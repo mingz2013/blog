@@ -1,0 +1,10 @@
+<div class="sidebar-module">
+    <h4>Authors</h4>
+    <ol class="list-unstyled">
+        {% for author, articles in authors|sort %}
+            <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}({{ articles|count }})</a></li>
+        {% endfor %}
+    </ol>
+</div>
+
+

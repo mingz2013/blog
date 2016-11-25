@@ -1,0 +1,8 @@
+<div class="sidebar-module">
+    <h4>Elsewhere</h4>
+    <ol class="list-unstyled">
+        {% for title, url in SOCIAL %}
+            <li><a href="{{ url }}">{{ title }}</a></li>
+        {% endfor %}
+    </ol>
+</div>

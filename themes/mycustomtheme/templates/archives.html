@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block masthead %}
+
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="{{ SITEURL }}">Home</a>
+                <a class="blog-nav-item active" href="{{ SITEURL }}/archives.html">Archives</a>
+                {% for page in pages %}
+                    <a class="blog-nav-item" href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="col-sm-8 blog-main">
+        <h4>Archives</h4>
+        <dl>
+            {% for article in dates %}
+                <dt>{{ article.locale_date }}</dt>
+                <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+            {% endfor %}
+        </dl>
+
+
+    </div><!-- /.blog-main -->
+{% endblock %}
+
+

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block masthead %}
+
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="{{ SITEURL }}">Home</a>
+                <a class="blog-nav-item" href="{{ SITEURL }}/archives.html">Archives</a>
+                {% for p in pages %}
+                    {% if p == page %}
+                        <a class="blog-nav-item active" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+                    {% else %}
+                        <a class="blog-nav-item" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+                    {% endif %}
+                {% endfor %}
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="col-sm-8 blog-main">
+
+        <div class="blog-post">
+            <h2 class="blog-post-title"><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h2>
+            <p class="blog-post-meta">{{ page.date.strftime('%Y-%m-%d %H:%M:%S') }} by <a
+                    href="{{ SITEURL }}/{{ page.author.url }}">{{ page.author }}</a></p>
+
+            <p>{{ page.summary }}</p>
+            <hr>
+            {{ page.content }}
+        </div><!-- /.blog-post -->
+
+
+    </div><!-- /.blog-main -->
+{% endblock %}
+
