@@ -2,89 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22dd89e9-20ad-416c-aad5-8312c6193cb9" name="Default" comment="init">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blog.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/zhaojm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README 2.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/articles/hello.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/articles/helloworld.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/articles/html/test_html.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/articles/js/about_js.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/articles/python/about_python.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/articles/test.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/extra/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/pages/about.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/pages/contact.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/develop_server.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/project.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/todo.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fabfile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pelicanconf.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/publishconf.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/make_github.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/archives.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/article.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/author.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/authors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/categories.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/category.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/elsewhere.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/github.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/period_archives.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/tag.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/tags.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/archives.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/author/mingz.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/authors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/categories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/category/html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/category/js.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/category/python.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/category/yeah.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feeds/all-en.atom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feeds/all.atom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feeds/html.atom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feeds/js.atom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feeds/mingz.atom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feeds/mingz.rss.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feeds/python.atom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/feeds/yeah.atom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/2016/Nov/25/about-js/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/2016/Nov/25/about-python/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/2016/Nov/25/hello/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/2016/Nov/25/helloworld/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/2016/Nov/25/rst-test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/2016/Nov/25/test-html/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/2016/Nov/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/posts/2016/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tag/awesome.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tag/hello.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tag/html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tag/js.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tag/pelican.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tag/publishing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tag/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tag/thats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tags.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CNAME" afterPath="$PROJECT_DIR$/content/extra/CNAME" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/robots.txt" afterPath="$PROJECT_DIR$/content/extra/robots.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/theme/css/blog.css" afterPath="$PROJECT_DIR$/themes/mycustomtheme/static/css/blog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/archives.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/author/mingz.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/authors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/categories.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/category/html.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/category/js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/category/python.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/category/yeah.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/feeds/all-en.atom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/feeds/all.atom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/feeds/html.atom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/feeds/js.atom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/feeds/mingz.atom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/feeds/mingz.rss.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/feeds/python.atom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/feeds/yeah.atom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/pages/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/pages/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/posts/2016/Nov/25/about-js/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/posts/2016/Nov/25/about-python/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/posts/2016/Nov/25/hello/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/posts/2016/Nov/25/helloworld/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/posts/2016/Nov/25/rst-test/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/posts/2016/Nov/25/test-html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/posts/2016/Nov/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/posts/2016/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tag/awesome.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tag/hello.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tag/html.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tag/js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tag/pelican.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tag/publishing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tag/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tag/thats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/tags.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/theme/css/blog.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,21 +81,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.840909">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6332454">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3863637">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.222222">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -170,10 +129,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pelicanconf.py" />
         <option value="$PROJECT_DIR$/publishconf.py" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -511,7 +470,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -519,7 +478,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -559,14 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.840909">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/publishconf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -585,8 +536,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3863637">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.222222">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6332454">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
