@@ -1,0 +1,8 @@
+<div class="sidebar-module">
+    <h4>Tags</h4>
+    <ol class="list-unstyled">
+        {% for tag, articles in tags|sort %}
+            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}({{ articles|count }})</a></li>
+        {% endfor %}
+    </ol>
+</div>
