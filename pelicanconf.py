@@ -64,9 +64,13 @@ STATIC_PATHS = [
     "images",
     "pdfs",
     'extra/robots.txt',
+    # 'extra/CNAME',
+    # 'extra/README.md'
 ]  # 在output目录中提供可访问的静态路径 “static”.
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    # 'extra/CNAME': {'path': 'CNAME'},
+    # 'extra/README.md': {'path': 'README.md'},
 }
 
 # Feed 设置
