@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 # 基本配置
 
-AUTHOR = u'mingz'  # 默认作者
+AUTHOR = u'Mingz'  # 默认作者
 
 USE_FOLDER_AS_CATEGORY = True  # 用目录作为类别
 DEFAULT_CATEGORY = 'misc'  # 默认文章分类
@@ -27,7 +27,7 @@ ARTICLE_PATHS = ['articles', ]  # 文章输入文件目录
 RELATIVE_URLS = False  # 定义是否使用文档相对URL链接，只有当测试时设置为 True
 PLUGINS = []  # 插件
 
-SITENAME = u"Mingz's home"  # 站点名称
+SITENAME = u"Mingz's Blog"  # 站点名称
 SITESUBTITLE = u"Mingz's blog on GitHub Page"
 SITEURL = 'http://localhost/blog'  # 站点url
 
@@ -64,13 +64,9 @@ STATIC_PATHS = [
     "images",
     "pdfs",
     'extra/robots.txt',
-    'extra/CNAME',
-    'extra/README.md'
 ]  # 在output目录中提供可访问的静态路径 “static”.
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/CNAME': {'path': 'CNAME'},
-    'extra/README.md': {'path': 'README.md'},
 }
 
 # Feed 设置
