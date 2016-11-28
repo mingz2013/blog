@@ -9,7 +9,7 @@
             <p class="blog-post-meta">{{ article.date.strftime('%Y-%m-%d %H:%M:%S') }} by <a
                     href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
                 Category:<a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a><br/>
-                Tags:{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
+                Tags:{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> {% endfor %}
             </p>
 
 
