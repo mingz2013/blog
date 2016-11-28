@@ -5,6 +5,7 @@ Category: Contact
 Tags: Contact
 Slug: about
 Author: Mingz
-Summary: Short version for index and feeds
+Summary: About
 
-About
+
+

@@ -6,5 +6,6 @@ Tags: test, hello
 Slug: about-python
 Author: Mingz
 Summary: Short version for index and feeds
+Status: draft
 
 This is the content of my super blog post.
