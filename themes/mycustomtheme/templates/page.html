@@ -52,11 +52,7 @@
 
         {#        {% include 'gentie.163.html' %}#}
 
-        <!-- 多说评论框 start -->
-        <div class="ds-thread" data-thread-key="{{ page.slug }}" data-title="{{ page.title }}"
-             data-url="{{ page.url }}"></div>
-        <!-- 多说评论框 end -->
-        {% include 'duoshuo.comment.html' %}
+        {% include 'duoshuo.comment.html' with context %}
 
     </div><!-- /.blog-main -->
 {% endblock %}
