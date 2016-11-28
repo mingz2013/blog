@@ -7,7 +7,10 @@
             <div class="blog-post">
                 <h2 class="blog-post-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
                 <p class="blog-post-meta">{{ article.date.strftime('%Y-%m-%d %H:%M:%S') }} by <a
-                        href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></p>
+                    href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+                Category:<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a><br/>
+                Tags:{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
+            </p>
 
                 <p>{{ article.summary }}</p>
                 <hr>
