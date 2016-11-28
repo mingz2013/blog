@@ -27,8 +27,8 @@
             <h2 class="blog-post-title"><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h2>
             <p class="blog-post-meta">
                 {{ page.date.strftime('%Y-%m-%d %H:%M:%S') }} by <a
-                    href="{{ SITEURL }}/{{ page.author.url }}">{{ page.author }}</a>
-                Category: <a href="{{ SITEURL }}/{{ page.category.url }}">{{ page.category }}</a><br/>
+                    href="{{ SITEURL }}/{{ page.author.url }}">{{ page.author }}</a><br/>
+                Category: <a href="{{ SITEURL }}/{{ page.category.url }}">{{ page.category }}</a>
                 Tags:
                 {% for tag in page.tags %}
                     <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
