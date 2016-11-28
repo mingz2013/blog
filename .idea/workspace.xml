@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22dd89e9-20ad-416c-aad5-8312c6193cb9" name="Default" comment="init">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/mycustomtheme/templates/base.html" afterPath="$PROJECT_DIR$/themes/mycustomtheme/templates/base.html" />
-    </list>
+    <list default="true" id="22dd89e9-20ad-416c-aad5-8312c6193cb9" name="Default" comment="init" />
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,11 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6776181">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.523614">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,8 +70,8 @@
         <option value="$PROJECT_DIR$/content/articles/test.rst" />
         <option value="$PROJECT_DIR$/content/articles/test_markdown.md" />
         <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/163.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/article.html" />
         <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/base.html" />
+        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/article.html" />
       </list>
     </option>
   </component>
@@ -1120,14 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5214724">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/gentie.163.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2760736">
@@ -1166,8 +1166,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6776181">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.523614">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
