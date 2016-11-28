@@ -35,8 +35,18 @@
       <file leaf-file-name="article.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.523614">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7392197">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baidu.share.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/baidu.share.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,6 +81,7 @@
         <option value="$PROJECT_DIR$/content/articles/test_markdown.md" />
         <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/163.html" />
         <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/base.html" />
+        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/baidu.share.html" />
         <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/article.html" />
       </list>
     </option>
@@ -640,20 +651,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content/articles/html/test_html.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/articles/js/about_js.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
@@ -1172,10 +1169,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/baidu.share.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/mycustomtheme/templates/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.523614">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7392197">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
