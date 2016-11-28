@@ -8,6 +8,7 @@
             <h2 class="blog-post-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
             <p class="blog-post-meta">{{ article.date.strftime('%Y-%m-%d %H:%M:%S') }} by <a
                     href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></p>
+            <p class="blog-post-meta">{{ category }}</p>
 
             <p>{{ article.summary }}</p>
             <hr>
