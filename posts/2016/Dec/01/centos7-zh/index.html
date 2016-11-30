@@ -80,39 +80,39 @@ var _hmt = _hmt || [];
             <p><p>CentOS7&nbsp;中文支持</p></p>
             <hr>
             <ol>
-<li>查看系统版本信息
-<code>cat /etc/redhat-release</code></li>
+<li>查看系统版本信息<br />
+<code>cat /etc/redhat-release</code>  </li>
 </ol>
 <div class="highlight"><pre><span></span>CentOS Linux release 7.1.1503 (Core)
 </pre></div>
 
 
-<p><code>uname -m</code></p>
+<p><code>uname -m</code>  </p>
 <div class="highlight"><pre><span></span>x86_64
 </pre></div>
 
 
-<p><code>uname -r</code></p>
+<p><code>uname -r</code>  </p>
 <div class="highlight"><pre><span></span>3.10.0-229.el7.x86_64
 </pre></div>
 
 
-<p><code>uname -a</code></p>
+<p><code>uname -a</code>  </p>
 <div class="highlight"><pre><span></span>Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 </pre></div>
 
 
 <ol>
-<li>当前文件配置
-<code>cat /etc/locale.conf</code></li>
+<li>当前文件配置<br />
+<code>cat /etc/locale.conf</code>  </li>
 </ol>
 <div class="highlight"><pre><span></span>LANG=&quot;C&quot;
 </pre></div>
 
 
 <ol>
-<li>查看locale环境变量
-<code>locale</code></li>
+<li>查看locale环境变量<br />
+<code>locale</code>  </li>
 </ol>
 <div class="highlight"><pre><span></span>LANG=C
 LC_CTYPE=&quot;C&quot;
@@ -132,8 +132,8 @@ LC_ALL=
 
 
 <ol>
-<li>修改
-<code>vim /etc/locale.conf</code></li>
+<li>修改<br />
+<code>vim /etc/locale.conf</code>  </li>
 </ol>
 <div class="highlight"><pre><span></span>#LANG=&quot;C&quot;
 LANG=&quot;zh_CN.UTF-8&quot;
@@ -142,13 +142,13 @@ LANG=&quot;zh_CN.UTF-8&quot;
 
 <ol>
 <li>
-<p>重新登录
-<code>exit</code>
-<code>login</code></p>
+<p>重新登录<br />
+<code>exit</code><br />
+<code>login</code>  </p>
 </li>
 <li>
-<p>查看locale环境变量
-<code>locale</code></p>
+<p>查看locale环境变量<br />
+<code>locale</code>  </p>
 </li>
 </ol>
 <div class="highlight"><pre><span></span>LANG=zh_CN.UTF-8
@@ -169,8 +169,8 @@ LC_ALL=
 
 
 <ol>
-<li>查看当前安装的中文语言包
-<code>locale -a | grep zh</code></li>
+<li>查看当前安装的中文语言包<br />
+<code>locale -a | grep zh</code>  </li>
 </ol>
 <div class="highlight"><pre><span></span>zh_CN
 zh_CN.gb18030
