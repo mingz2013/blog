@@ -57,6 +57,7 @@ LC_ALL=
 #LANG="C"
 LANG="zh_CN.UTF-8"
 ```
+
 5. 重新登录  
 `exit`  
 `login`  
