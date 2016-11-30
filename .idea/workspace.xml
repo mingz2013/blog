@@ -26,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/content/articles/Linux/centos7_zh.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.4257642">
-                <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <first_editor vertical-scroll-proportion="0.7860262">
+                <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -922,8 +922,8 @@
     <entry file="file://$PROJECT_DIR$/content/articles/Linux/centos7_zh.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.4257642">
-            <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <first_editor vertical-scroll-proportion="0.7860262">
+            <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />
