@@ -79,41 +79,35 @@ var _hmt = _hmt || [];
 
             <p><p>CentOS7&nbsp;中文支持</p></p>
             <hr>
-            <ol>
-<li>查看系统版本信息
-<code>cat /etc/redhat-release</code></li>
-</ol>
+            <h2>查看系统版本信息</h2>
+<p><code>$cat /etc/redhat-release</code></p>
 <div class="highlight"><pre><span></span>CentOS Linux release 7.1.1503 (Core)
 </pre></div>
 
 
-<p><code>uname -m</code></p>
+<p><code>$uname -m</code></p>
 <div class="highlight"><pre><span></span>x86_64
 </pre></div>
 
 
-<p><code>uname -r</code></p>
+<p><code>$uname -r</code></p>
 <div class="highlight"><pre><span></span>3.10.0-229.el7.x86_64
 </pre></div>
 
 
-<p><code>uname -a</code></p>
+<p><code>$uname -a</code></p>
 <div class="highlight"><pre><span></span>Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 </pre></div>
 
 
-<ol>
-<li>当前文件配置
-<code>cat /etc/locale.conf</code></li>
-</ol>
+<h2>当前文件配置</h2>
+<p><code>$cat /etc/locale.conf</code></p>
 <div class="highlight"><pre><span></span>LANG=&quot;C&quot;
 </pre></div>
 
 
-<ol>
-<li>查看locale环境变量
-<code>locale</code></li>
-</ol>
+<h2>查看locale环境变量</h2>
+<p><code>$locale</code></p>
 <div class="highlight"><pre><span></span>LANG=C
 LC_CTYPE=&quot;C&quot;
 LC_NUMERIC=&quot;C&quot;
@@ -131,26 +125,18 @@ LC_ALL=
 </pre></div>
 
 
-<ol>
-<li>修改
-<code>vim /etc/locale.conf</code></li>
-</ol>
+<h2>修改</h2>
+<p><code>$vim /etc/locale.conf</code></p>
 <div class="highlight"><pre><span></span>#LANG=&quot;C&quot;
 LANG=&quot;zh_CN.UTF-8&quot;
 </pre></div>
 
 
-<ol>
-<li>
-<p>重新登录
-<code>exit</code>
-<code>login</code></p>
-</li>
-<li>
-<p>查看locale环境变量
-<code>locale</code></p>
-</li>
-</ol>
+<h2>重新登录</h2>
+<p><code>$exit</code></p>
+<p><code>$login</code></p>
+<h2>查看locale环境变量</h2>
+<p><code>$locale</code></p>
 <div class="highlight"><pre><span></span>LANG=zh_CN.UTF-8
 LC_CTYPE=&quot;zh_CN.UTF-8&quot;
 LC_NUMERIC=&quot;zh_CN.UTF-8&quot;
@@ -168,10 +154,8 @@ LC_ALL=
 </pre></div>
 
 
-<ol>
-<li>查看当前安装的中文语言包
-<code>locale -a | grep zh</code></li>
-</ol>
+<h2>查看当前安装的中文语言包</h2>
+<p><code>$locale -a | grep zh</code></p>
 <div class="highlight"><pre><span></span>zh_CN
 zh_CN.gb18030
 zh_CN.gb2312
@@ -211,7 +195,7 @@ zh_TW.utf8
     },
     "share": {},
     "image": {"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16"},
-    "selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]}
+    //"selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]}
 };
 with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
 
@@ -251,12 +235,12 @@ with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createEle
 <div class="sidebar-module">
     <h4>Categories</h4>
     <ol class="list-unstyled">
-            <li><a href="http://mingz.me/blog/category/linux.html">Linux(1)</a></li>
+            <li><a href="http://mingz.me/blog/category/linux.html">Linux(2)</a></li>
     </ol>
 </div><div class="sidebar-module">
     <h4>Tags</h4>
     <ol class="list-unstyled">
-            <li><a href="http://mingz.me/blog/tag/centos7.html">CentOS7(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/centos7.html">CentOS7(2)</a></li>
     </ol>
 </div><div class="sidebar-module">
     <h4>Elsewhere</h4>

@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/linux.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-01T00:00:00+01:00</updated><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh/</id><summary type="html">&lt;ol&gt;
-&lt;li&gt;查看系统版本信息
-&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/linux.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-01T00:00:00+01:00</updated><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh/</id><summary type="html">&lt;h2&gt;查看系统版本信息&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$cat /etc/redhat-release&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;CentOS Linux release 7.1.1503 (Core)
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;code&gt;uname -m&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$uname -m&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;x86_64
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;code&gt;uname -r&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$uname -r&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;3.10.0-229.el7.x86_64
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;code&gt;uname -a&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$uname -a&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;ol&gt;
-&lt;li&gt;当前文件配置
-&lt;code&gt;cat /etc/locale.conf&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2&gt;当前文件配置&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$cat /etc/locale.conf&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=&amp;quot;C&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;ol&gt;
-&lt;li&gt;查看locale环境变量
-&lt;code&gt;locale&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2&gt;查看locale环境变量&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$locale&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=C
 LC_CTYPE=&amp;quot;C&amp;quot;
 LC_NUMERIC=&amp;quot;C&amp;quot;
@@ -51,26 +45,18 @@ LC_ALL=
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;ol&gt;
-&lt;li&gt;修改
-&lt;code&gt;vim /etc/locale.conf&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2&gt;修改&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$vim /etc/locale.conf&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#LANG=&amp;quot;C&amp;quot;
 LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;重新登录
-&lt;code&gt;exit&lt;/code&gt;
-&lt;code&gt;login&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;查看locale环境变量
-&lt;code&gt;locale&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2&gt;重新登录&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$exit&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$login&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;查看locale环境变量&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$locale&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=zh_CN.UTF-8
 LC_CTYPE=&amp;quot;zh_CN.UTF-8&amp;quot;
 LC_NUMERIC=&amp;quot;zh_CN.UTF-8&amp;quot;
@@ -88,10 +74,8 @@ LC_ALL=
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;ol&gt;
-&lt;li&gt;查看当前安装的中文语言包
-&lt;code&gt;locale -a | grep zh&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2&gt;查看当前安装的中文语言包&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$locale -a | grep zh&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;zh_CN
 zh_CN.gb18030
 zh_CN.gb2312
@@ -108,4 +92,105 @@ zh_TW
 zh_TW.big5
 zh_TW.euctw
 zh_TW.utf8
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="CentOS7"></category></entry></feed>
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="CentOS7"></category></entry><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh-rst/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh-rst/</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;1.&amp;nbsp;查看系统版本信息&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$cat&amp;nbsp;/etc/redhat-release&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+CentOS Linux release 7.1.1503 (Core)
+&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;$uname&amp;nbsp;-m&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+x86_64
+&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;$uname&amp;nbsp;-r&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+3.10.0-229.el7.x86_64
+&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;$uname&amp;nbsp;-a&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id2"&gt;
+&lt;h2&gt;2.&amp;nbsp;当前文件配置&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$cat&amp;nbsp;/etc/locale.conf&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+LANG=&amp;quot;C&amp;quot;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="locale"&gt;
+&lt;h2&gt;3.&amp;nbsp;查看locale环境变量&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$locale&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+LANG=C
+LC_CTYPE=&amp;quot;C&amp;quot;
+LC_NUMERIC=&amp;quot;C&amp;quot;
+LC_TIME=&amp;quot;C&amp;quot;
+LC_COLLATE=&amp;quot;C&amp;quot;
+LC_MONETARY=&amp;quot;C&amp;quot;
+LC_MESSAGES=&amp;quot;C&amp;quot;
+LC_PAPER=&amp;quot;C&amp;quot;
+LC_NAME=&amp;quot;C&amp;quot;
+LC_ADDRESS=&amp;quot;C&amp;quot;
+LC_TELEPHONE=&amp;quot;C&amp;quot;
+LC_MEASUREMENT=&amp;quot;C&amp;quot;
+LC_IDENTIFICATION=&amp;quot;C&amp;quot;
+LC_ALL=
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;4.&amp;nbsp;修改&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$vim&amp;nbsp;/etc/locale.conf&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+#LANG=&amp;quot;C&amp;quot;
+LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id4"&gt;
+&lt;h2&gt;5.&amp;nbsp;重新登录&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$exit&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;$login&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id5"&gt;
+&lt;h2&gt;6.&amp;nbsp;查看locale环境变量&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$locale&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+LANG=zh_CN.UTF-8
+LC_CTYPE=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_NUMERIC=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_TIME=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_COLLATE=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_MONETARY=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_MESSAGES=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_PAPER=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_NAME=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_ADDRESS=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_TELEPHONE=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_MEASUREMENT=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_IDENTIFICATION=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_ALL=
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id6"&gt;
+&lt;h2&gt;7.&amp;nbsp;查看当前安装的中文语言包&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$locale -a | grep&amp;nbsp;zh&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+zh_CN
+zh_CN.gb18030
+zh_CN.gb2312
+zh_CN.gbk
+zh_CN.utf8
+zh_HK
+zh_HK.big5hkscs
+zh_HK.utf8
+zh_SG
+zh_SG.gb2312
+zh_SG.gbk
+zh_SG.utf8
+zh_TW
+zh_TW.big5
+zh_TW.euctw
+zh_TW.utf8
+&lt;/pre&gt;
+&lt;/div&gt;
+</summary><category term="CentOS7"></category></entry></feed>

@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://mingz.me/blog/favicon.ico">
+    <link rel="icon" href="http://localhost/favicon.ico">
     <title>Mingz's Blog</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="http://mingz.me/blog/theme/css/blog.css" rel="stylesheet">
+    <link href="http://localhost/theme/css/blog.css" rel="stylesheet">
 
 </head>
 <script>
@@ -49,8 +49,8 @@ var _hmt = _hmt || [];
         <div class="container">
             <nav class="blog-nav">
                 <a class="blog-nav-item" href="/">Home</a>
-                <a class="blog-nav-item active" href="http://mingz.me/blog/">Blog</a>
-                <a class="blog-nav-item" href="http://mingz.me/blog/archives.html">Archives</a>
+                <a class="blog-nav-item active" href="http://localhost/">Blog</a>
+                <a class="blog-nav-item" href="http://localhost/archives.html">Archives</a>
             </nav>
         </div>
     </div>
@@ -58,7 +58,7 @@ var _hmt = _hmt || [];
 <div class="container">
 
     <div class="blog-header">
-        <h1 class="blog-title"><a href="http://mingz.me/blog/">Mingz's Blog</a></h1>
+        <h1 class="blog-title"><a href="http://localhost/">Mingz's Blog</a></h1>
         <p class="lead blog-description">Mingz's blog on GitHub Page</p>
     </div>
 
@@ -67,22 +67,20 @@ var _hmt = _hmt || [];
     <div class="col-sm-8 blog-main">
 
         <div class="blog-post">
-            <h2 class="blog-post-title"><a href="http://mingz.me/blog/drafts/centos7-zh.html">CentOS7&nbsp;中文支持</a></h2>
+            <h2 class="blog-post-title"><a href="http://localhost/drafts/centos7-zh.html">CentOS7&nbsp;中文支持</a></h2>
             <p class="blog-post-meta">
                 2016-12-01 00:00:00 by <a
-                    href="http://mingz.me/blog/author/mingz.html">Mingz</a><br/>
-                Category: <a href="http://mingz.me/blog/category/linux.html">Linux</a>
+                    href="http://localhost/author/mingz.html">Mingz</a><br/>
+                Category: <a href="http://localhost/category/linux.html">Linux</a>
                 Tags:
-                    <a href="http://mingz.me/blog/tag/centos7.html">CentOS7</a>
+                    <a href="http://localhost/tag/centos7.html">CentOS7</a>
             </p>
 
 
             <p><p>CentOS7&nbsp;中文支持</p></p>
             <hr>
-            <ol>
-<li>查看系统版本信息
-<code>cat /etc/redhat-release</code></li>
-</ol>
+            <h2>查看系统版本信息</h2>
+<p><code>cat /etc/redhat-release</code></p>
 <div class="highlight"><pre><span></span>CentOS Linux release 7.1.1503 (Core)
 </pre></div>
 
@@ -102,18 +100,14 @@ var _hmt = _hmt || [];
 </pre></div>
 
 
-<ol>
-<li>当前文件配置
-<code>cat /etc/locale.conf</code></li>
-</ol>
+<h2>当前文件配置</h2>
+<p><code>cat /etc/locale.conf</code></p>
 <div class="highlight"><pre><span></span>LANG=&quot;C&quot;
 </pre></div>
 
 
-<ol>
-<li>查看locale环境变量
-<code>locale</code></li>
-</ol>
+<h2>查看locale环境变量</h2>
+<p><code>locale</code></p>
 <div class="highlight"><pre><span></span>LANG=C
 LC_CTYPE=&quot;C&quot;
 LC_NUMERIC=&quot;C&quot;
@@ -131,26 +125,18 @@ LC_ALL=
 </pre></div>
 
 
-<ol>
-<li>修改
-<code>vim /etc/locale.conf</code></li>
-</ol>
+<h2>修改</h2>
+<p><code>vim /etc/locale.conf</code></p>
 <div class="highlight"><pre><span></span>#LANG=&quot;C&quot;
 LANG=&quot;zh_CN.UTF-8&quot;
 </pre></div>
 
 
-<ol>
-<li>
-<p>重新登录
-<code>exit</code>
-<code>login</code></p>
-</li>
-<li>
-<p>查看locale环境变量
-<code>locale</code></p>
-</li>
-</ol>
+<h2>重新登录</h2>
+<p><code>exit</code></p>
+<p><code>login</code></p>
+<h2>查看locale环境变量</h2>
+<p><code>locale</code></p>
 <div class="highlight"><pre><span></span>LANG=zh_CN.UTF-8
 LC_CTYPE=&quot;zh_CN.UTF-8&quot;
 LC_NUMERIC=&quot;zh_CN.UTF-8&quot;
@@ -168,10 +154,8 @@ LC_ALL=
 </pre></div>
 
 
-<ol>
-<li>查看当前安装的中文语言包
-<code>locale -a | grep zh</code></li>
-</ol>
+<h2>查看当前安装的中文语言包</h2>
+<p><code>locale -a | grep zh</code></p>
 <div class="highlight"><pre><span></span>zh_CN
 zh_CN.gb18030
 zh_CN.gb2312
@@ -217,7 +201,7 @@ with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createEle
 
     <!-- 多说评论框 start -->
     <div class="ds-thread" data-thread-key="centos7-zh" data-title="CentOS7&nbsp;中文支持"
-         data-url="http://mingz.me/blog/drafts/centos7-zh.html"></div>
+         data-url="http://localhost/drafts/centos7-zh.html"></div>
     <!-- 多说评论框 end -->
 
 
@@ -251,10 +235,12 @@ with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createEle
 <div class="sidebar-module">
     <h4>Categories</h4>
     <ol class="list-unstyled">
+            <li><a href="http://localhost/category/linux.html">Linux(1)</a></li>
     </ol>
 </div><div class="sidebar-module">
     <h4>Tags</h4>
     <ol class="list-unstyled">
+            <li><a href="http://localhost/tag/centos7.html">CentOS7(1)</a></li>
     </ol>
 </div><div class="sidebar-module">
     <h4>Elsewhere</h4>
