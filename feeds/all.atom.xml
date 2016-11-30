@@ -1,86 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/all.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-01T00:00:00+01:00</updated><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh/</id><summary type="html">&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;查看系统版本信息
-    &lt;code&gt;cat /etc/redhat-release&lt;/code&gt;
-    &lt;code&gt;CentOS Linux release 7.1.1503 (Core)&lt;/code&gt;
-    &lt;code&gt;uname -m&lt;/code&gt;
-    &lt;code&gt;x86_64&lt;/code&gt;
-    &lt;code&gt;uname -r&lt;/code&gt;
-    &lt;code&gt;3.10.0-229.el7.x86_64&lt;/code&gt;
-    &lt;code&gt;uname -a&lt;/code&gt;
-    &lt;code&gt;Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;查看系统版本信息&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;
+&lt;code&gt;CentOS Linux release 7.1.1503 (Core)&lt;/code&gt;
+&lt;code&gt;uname -m&lt;/code&gt;
+&lt;code&gt;x86_64&lt;/code&gt;
+&lt;code&gt;uname -r&lt;/code&gt;
+&lt;code&gt;3.10.0-229.el7.x86_64&lt;/code&gt;
+&lt;code&gt;uname -a&lt;/code&gt;
+&lt;code&gt;Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;当前文件配置
-    &lt;code&gt;cat /etc/locale.conf&lt;/code&gt;
-    &lt;code&gt;LANG="C"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;当前文件配置&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;cat /etc/locale.conf&lt;/code&gt;
+&lt;code&gt;LANG="C"&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;查看locale环境变量
-    &lt;code&gt;locale&lt;/code&gt;
-    &lt;code&gt;LANG=C
-    LC_CTYPE="C"
-    LC_NUMERIC="C"
-    LC_TIME="C"
-    LC_COLLATE="C"
-    LC_MONETARY="C"
-    LC_MESSAGES="C"
-    LC_PAPER="C"
-    LC_NAME="C"
-    LC_ADDRESS="C"
-    LC_TELEPHONE="C"
-    LC_MEASUREMENT="C"
-    LC_IDENTIFICATION="C"
-    LC_ALL=&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;查看locale环境变量&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;locale&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    LANG=C
+    LC_CTYPE=&amp;quot;C&amp;quot;
+    LC_NUMERIC=&amp;quot;C&amp;quot;
+    LC_TIME=&amp;quot;C&amp;quot;
+    LC_COLLATE=&amp;quot;C&amp;quot;
+    LC_MONETARY=&amp;quot;C&amp;quot;
+    LC_MESSAGES=&amp;quot;C&amp;quot;
+    LC_PAPER=&amp;quot;C&amp;quot;
+    LC_NAME=&amp;quot;C&amp;quot;
+    LC_ADDRESS=&amp;quot;C&amp;quot;
+    LC_TELEPHONE=&amp;quot;C&amp;quot;
+    LC_MEASUREMENT=&amp;quot;C&amp;quot;
+    LC_IDENTIFICATION=&amp;quot;C&amp;quot;
+    LC_ALL=
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;修改
-    &lt;code&gt;vim /etc/locale.conf&lt;/code&gt;
-    &lt;code&gt;#LANG="C"
-    LANG="zh_CN.UTF-8"&lt;/code&gt;&lt;/p&gt;
+&lt;code&gt;vim /etc/locale.conf&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#LANG=&amp;quot;C&amp;quot;
+LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;重新登录
-    &lt;code&gt;exit&lt;/code&gt;
-    &lt;code&gt;login&lt;/code&gt;&lt;/p&gt;
+&lt;code&gt;exit&lt;/code&gt;
+&lt;code&gt;login&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;查看locale环境变量
-    &lt;code&gt;locale&lt;/code&gt;
-    &lt;code&gt;LANG=zh_CN.UTF-8
-    LC_CTYPE="zh_CN.UTF-8"
-    LC_NUMERIC="zh_CN.UTF-8"
-    LC_TIME="zh_CN.UTF-8"
-    LC_COLLATE="zh_CN.UTF-8"
-    LC_MONETARY="zh_CN.UTF-8"
-    LC_MESSAGES="zh_CN.UTF-8"
-    LC_PAPER="zh_CN.UTF-8"
-    LC_NAME="zh_CN.UTF-8"
-    LC_ADDRESS="zh_CN.UTF-8"
-    LC_TELEPHONE="zh_CN.UTF-8"
-    LC_MEASUREMENT="zh_CN.UTF-8"
-    LC_IDENTIFICATION="zh_CN.UTF-8"
-    LC_ALL=&lt;/code&gt;&lt;/p&gt;
+&lt;code&gt;locale&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;查看当前安装的中文语言包
-    &lt;code&gt;locale -a | grep zh&lt;/code&gt;
-    &lt;code&gt;zh_CN
-    zh_CN.gb18030
-    zh_CN.gb2312
-    zh_CN.gbk
-    zh_CN.utf8
-    zh_HK
-    zh_HK.big5hkscs
-    zh_HK.utf8
-    zh_SG
-    zh_SG.gb2312
-    zh_SG.gbk
-    zh_SG.utf8
-    zh_TW
-    zh_TW.big5
-    zh_TW.euctw
-    zh_TW.utf8&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</summary><category term="CentOS7"></category></entry><entry><title>Test rst</title><link href="http://mingz.me/blog/posts/2016/Nov/25/rst-test/" rel="alternate"></link><published>2016-11-25T22:20:00+01:00</published><updated>2016-11-25T22:20:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-11-25:blog/posts/2016/Nov/25/rst-test/</id><summary type="html"></summary><category term="thats"></category><category term="awesome"></category></entry></feed>
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=zh_CN.UTF-8
+LC_CTYPE=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_NUMERIC=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_TIME=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_COLLATE=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_MONETARY=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_MESSAGES=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_PAPER=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_NAME=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_ADDRESS=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_TELEPHONE=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_MEASUREMENT=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_IDENTIFICATION=&amp;quot;zh_CN.UTF-8&amp;quot;
+LC_ALL=
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;查看当前安装的中文语言包
+&lt;code&gt;locale -a | grep zh&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;zh_CN
+zh_CN.gb18030
+zh_CN.gb2312
+zh_CN.gbk
+zh_CN.utf8
+zh_HK
+zh_HK.big5hkscs
+zh_HK.utf8
+zh_SG
+zh_SG.gb2312
+zh_SG.gbk
+zh_SG.utf8
+zh_TW
+zh_TW.big5
+zh_TW.euctw
+zh_TW.utf8
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="CentOS7"></category></entry><entry><title>Test rst</title><link href="http://mingz.me/blog/posts/2016/Nov/25/rst-test/" rel="alternate"></link><published>2016-11-25T22:20:00+01:00</published><updated>2016-11-25T22:20:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-11-25:blog/posts/2016/Nov/25/rst-test/</id><summary type="html"></summary><category term="thats"></category><category term="awesome"></category></entry></feed>
