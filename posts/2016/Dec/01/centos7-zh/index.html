@@ -82,38 +82,24 @@ var _hmt = _hmt || [];
             <p><p>CentOS7&nbsp;中文支持</p></p>
             <hr>
             <ol>
-<li>查看系统版本信息<blockquote>
-<p><code>cat /etc/redhat-release</code></p>
+<li>
+<p>查看系统版本信息</p>
+<blockquote>
+<p><code>cat /etc/redhat-release</code>
+      CentOS Linux release 7.1.1503 (Core)
+<code>uname -m</code>
+      x86_64
+<code>uname -r</code>
+      3.10.0-229.el7.x86_64
+<code>uname -a</code>
+      Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 <span class="caps">SMP</span> Fri Mar 6 11:36:42 <span class="caps">UTC</span> 2015 x86_64 x86_64 x86_64 <span class="caps">GNU</span>/Linux</p>
 </blockquote>
 </li>
-</ol>
-<blockquote>
-<div class="highlight"><pre><span></span>  CentOS Linux release 7.1.1503 (Core)
-</pre></div>
-
-
-<p><code>uname -m</code></p>
-<div class="highlight"><pre><span></span>  x86_64
-</pre></div>
-
-
-<p><code>uname -r</code></p>
-<div class="highlight"><pre><span></span>  3.10.0-229.el7.x86_64
-</pre></div>
-
-
-<p><code>uname -a</code></p>
-<div class="highlight"><pre><span></span>  Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
-</pre></div>
-
-
-</blockquote>
-<ol>
 <li>
 <p>当前文件配置</p>
 <blockquote>
 <p><code>cat /etc/locale.conf</code>
-<code>LANG="C"</code></p>
+      <span class="caps">LANG</span>=&#8221;C&#8221;</p>
 </blockquote>
 </li>
 <li>
@@ -140,46 +126,53 @@ var _hmt = _hmt || [];
 </blockquote>
 </li>
 <li>
-<p>修改
-<code>vim /etc/locale.conf</code></p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span>#LANG=&quot;C&quot;
-LANG=&quot;zh_CN.UTF-8&quot;
+<p>修改</p>
+<blockquote>
+<p><code>vim /etc/locale.conf</code></p>
+<div class="highlight"><pre><span></span>    #LANG=&quot;C&quot;
+    LANG=&quot;zh_CN.UTF-8&quot;
 </pre></div>
 
 
-<ol>
+</blockquote>
+</li>
 <li>
-<p>重新登录
-<code>exit</code>
+<p>重新登录</p>
+<blockquote>
+<p><code>exit</code>
 <code>login</code></p>
+</blockquote>
 </li>
 <li>
-<p>查看locale环境变量
-<code>locale</code></p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span>LANG=zh_CN.UTF-8
-LC_CTYPE=&quot;zh_CN.UTF-8&quot;
-LC_NUMERIC=&quot;zh_CN.UTF-8&quot;
-LC_TIME=&quot;zh_CN.UTF-8&quot;
-LC_COLLATE=&quot;zh_CN.UTF-8&quot;
-LC_MONETARY=&quot;zh_CN.UTF-8&quot;
-LC_MESSAGES=&quot;zh_CN.UTF-8&quot;
-LC_PAPER=&quot;zh_CN.UTF-8&quot;
-LC_NAME=&quot;zh_CN.UTF-8&quot;
-LC_ADDRESS=&quot;zh_CN.UTF-8&quot;
-LC_TELEPHONE=&quot;zh_CN.UTF-8&quot;
-LC_MEASUREMENT=&quot;zh_CN.UTF-8&quot;
-LC_IDENTIFICATION=&quot;zh_CN.UTF-8&quot;
-LC_ALL=
+<p>查看locale环境变量</p>
+<blockquote>
+<p><code>locale</code></p>
+<div class="highlight"><pre><span></span>    LANG=zh_CN.UTF-8
+    LC_CTYPE=&quot;zh_CN.UTF-8&quot;
+    LC_NUMERIC=&quot;zh_CN.UTF-8&quot;
+    LC_TIME=&quot;zh_CN.UTF-8&quot;
+    LC_COLLATE=&quot;zh_CN.UTF-8&quot;
+    LC_MONETARY=&quot;zh_CN.UTF-8&quot;
+    LC_MESSAGES=&quot;zh_CN.UTF-8&quot;
+    LC_PAPER=&quot;zh_CN.UTF-8&quot;
+    LC_NAME=&quot;zh_CN.UTF-8&quot;
+    LC_ADDRESS=&quot;zh_CN.UTF-8&quot;
+    LC_TELEPHONE=&quot;zh_CN.UTF-8&quot;
+    LC_MEASUREMENT=&quot;zh_CN.UTF-8&quot;
+    LC_IDENTIFICATION=&quot;zh_CN.UTF-8&quot;
+    LC_ALL=
 </pre></div>
 
 
-<ol>
-<li>查看当前安装的中文语言包
-<code>locale -a | grep zh</code></li>
+</blockquote>
+</li>
+<li>
+<p>查看当前安装的中文语言包</p>
+<blockquote>
+<p><code>locale -a | grep zh</code>
+</p>
+</blockquote>
+</li>
 </ol>
 <div class="highlight"><pre><span></span>zh_CN
 zh_CN.gb18030
