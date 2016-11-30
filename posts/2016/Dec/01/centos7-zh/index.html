@@ -82,115 +82,90 @@ var _hmt = _hmt || [];
             <p><p>CentOS7&nbsp;中文支持</p></p>
             <hr>
             <ol>
-<li>查看系统版本信息
-<code>cat /etc/redhat-release</code></li>
-</ol>
-<div class="highlight"><pre><span></span>CentOS Linux release 7.1.1503 (Core)
-</pre></div>
-
-
-<p><code>uname -m</code></p>
-<div class="highlight"><pre><span></span>x86_64
-</pre></div>
-
-
-<p><code>uname -r</code></p>
-<div class="highlight"><pre><span></span>3.10.0-229.el7.x86_64
-</pre></div>
-
-
-<p><code>uname -a</code></p>
-<div class="highlight"><pre><span></span>Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
-</pre></div>
-
-
-<ol>
-<li>当前文件配置
-<code>cat /etc/locale.conf</code></li>
-</ol>
-<div class="highlight"><pre><span></span>LANG=&quot;C&quot;
-</pre></div>
-
-
-<ol>
-<li>查看locale环境变量
-<code>locale</code></li>
-</ol>
-<div class="highlight"><pre><span></span>LANG=C
-LC_CTYPE=&quot;C&quot;
-LC_NUMERIC=&quot;C&quot;
-LC_TIME=&quot;C&quot;
-LC_COLLATE=&quot;C&quot;
-LC_MONETARY=&quot;C&quot;
-LC_MESSAGES=&quot;C&quot;
-LC_PAPER=&quot;C&quot;
-LC_NAME=&quot;C&quot;
-LC_ADDRESS=&quot;C&quot;
-LC_TELEPHONE=&quot;C&quot;
-LC_MEASUREMENT=&quot;C&quot;
-LC_IDENTIFICATION=&quot;C&quot;
-LC_ALL=
-</pre></div>
-
-
-<ol>
-<li>修改
-<code>vim /etc/locale.conf</code></li>
-</ol>
-<div class="highlight"><pre><span></span>#LANG=&quot;C&quot;
-LANG=&quot;zh_CN.UTF-8&quot;
-</pre></div>
-
-
-<ol>
 <li>
-<p>重新登录
-<code>exit</code>
-<code>login</code></p>
+<p>查看系统版本信息
+    <code>cat /etc/redhat-release</code>
+    <code>CentOS Linux release 7.1.1503 (Core)</code>
+    <code>uname -m</code>
+    <code>x86_64</code>
+    <code>uname -r</code>
+    <code>3.10.0-229.el7.x86_64</code>
+    <code>uname -a</code>
+    <code>Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux</code></p>
+</li>
+<li>
+<p>当前文件配置
+    <code>cat /etc/locale.conf</code>
+    <code>LANG="C"</code></p>
 </li>
 <li>
 <p>查看locale环境变量
-<code>locale</code></p>
+    <code>locale</code>
+    <code>LANG=C
+    LC_CTYPE="C"
+    LC_NUMERIC="C"
+    LC_TIME="C"
+    LC_COLLATE="C"
+    LC_MONETARY="C"
+    LC_MESSAGES="C"
+    LC_PAPER="C"
+    LC_NAME="C"
+    LC_ADDRESS="C"
+    LC_TELEPHONE="C"
+    LC_MEASUREMENT="C"
+    LC_IDENTIFICATION="C"
+    LC_ALL=</code></p>
+</li>
+<li>
+<p>修改
+    <code>vim /etc/locale.conf</code>
+    <code>#LANG="C"
+    LANG="zh_CN.UTF-8"</code></p>
+</li>
+<li>
+<p>重新登录
+    <code>exit</code>
+    <code>login</code></p>
+</li>
+<li>
+<p>查看locale环境变量
+    <code>locale</code>
+    <code>LANG=zh_CN.UTF-8
+    LC_CTYPE="zh_CN.UTF-8"
+    LC_NUMERIC="zh_CN.UTF-8"
+    LC_TIME="zh_CN.UTF-8"
+    LC_COLLATE="zh_CN.UTF-8"
+    LC_MONETARY="zh_CN.UTF-8"
+    LC_MESSAGES="zh_CN.UTF-8"
+    LC_PAPER="zh_CN.UTF-8"
+    LC_NAME="zh_CN.UTF-8"
+    LC_ADDRESS="zh_CN.UTF-8"
+    LC_TELEPHONE="zh_CN.UTF-8"
+    LC_MEASUREMENT="zh_CN.UTF-8"
+    LC_IDENTIFICATION="zh_CN.UTF-8"
+    LC_ALL=</code></p>
+</li>
+<li>
+<p>查看当前安装的中文语言包
+    <code>locale -a | grep zh</code>
+    <code>zh_CN
+    zh_CN.gb18030
+    zh_CN.gb2312
+    zh_CN.gbk
+    zh_CN.utf8
+    zh_HK
+    zh_HK.big5hkscs
+    zh_HK.utf8
+    zh_SG
+    zh_SG.gb2312
+    zh_SG.gbk
+    zh_SG.utf8
+    zh_TW
+    zh_TW.big5
+    zh_TW.euctw
+    zh_TW.utf8</code></p>
 </li>
 </ol>
-<div class="highlight"><pre><span></span>LANG=zh_CN.UTF-8
-LC_CTYPE=&quot;zh_CN.UTF-8&quot;
-LC_NUMERIC=&quot;zh_CN.UTF-8&quot;
-LC_TIME=&quot;zh_CN.UTF-8&quot;
-LC_COLLATE=&quot;zh_CN.UTF-8&quot;
-LC_MONETARY=&quot;zh_CN.UTF-8&quot;
-LC_MESSAGES=&quot;zh_CN.UTF-8&quot;
-LC_PAPER=&quot;zh_CN.UTF-8&quot;
-LC_NAME=&quot;zh_CN.UTF-8&quot;
-LC_ADDRESS=&quot;zh_CN.UTF-8&quot;
-LC_TELEPHONE=&quot;zh_CN.UTF-8&quot;
-LC_MEASUREMENT=&quot;zh_CN.UTF-8&quot;
-LC_IDENTIFICATION=&quot;zh_CN.UTF-8&quot;
-LC_ALL=
-</pre></div>
-
-
-<ol>
-<li>查看当前安装的中文语言包
-<code>locale -a | grep zh</code></li>
-</ol>
-<div class="highlight"><pre><span></span>zh_CN
-zh_CN.gb18030
-zh_CN.gb2312
-zh_CN.gbk
-zh_CN.utf8
-zh_HK
-zh_HK.big5hkscs
-zh_HK.utf8
-zh_SG
-zh_SG.gb2312
-zh_SG.gbk
-zh_SG.utf8
-zh_TW
-zh_TW.big5
-zh_TW.euctw
-zh_TW.utf8
-</pre></div>
         </div><!-- /.blog-post -->
 
 <div class="bdsharebuttonbox">
