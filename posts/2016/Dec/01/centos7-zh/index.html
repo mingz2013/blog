@@ -81,27 +81,21 @@ var _hmt = _hmt || [];
 
             <p><p>CentOS7&nbsp;中文支持</p></p>
             <hr>
-            <ol>
-<li>
-<p>查看系统版本信息
-<code>cat /etc/redhat-release</code>
-CentOS Linux release 7.1.1503 (Core)
-<code>uname -m</code>
-x86_64
-<code>uname -r</code>
-3.10.0-229.el7.x86_64
-<code>uname -a</code>
-Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 <span class="caps">SMP</span> Fri Mar 6 11:36:42 <span class="caps">UTC</span> 2015 x86_64 x86_64 x86_64 <span class="caps">GNU</span>/Linux</p>
-</li>
-<li>
-<p>当前文件配置
-<code>cat /etc/locale.conf</code>
-<span class="caps">LANG</span>=&#8221;C&#8221;</p>
-</li>
-<li>
-<p>查看locale环境变量
-<code>locale</code>
-<span class="caps">LANG</span>=C
+            <h2>查看系统版本信息</h2>
+<p><code>cat /etc/redhat-release</code></p>
+<p>CentOS Linux release 7.1.1503&nbsp;(Core)</p>
+<p><code>uname -m</code></p>
+<p>x86_64</p>
+<p><code>uname -r</code></p>
+<p>3.10.0-229.el7.x86_64</p>
+<p><code>uname -a</code></p>
+<p>Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 <span class="caps">SMP</span> Fri Mar 6 11:36:42 <span class="caps">UTC</span> 2015 x86_64 x86_64 x86_64 <span class="caps">GNU</span>/Linux</p>
+<h2>当前文件配置</h2>
+<p><code>cat /etc/locale.conf</code></p>
+<p><span class="caps">LANG</span>=&#8221;C&#8221;</p>
+<h2>查看locale环境变量</h2>
+<p><code>locale</code></p>
+<p><span class="caps">LANG</span>=C
 LC_CTYPE=&#8221;C&#8221;
 LC_NUMERIC=&#8221;C&#8221;
 LC_TIME=&#8221;C&#8221;
@@ -114,25 +108,19 @@ LC_ADDRESS=&#8221;C&#8221;
 LC_TELEPHONE=&#8221;C&#8221;
 LC_MEASUREMENT=&#8221;C&#8221;
 LC_IDENTIFICATION=&#8221;C&#8221;&nbsp;LC_ALL=</p>
-</li>
-<li>
-<p>修改
-<code>vim /etc/locale.conf</code></p>
-<div class="highlight"><pre><span></span>#LANG=&quot;C&quot;
-LANG=&quot;zh_CN.UTF-8&quot;
+<h2>修改</h2>
+<p><code>vim /etc/locale.conf</code></p>
+<div class="highlight"><pre><span></span>    #LANG=&quot;C&quot;
+    LANG=&quot;zh_CN.UTF-8&quot;
 </pre></div>
 
 
-</li>
-<li>
-<p>重新登录
-<code>exit</code>
-<code>login</code></p>
-</li>
-<li>
-<p>查看locale环境变量
-<code>locale</code>
-<span class="caps">LANG</span>=zh_CN.<span class="caps">UTF</span>-8
+<h2>重新登录</h2>
+<p><code>exit</code></p>
+<p><code>login</code></p>
+<h2>查看locale环境变量</h2>
+<p><code>locale</code></p>
+<p><span class="caps">LANG</span>=zh_CN.<span class="caps">UTF</span>-8
 LC_CTYPE=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
 LC_NUMERIC=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
 LC_TIME=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
@@ -145,11 +133,9 @@ LC_ADDRESS=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
 LC_TELEPHONE=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
 LC_MEASUREMENT=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
 LC_IDENTIFICATION=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;&nbsp;LC_ALL=</p>
-</li>
-<li>
-<p>查看当前安装的中文语言包
-<code>locale -a | grep zh</code>
-zh_CN
+<h2>查看当前安装的中文语言包</h2>
+<p><code>locale -a | grep zh</code></p>
+<p>zh_CN
 zh_CN.gb18030
 zh_CN.gb2312
 zh_CN.gbk
@@ -164,8 +150,6 @@ zh_SG.utf8
 zh_TW
 zh_TW.big5
 zh_TW.euctw&nbsp;zh_TW.utf8</p>
-</li>
-</ol>
         </div><!-- /.blog-post -->
 
 <div class="bdsharebuttonbox">
