@@ -6,7 +6,8 @@ Tags: CentOS7
 Slug: centos7-zh
 Author: Mingz
 Summary: CentOS7 中文支持
-Status:published
+
+- Status:published
 
 1. 查看系统版本信息
 `cat /etc/redhat-release`
