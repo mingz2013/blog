@@ -80,9 +80,9 @@ var _hmt = _hmt || [];
             <p><p>CentOS7&nbsp;中文支持</p></p>
             <hr>
             <ol>
-<li>查看系统版本信息  </li>
+<li>查看系统版本信息<br />
+<code>cat /etc/redhat-release</code>  </li>
 </ol>
-<p><code>cat /etc/redhat-release</code>  </p>
 <div class="highlight"><pre><span></span>CentOS Linux release 7.1.1503 (Core)
 </pre></div>
 
@@ -103,17 +103,17 @@ var _hmt = _hmt || [];
 
 
 <ol>
-<li>当前文件配置  </li>
+<li>当前文件配置<br />
+<code>cat /etc/locale.conf</code>  </li>
 </ol>
-<p><code>cat /etc/locale.conf</code>  </p>
 <div class="highlight"><pre><span></span>LANG=&quot;C&quot;
 </pre></div>
 
 
 <ol>
-<li>查看locale环境变量  </li>
+<li>查看locale环境变量<br />
+<code>locale</code>  </li>
 </ol>
-<p><code>locale</code>  </p>
 <div class="highlight"><pre><span></span>LANG=C
 LC_CTYPE=&quot;C&quot;
 LC_NUMERIC=&quot;C&quot;
@@ -132,23 +132,25 @@ LC_ALL=
 
 
 <ol>
-<li>修改  </li>
+<li>修改<br />
+<code>vim /etc/locale.conf</code>  </li>
 </ol>
-<p><code>vim /etc/locale.conf</code>  </p>
 <div class="highlight"><pre><span></span>#LANG=&quot;C&quot;
 LANG=&quot;zh_CN.UTF-8&quot;
 </pre></div>
 
 
 <ol>
-<li>重新登录  </li>
-</ol>
-<p><code>exit</code><br />
+<li>
+<p>重新登录<br />
+<code>exit</code><br />
 <code>login</code>  </p>
-<ol>
-<li>查看locale环境变量  </li>
+</li>
+<li>
+<p>查看locale环境变量<br />
+<code>locale</code>  </p>
+</li>
 </ol>
-<p><code>locale</code>  </p>
 <div class="highlight"><pre><span></span>LANG=zh_CN.UTF-8
 LC_CTYPE=&quot;zh_CN.UTF-8&quot;
 LC_NUMERIC=&quot;zh_CN.UTF-8&quot;
@@ -167,9 +169,9 @@ LC_ALL=
 
 
 <ol>
-<li>查看当前安装的中文语言包  </li>
+<li>查看当前安装的中文语言包<br />
+<code>locale -a | grep zh</code>  </li>
 </ol>
-<p><code>locale -a | grep zh</code>  </p>
 <div class="highlight"><pre><span></span>zh_CN
 zh_CN.gb18030
 zh_CN.gb2312
