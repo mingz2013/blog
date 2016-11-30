@@ -69,22 +69,103 @@ var _hmt = _hmt || [];
     <div class="col-sm-8 blog-main">
 
         <div class="blog-post">
-            <h2 class="blog-post-title"><a href="http://mingz.me/blog/posts/2016/Nov/25/rst-test/">Test rst</a></h2>
+            <h2 class="blog-post-title"><a href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/">CentOS7&nbsp;中文支持</a></h2>
             <p class="blog-post-meta">
-                2016-11-25 22:20:00 by <a
+                2016-12-01 00:00:00 by <a
                     href="http://mingz.me/blog/author/mingz.html">Mingz</a><br/>
-                Category: <a href="http://mingz.me/blog/category/yeah.html">yeah</a>
+                Category: <a href="http://mingz.me/blog/category/linux.html">Linux</a>
                 Tags:
-                    <a href="http://mingz.me/blog/tag/thats.html">thats</a>
-                    <a href="http://mingz.me/blog/tag/awesome.html">awesome</a>
+                    <a href="http://mingz.me/blog/tag/centos7.html">CentOS7</a>
             </p>
 
 
-            <p><p class="first">Short version for index and&nbsp;feeds</p>
-<p class="last">hahahaha</p>
-</p>
+            <p><p>CentOS7&nbsp;中文支持</p></p>
             <hr>
-            
+            <ol>
+<li>
+<p>查看系统版本信息
+<code>cat /etc/redhat-release</code>
+CentOS Linux release 7.1.1503 (Core)
+<code>uname -m</code>
+x86_64
+<code>uname -r</code>
+3.10.0-229.el7.x86_64
+<code>uname -a</code>
+Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 <span class="caps">SMP</span> Fri Mar 6 11:36:42 <span class="caps">UTC</span> 2015 x86_64 x86_64 x86_64 <span class="caps">GNU</span>/Linux</p>
+</li>
+<li>
+<p>当前文件配置
+<code>cat /etc/locale.conf</code>
+<span class="caps">LANG</span>=&#8221;C&#8221;</p>
+</li>
+<li>
+<p>查看locale环境变量
+<code>locale</code>
+<span class="caps">LANG</span>=C
+LC_CTYPE=&#8221;C&#8221;
+LC_NUMERIC=&#8221;C&#8221;
+LC_TIME=&#8221;C&#8221;
+LC_COLLATE=&#8221;C&#8221;
+LC_MONETARY=&#8221;C&#8221;
+LC_MESSAGES=&#8221;C&#8221;
+LC_PAPER=&#8221;C&#8221;
+LC_NAME=&#8221;C&#8221;
+LC_ADDRESS=&#8221;C&#8221;
+LC_TELEPHONE=&#8221;C&#8221;
+LC_MEASUREMENT=&#8221;C&#8221;
+LC_IDENTIFICATION=&#8221;C&#8221;&nbsp;LC_ALL=</p>
+</li>
+<li>
+<p>修改
+<code>vim /etc/locale.conf</code></p>
+<div class="highlight"><pre><span></span>#LANG=&quot;C&quot;
+LANG=&quot;zh_CN.UTF-8&quot;
+</pre></div>
+
+
+</li>
+<li>
+<p>重新登录
+<code>exit</code>
+<code>login</code></p>
+</li>
+<li>
+<p>查看locale环境变量
+<code>locale</code>
+<span class="caps">LANG</span>=zh_CN.<span class="caps">UTF</span>-8
+LC_CTYPE=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_NUMERIC=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_TIME=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_COLLATE=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_MONETARY=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_MESSAGES=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_PAPER=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_NAME=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_ADDRESS=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_TELEPHONE=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_MEASUREMENT=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;
+LC_IDENTIFICATION=&#8221;zh_CN.<span class="caps">UTF</span>-8&#8221;&nbsp;LC_ALL=</p>
+</li>
+<li>
+<p>查看当前安装的中文语言包
+<code>locale -a | grep zh</code>
+zh_CN
+zh_CN.gb18030
+zh_CN.gb2312
+zh_CN.gbk
+zh_CN.utf8
+zh_HK
+zh_HK.big5hkscs
+zh_HK.utf8
+zh_SG
+zh_SG.gb2312
+zh_SG.gbk
+zh_SG.utf8
+zh_TW
+zh_TW.big5
+zh_TW.euctw&nbsp;zh_TW.utf8</p>
+</li>
+</ol>
         </div><!-- /.blog-post -->
 
 <div class="bdsharebuttonbox">
@@ -112,8 +193,8 @@ var _hmt = _hmt || [];
 with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
 
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="rst-test" data-title="Test rst"
-         data-url="http://mingz.me/blog/posts/2016/Nov/25/rst-test/"></div>
+    <div class="ds-thread" data-thread-key="centos7-zh" data-title="CentOS7&nbsp;中文支持"
+         data-url="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/"></div>
     <!-- 多说评论框 end -->
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/all-en.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-01T00:00:00+01:00</updated><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh/</id><summary type="html">&lt;ol&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/linux.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-01T00:00:00+01:00</updated><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh/</id><summary type="html">&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;查看系统版本信息
 &lt;code&gt;cat /etc/redhat-release&lt;/code&gt;
@@ -83,4 +83,4 @@ zh_TW
 zh_TW.big5
 zh_TW.euctw&amp;nbsp;zh_TW.utf8&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</summary><category term="CentOS7"></category></entry><entry><title>Test rst</title><link href="http://mingz.me/blog/posts/2016/Nov/25/rst-test/" rel="alternate"></link><published>2016-11-25T22:20:00+01:00</published><updated>2016-11-25T22:20:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-11-25:blog/posts/2016/Nov/25/rst-test/</id><summary type="html"></summary><category term="thats"></category><category term="awesome"></category></entry></feed>
+&lt;/ol&gt;</summary><category term="CentOS7"></category></entry></feed>
