@@ -1,95 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/mingz.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-01T00:00:00+01:00</updated><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh/</id><summary type="html">&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;查看系统版本信息&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;
-      CentOS Linux release 7.1.1503 (Core)
+&lt;p&gt;查看系统版本信息
+&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;
+       CentOS Linux release 7.1.1503 (Core)
 &lt;code&gt;uname -m&lt;/code&gt;
-      x86_64
+       x86_64
 &lt;code&gt;uname -r&lt;/code&gt;
-      3.10.0-229.el7.x86_64
+       3.10.0-229.el7.x86_64
 &lt;code&gt;uname -a&lt;/code&gt;
-      Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 &lt;span class="caps"&gt;SMP&lt;/span&gt; Fri Mar 6 11:36:42 &lt;span class="caps"&gt;UTC&lt;/span&gt; 2015 x86_64 x86_64 x86_64 &lt;span class="caps"&gt;GNU&lt;/span&gt;/Linux&lt;/p&gt;
-&lt;/blockquote&gt;
+       Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 &lt;span class="caps"&gt;SMP&lt;/span&gt; Fri Mar 6 11:36:42 &lt;span class="caps"&gt;UTC&lt;/span&gt; 2015 x86_64 x86_64 x86_64 &lt;span class="caps"&gt;GNU&lt;/span&gt;/Linux&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;当前文件配置&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;cat /etc/locale.conf&lt;/code&gt;
-      &lt;span class="caps"&gt;LANG&lt;/span&gt;=&amp;#8221;C&amp;#8221;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;当前文件配置
+&lt;code&gt;cat /etc/locale.conf&lt;/code&gt;
+        &lt;span class="caps"&gt;LANG&lt;/span&gt;=&amp;#8221;C&amp;#8221;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;查看locale环境变量&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;locale&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    LANG=C
-    LC_CTYPE=&amp;quot;C&amp;quot;
-    LC_NUMERIC=&amp;quot;C&amp;quot;
-    LC_TIME=&amp;quot;C&amp;quot;
-    LC_COLLATE=&amp;quot;C&amp;quot;
-    LC_MONETARY=&amp;quot;C&amp;quot;
-    LC_MESSAGES=&amp;quot;C&amp;quot;
-    LC_PAPER=&amp;quot;C&amp;quot;
-    LC_NAME=&amp;quot;C&amp;quot;
-    LC_ADDRESS=&amp;quot;C&amp;quot;
-    LC_TELEPHONE=&amp;quot;C&amp;quot;
-    LC_MEASUREMENT=&amp;quot;C&amp;quot;
-    LC_IDENTIFICATION=&amp;quot;C&amp;quot;
-    LC_ALL=
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/blockquote&gt;
+&lt;p&gt;查看locale环境变量
+&lt;code&gt;locale&lt;/code&gt;
+        &lt;span class="caps"&gt;LANG&lt;/span&gt;=C
+        LC_CTYPE=&amp;#8221;C&amp;#8221;
+        LC_NUMERIC=&amp;#8221;C&amp;#8221;
+        LC_TIME=&amp;#8221;C&amp;#8221;
+        LC_COLLATE=&amp;#8221;C&amp;#8221;
+        LC_MONETARY=&amp;#8221;C&amp;#8221;
+        LC_MESSAGES=&amp;#8221;C&amp;#8221;
+        LC_PAPER=&amp;#8221;C&amp;#8221;
+        LC_NAME=&amp;#8221;C&amp;#8221;
+        LC_ADDRESS=&amp;#8221;C&amp;#8221;
+        LC_TELEPHONE=&amp;#8221;C&amp;#8221;
+        LC_MEASUREMENT=&amp;#8221;C&amp;#8221;
+        LC_IDENTIFICATION=&amp;#8221;C&amp;#8221;&amp;nbsp;LC_ALL=&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;修改&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;vim /etc/locale.conf&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    #LANG=&amp;quot;C&amp;quot;
-    LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/blockquote&gt;
+&lt;p&gt;修改
+&lt;code&gt;vim /etc/locale.conf&lt;/code&gt;
+        #&lt;span class="caps"&gt;LANG&lt;/span&gt;=&amp;#8221;C&amp;#8221;
+        &lt;span class="caps"&gt;LANG&lt;/span&gt;=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;重新登录&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;exit&lt;/code&gt;
+&lt;p&gt;重新登录
+&lt;code&gt;exit&lt;/code&gt;
 &lt;code&gt;login&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;查看locale环境变量&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;locale&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    LANG=zh_CN.UTF-8
-    LC_CTYPE=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_NUMERIC=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_TIME=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_COLLATE=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_MONETARY=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_MESSAGES=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_PAPER=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_NAME=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_ADDRESS=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_TELEPHONE=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_MEASUREMENT=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_IDENTIFICATION=&amp;quot;zh_CN.UTF-8&amp;quot;
-    LC_ALL=
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;/blockquote&gt;
+&lt;p&gt;查看locale环境变量
+&lt;code&gt;locale&lt;/code&gt;
+        &lt;span class="caps"&gt;LANG&lt;/span&gt;=zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8
+        LC_CTYPE=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_NUMERIC=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_TIME=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_COLLATE=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_MONETARY=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_MESSAGES=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_PAPER=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_NAME=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_ADDRESS=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_TELEPHONE=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_MEASUREMENT=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;
+        LC_IDENTIFICATION=&amp;#8221;zh_CN.&lt;span class="caps"&gt;UTF&lt;/span&gt;-8&amp;#8221;&amp;nbsp;LC_ALL=&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;查看当前安装的中文语言包&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;locale -a | grep zh&lt;/code&gt;
-&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;查看当前安装的中文语言包
+&lt;code&gt;locale -a | grep zh&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;zh_CN
