@@ -7,33 +7,33 @@ Slug: centos7-zh
 Author: Mingz
 Summary: CentOS7 中文支持
 
-## 查看系统版本信息
+1. 查看系统版本信息
 `cat /etc/redhat-release`
-
+```
 CentOS Linux release 7.1.1503 (Core)
-
+```
 `uname -m`
-
+```
 x86_64
-
+```
 `uname -r`
-
+```
 3.10.0-229.el7.x86_64
-
+```
 `uname -a`
-
+```
 Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+```
 
-## 当前文件配置
-
+2. 当前文件配置
 `cat /etc/locale.conf`
-
+```
 LANG="C"
+```
 
-## 查看locale环境变量
-
+3. 查看locale环境变量
 `locale`
-
+```
 LANG=C
 LC_CTYPE="C"
 LC_NUMERIC="C"
@@ -48,24 +48,21 @@ LC_TELEPHONE="C"
 LC_MEASUREMENT="C"
 LC_IDENTIFICATION="C"
 LC_ALL=
-
-## 修改
-
+```
+4. 修改
 `vim /etc/locale.conf`
+```
+#LANG="C"
+LANG="zh_CN.UTF-8"
+```
 
-		#LANG="C"
-		LANG="zh_CN.UTF-8"
-
-## 重新登录
-
+5. 重新登录
 `exit`
-
 `login`
 
-## 查看locale环境变量
-
+6. 查看locale环境变量
 `locale`
-
+```
 LANG=zh_CN.UTF-8
 LC_CTYPE="zh_CN.UTF-8"
 LC_NUMERIC="zh_CN.UTF-8"
@@ -80,11 +77,10 @@ LC_TELEPHONE="zh_CN.UTF-8"
 LC_MEASUREMENT="zh_CN.UTF-8"
 LC_IDENTIFICATION="zh_CN.UTF-8"
 LC_ALL=
-
-## 查看当前安装的中文语言包
-
+```
+7. 查看当前安装的中文语言包
 `locale -a | grep zh`
-
+```
 zh_CN
 zh_CN.gb18030
 zh_CN.gb2312
@@ -101,4 +97,4 @@ zh_TW
 zh_TW.big5
 zh_TW.euctw
 zh_TW.utf8
-
+```
