@@ -27,14 +27,6 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.12 (/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/python2.7)" project-jdk-type="Python SDK" />
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings sdk-home="/usr/local/Cellar/python/2.7.10/Frameworks/Python.framework/Versions/2.7/bin/python2.7">
-        <option name="mySdkHome" value="/usr/local/Cellar/python/2.7.10/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      </console-settings>
-    </option>
-    <option name="myShowDebugConsoleByDefault" value="true" />
-  </component>
   <component name="masterDetails">
     <states>
       <state key="ScopeChooserConfigurable.UI">
