@@ -31,7 +31,7 @@ PLUGINS = []  # 插件
 
 SITENAME = u"Mingz's Blog"  # 站点名称
 SITESUBTITLE = u"Mingz's blog on GitHub Page"
-SITEURL = 'http://localhost/blog'  # 站点url
+SITEURL = 'http://localhost/'  # 站点url,测试
 
 TIMEZONE = 'Europe/Paris'
 
