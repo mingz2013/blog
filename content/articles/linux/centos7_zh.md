@@ -8,32 +8,32 @@ Author: Mingz
 Summary: CentOS7 中文支持
 Status:published
 
-1. 查看系统版本信息
-`cat /etc/redhat-release`
+1. 查看系统版本信息  
+`cat /etc/redhat-release`  
 ```
 CentOS Linux release 7.1.1503 (Core)
 ```
-`uname -m`
+`uname -m`  
 ```
 x86_64
 ```
-`uname -r`
+`uname -r`  
 ```
 3.10.0-229.el7.x86_64
 ```
-`uname -a`
+`uname -a`  
 ```
 Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-2. 当前文件配置
-`cat /etc/locale.conf`
+2. 当前文件配置  
+`cat /etc/locale.conf`  
 ```
 LANG="C"
 ```
 
-3. 查看locale环境变量
-`locale`
+3. 查看locale环境变量  
+`locale`  
 ```
 LANG=C
 LC_CTYPE="C"
@@ -51,18 +51,18 @@ LC_IDENTIFICATION="C"
 LC_ALL=
 ```
 
-4. 修改
-`vim /etc/locale.conf`
+4. 修改  
+`vim /etc/locale.conf`  
 ```
 #LANG="C"
 LANG="zh_CN.UTF-8"
 ```
-5. 重新登录
-`exit`
-`login`
+5. 重新登录  
+`exit`  
+`login`  
 
-6. 查看locale环境变量
-`locale`
+6. 查看locale环境变量  
+`locale`  
 ```
 LANG=zh_CN.UTF-8
 LC_CTYPE="zh_CN.UTF-8"
@@ -80,8 +80,8 @@ LC_IDENTIFICATION="zh_CN.UTF-8"
 LC_ALL=
 ```
 
-7. 查看当前安装的中文语言包
-`locale -a | grep zh`
+7. 查看当前安装的中文语言包  
+`locale -a | grep zh`  
 ```
 zh_CN
 zh_CN.gb18030
