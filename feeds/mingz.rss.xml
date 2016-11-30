@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>Mingz's Blog</title><link>http://mingz.me/blog/</link><description>Mingz's blog on GitHub Page</description><lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0100</lastBuildDate><item><title>CentOS7 中文支持</title><link>http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/</link><description>&lt;ol&gt;
-&lt;li&gt;查看系统版本信息&lt;br /&gt;
-&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;查看系统版本信息  &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;CentOS Linux release 7.1.1503 (Core)
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -23,17 +23,17 @@
 
 
 &lt;ol&gt;
-&lt;li&gt;当前文件配置&lt;br /&gt;
-&lt;code&gt;cat /etc/locale.conf&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;当前文件配置  &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;cat /etc/locale.conf&lt;/code&gt;  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=&amp;quot;C&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ol&gt;
-&lt;li&gt;查看locale环境变量&lt;br /&gt;
-&lt;code&gt;locale&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;查看locale环境变量  &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;locale&lt;/code&gt;  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=C
 LC_CTYPE=&amp;quot;C&amp;quot;
 LC_NUMERIC=&amp;quot;C&amp;quot;
@@ -52,25 +52,23 @@ LC_ALL=
 
 
 &lt;ol&gt;
-&lt;li&gt;修改&lt;br /&gt;
-&lt;code&gt;vim /etc/locale.conf&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;修改  &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;vim /etc/locale.conf&lt;/code&gt;  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#LANG=&amp;quot;C&amp;quot;
 LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;重新登录&lt;br /&gt;
-&lt;code&gt;exit&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;login&lt;/code&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;查看locale环境变量&lt;br /&gt;
-&lt;code&gt;locale&lt;/code&gt;  &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;重新登录  &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;exit&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;login&lt;/code&gt;  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;查看locale环境变量  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;locale&lt;/code&gt;  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=zh_CN.UTF-8
 LC_CTYPE=&amp;quot;zh_CN.UTF-8&amp;quot;
 LC_NUMERIC=&amp;quot;zh_CN.UTF-8&amp;quot;
@@ -89,9 +87,9 @@ LC_ALL=
 
 
 &lt;ol&gt;
-&lt;li&gt;查看当前安装的中文语言包&lt;br /&gt;
-&lt;code&gt;locale -a | grep zh&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;查看当前安装的中文语言包  &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;locale -a | grep zh&lt;/code&gt;  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;zh_CN
 zh_CN.gb18030
 zh_CN.gb2312
