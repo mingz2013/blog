@@ -13,7 +13,9 @@ DEFAULT_CATEGORY = 'misc'  # 默认文章分类
 # DISPLAY_CATEGORIES_ON_MENU = True  # 是否在模板菜单上显示分类
 DEFAULT_DATE = "fs"  # (2012, 3, 2, 14, 1, 1) 默认日期
 # global metadata to all the contents
-DEFAULT_METADATA = {'yeah': 'it is'}  # 文章和页面的默认元数据设置
+DEFAULT_METADATA = {
+    'status': 'draft',
+}  # 文章和页面的默认元数据设置
 # FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2}).*'
 DELETE_OUTPUT_DIRECTORY = False  # 删除putput目录，优点在于避免生成不必要的文件，同时， 该设置具有一定风险，请谨慎处理。
 JINJA_EXTENSIONS = []  # 使用Jinja扩展列表
