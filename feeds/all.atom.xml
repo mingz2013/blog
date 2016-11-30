@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/all.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-01T00:00:00+01:00</updated><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh/</id><summary type="html">&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;查看系统版本信息&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;
-&lt;code&gt;CentOS Linux release 7.1.1503 (Core)&lt;/code&gt;
-&lt;code&gt;uname -m&lt;/code&gt;
-&lt;code&gt;x86_64&lt;/code&gt;
-&lt;code&gt;uname -r&lt;/code&gt;
-&lt;code&gt;3.10.0-229.el7.x86_64&lt;/code&gt;
-&lt;code&gt;uname -a&lt;/code&gt;
-&lt;code&gt;Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;查看系统版本信息&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  CentOS Linux release 7.1.1503 (Core)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;uname -m&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  x86_64
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;uname -r&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  3.10.0-229.el7.x86_64
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;uname -a&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/blockquote&gt;
+&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;当前文件配置&lt;/p&gt;
 &lt;blockquote&gt;

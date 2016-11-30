@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>Mingz's Blog</title><link>http://mingz.me/blog/</link><description>Mingz's blog on GitHub Page</description><lastBuildDate>Thu, 01 Dec 2016 00:00:00 +0100</lastBuildDate><item><title>CentOS7 中文支持</title><link>http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/</link><description>&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;查看系统版本信息&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;
-&lt;code&gt;CentOS Linux release 7.1.1503 (Core)&lt;/code&gt;
-&lt;code&gt;uname -m&lt;/code&gt;
-&lt;code&gt;x86_64&lt;/code&gt;
-&lt;code&gt;uname -r&lt;/code&gt;
-&lt;code&gt;3.10.0-229.el7.x86_64&lt;/code&gt;
-&lt;code&gt;uname -a&lt;/code&gt;
-&lt;code&gt;Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;查看系统版本信息&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;cat /etc/redhat-release&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  CentOS Linux release 7.1.1503 (Core)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;uname -m&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  x86_64
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;uname -r&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  3.10.0-229.el7.x86_64
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;uname -a&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/blockquote&gt;
+&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;当前文件配置&lt;/p&gt;
 &lt;blockquote&gt;
