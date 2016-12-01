@@ -6,6 +6,6 @@ Tags: Contact
 Slug: about
 Author: Mingz
 Summary: About
-
+Status: published
 
 

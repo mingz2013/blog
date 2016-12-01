@@ -6,5 +6,6 @@ Tags: Contact
 Slug: contact
 Author: Mingz
 Summary: Short version for index and feeds
+Status: published
 
 Contact
