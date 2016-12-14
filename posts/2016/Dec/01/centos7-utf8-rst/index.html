@@ -69,7 +69,7 @@ var _hmt = _hmt || [];
     <div class="col-sm-8 blog-main">
 
         <div class="blog-post">
-            <h2 class="blog-post-title"><a href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/">CentOS7 <span class="caps">UTF8</span>编码设置</a></h2>
+            <h2 class="blog-post-title"><a href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/">CentOS7 UTF8编码设置</a></h2>
             <p class="blog-post-meta">
                 2016-12-01 00:00:00 by <a
                     href="http://mingz.me/blog/author/mingz.html">Mingz</a><br/>
@@ -79,37 +79,37 @@ var _hmt = _hmt || [];
             </p>
 
 
-            <p><p class="first last">CentOS7&nbsp;utf8编码</p>
+            <p><p class="first last">CentOS7 utf8编码</p>
 </p>
             <hr>
             <div class="section" id="id1">
-<h2>1.&nbsp;查看系统版本信息</h2>
-<p><em>$cat&nbsp;/etc/redhat-release</em></p>
+<h2>1. 查看系统版本信息</h2>
+<p><em>$cat /etc/redhat-release</em></p>
 <pre class="literal-block">
 CentOS Linux release 7.1.1503 (Core)
 </pre>
-<p><em>$uname&nbsp;-m</em></p>
+<p><em>$uname -m</em></p>
 <pre class="literal-block">
 x86_64
 </pre>
-<p><em>$uname&nbsp;-r</em></p>
+<p><em>$uname -r</em></p>
 <pre class="literal-block">
 3.10.0-229.el7.x86_64
 </pre>
-<p><em>$uname&nbsp;-a</em></p>
+<p><em>$uname -a</em></p>
 <pre class="literal-block">
 Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 </pre>
 </div>
 <div class="section" id="id2">
-<h2>2.&nbsp;当前文件配置</h2>
-<p><em>$cat&nbsp;/etc/locale.conf</em></p>
+<h2>2. 当前文件配置</h2>
+<p><em>$cat /etc/locale.conf</em></p>
 <pre class="literal-block">
 LANG=&quot;C&quot;
 </pre>
 </div>
 <div class="section" id="locale">
-<h2>3.&nbsp;查看locale环境变量</h2>
+<h2>3. 查看locale环境变量</h2>
 <p><em>$locale</em></p>
 <pre class="literal-block">
 LANG=C
@@ -129,20 +129,20 @@ LC_ALL=
 </pre>
 </div>
 <div class="section" id="id3">
-<h2>4.&nbsp;修改</h2>
-<p><em>$vim&nbsp;/etc/locale.conf</em></p>
+<h2>4. 修改</h2>
+<p><em>$vim /etc/locale.conf</em></p>
 <pre class="literal-block">
 #LANG=&quot;C&quot;
 LANG=&quot;en_US.UTF-8&quot;
 </pre>
 </div>
 <div class="section" id="id4">
-<h2>5.&nbsp;重新登录</h2>
+<h2>5. 重新登录</h2>
 <p><em>$exit</em></p>
 <p><em>$login</em></p>
 </div>
 <div class="section" id="id5">
-<h2>6.&nbsp;查看locale环境变量</h2>
+<h2>6. 查看locale环境变量</h2>
 <p><em>$locale</em></p>
 <pre class="literal-block">
 LANG=en_US.UTF-8
@@ -162,8 +162,8 @@ LC_ALL=
 </pre>
 </div>
 <div class="section" id="id6">
-<h2>7.&nbsp;查看当前安装的语言包</h2>
-<p><em>$locale -a | grep&nbsp;en_US</em></p>
+<h2>7. 查看当前安装的语言包</h2>
+<p><em>$locale -a | grep en_US</em></p>
 <pre class="literal-block">
 en_US
 en_US.iso88591
@@ -199,7 +199,7 @@ en_US.utf8
 with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
 
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="centos7-utf8-rst" data-title="CentOS7 <span class="caps">UTF8</span>编码设置"
+    <div class="ds-thread" data-thread-key="centos7-utf8-rst" data-title="CentOS7 UTF8编码设置"
          data-url="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/"></div>
     <!-- 多说评论框 end -->
 

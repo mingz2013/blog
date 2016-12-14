@@ -81,33 +81,33 @@ en_US.iso88591
 en_US.iso885915
 en_US.utf8
 &lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mingz</dc:creator><pubDate>Wed, 14 Dec 2016 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-utf8/</guid><category>CentOS7</category></item><item><title>CentOS7 UTF8编码设置</title><link>http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/</link><description>&lt;div class="section" id="id1"&gt;
-&lt;h2&gt;1.&amp;nbsp;查看系统版本信息&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;$cat&amp;nbsp;/etc/redhat-release&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;1. 查看系统版本信息&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$cat /etc/redhat-release&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 CentOS Linux release 7.1.1503 (Core)
 &lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;$uname&amp;nbsp;-m&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;$uname -m&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 x86_64
 &lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;$uname&amp;nbsp;-r&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;$uname -r&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 3.10.0-229.el7.x86_64
 &lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;$uname&amp;nbsp;-a&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;$uname -a&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 Linux VM_7_30_centos 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id2"&gt;
-&lt;h2&gt;2.&amp;nbsp;当前文件配置&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;$cat&amp;nbsp;/etc/locale.conf&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;2. 当前文件配置&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$cat /etc/locale.conf&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 LANG=&amp;quot;C&amp;quot;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="locale"&gt;
-&lt;h2&gt;3.&amp;nbsp;查看locale环境变量&lt;/h2&gt;
+&lt;h2&gt;3. 查看locale环境变量&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;$locale&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 LANG=C
@@ -127,20 +127,20 @@ LC_ALL=
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id3"&gt;
-&lt;h2&gt;4.&amp;nbsp;修改&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;$vim&amp;nbsp;/etc/locale.conf&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;4. 修改&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$vim /etc/locale.conf&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 #LANG=&amp;quot;C&amp;quot;
 LANG=&amp;quot;en_US.UTF-8&amp;quot;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
-&lt;h2&gt;5.&amp;nbsp;重新登录&lt;/h2&gt;
+&lt;h2&gt;5. 重新登录&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;$exit&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;$login&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id5"&gt;
-&lt;h2&gt;6.&amp;nbsp;查看locale环境变量&lt;/h2&gt;
+&lt;h2&gt;6. 查看locale环境变量&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;$locale&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 LANG=en_US.UTF-8
@@ -160,8 +160,8 @@ LC_ALL=
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id6"&gt;
-&lt;h2&gt;7.&amp;nbsp;查看当前安装的语言包&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;$locale -a | grep&amp;nbsp;en_US&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;7. 查看当前安装的语言包&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$locale -a | grep en_US&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 en_US
 en_US.iso88591
