@@ -100,7 +100,7 @@ LC_IDENTIFICATION="en_US.UTF-8"
 LC_ALL=
 ```
 
-## 查看当前安装的中文语言包
+## 查看当前安装的语言包
 
 `$locale -a | grep en_US`
 
