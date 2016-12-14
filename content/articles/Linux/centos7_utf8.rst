@@ -1,13 +1,13 @@
-CentOS7 中文支持
+CentOS7 UTF8编码设置
 ############################
 
 :date: 2016-12-01 00:00
-:modified: 2016-12-01 00:00
+:modified: 2016-12-14 12:00:00
 :category: Linux
 :tags: CentOS7
-:slug: centos7-zh-rst
+:slug: centos7-utf8-rst
 :author: Mingz
-:summary: CentOS7 中文支持
+:summary: CentOS7 utf8编码
 :status: published
 
 1. 查看系统版本信息
@@ -65,7 +65,7 @@ CentOS7 中文支持
 ::
 
     #LANG="C"
-    LANG="zh_CN.UTF-8"
+    LANG="en_US.UTF-8"
 
 5. 重新登录
 ********************************
@@ -78,40 +78,28 @@ CentOS7 中文支持
 *$locale*
 ::
 
-    LANG=zh_CN.UTF-8
-    LC_CTYPE="zh_CN.UTF-8"
-    LC_NUMERIC="zh_CN.UTF-8"
-    LC_TIME="zh_CN.UTF-8"
-    LC_COLLATE="zh_CN.UTF-8"
-    LC_MONETARY="zh_CN.UTF-8"
-    LC_MESSAGES="zh_CN.UTF-8"
-    LC_PAPER="zh_CN.UTF-8"
-    LC_NAME="zh_CN.UTF-8"
-    LC_ADDRESS="zh_CN.UTF-8"
-    LC_TELEPHONE="zh_CN.UTF-8"
-    LC_MEASUREMENT="zh_CN.UTF-8"
-    LC_IDENTIFICATION="zh_CN.UTF-8"
+    LANG=en_US.UTF-8
+    LC_CTYPE="en_US.UTF-8"
+    LC_NUMERIC="en_US.UTF-8"
+    LC_TIME="en_US.UTF-8"
+    LC_COLLATE="en_US.UTF-8"
+    LC_MONETARY="en_US.UTF-8"
+    LC_MESSAGES="en_US.UTF-8"
+    LC_PAPER="en_US.UTF-8"
+    LC_NAME="en_US.UTF-8"
+    LC_ADDRESS="en_US.UTF-8"
+    LC_TELEPHONE="en_US.UTF-8"
+    LC_MEASUREMENT="en_US.UTF-8"
+    LC_IDENTIFICATION="en_US.UTF-8"
     LC_ALL=
 
-7. 查看当前安装的中文语言包
+7. 查看当前安装的语言包
 ********************************
-*$locale -a | grep zh*
+*$locale -a | grep en_US*
 ::
 
-    zh_CN
-    zh_CN.gb18030
-    zh_CN.gb2312
-    zh_CN.gbk
-    zh_CN.utf8
-    zh_HK
-    zh_HK.big5hkscs
-    zh_HK.utf8
-    zh_SG
-    zh_SG.gb2312
-    zh_SG.gbk
-    zh_SG.utf8
-    zh_TW
-    zh_TW.big5
-    zh_TW.euctw
-    zh_TW.utf8
+    en_US
+    en_US.iso88591
+    en_US.iso885915
+    en_US.utf8
 
