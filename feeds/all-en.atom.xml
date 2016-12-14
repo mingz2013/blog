@@ -74,7 +74,7 @@ LC_ALL=
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;查看当前安装的中文语言包&lt;/h2&gt;
+&lt;h2&gt;查看当前安装的语言包&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;$locale -a | grep en_US&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;en_US
 en_US.iso88591
