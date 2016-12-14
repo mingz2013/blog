@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/all.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-01T00:00:00+01:00</updated><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh/</id><summary type="html">&lt;h2&gt;查看系统版本信息&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/all.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-14T12:00:00+01:00</updated><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8/" rel="alternate"></link><published>2016-12-14T12:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-utf8/</id><summary type="html">&lt;h2&gt;查看系统版本信息&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;$cat /etc/redhat-release&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;CentOS Linux release 7.1.1503 (Core)
 &lt;/pre&gt;&lt;/div&gt;
@@ -48,7 +48,7 @@ LC_ALL=
 &lt;h2&gt;修改&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;$vim /etc/locale.conf&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#LANG=&amp;quot;C&amp;quot;
-LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
+LANG=&amp;quot;en_US.UTF-8&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -57,42 +57,30 @@ LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
 &lt;p&gt;&lt;code&gt;$login&lt;/code&gt;&lt;/p&gt;
 &lt;h2&gt;查看locale环境变量&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;$locale&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=zh_CN.UTF-8
-LC_CTYPE=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_NUMERIC=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_TIME=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_COLLATE=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_MONETARY=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_MESSAGES=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_PAPER=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_NAME=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_ADDRESS=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_TELEPHONE=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_MEASUREMENT=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_IDENTIFICATION=&amp;quot;zh_CN.UTF-8&amp;quot;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LANG=en_US.UTF-8
+LC_CTYPE=&amp;quot;en_US.UTF-8&amp;quot;
+LC_NUMERIC=&amp;quot;en_US.UTF-8&amp;quot;
+LC_TIME=&amp;quot;en_US.UTF-8&amp;quot;
+LC_COLLATE=&amp;quot;en_US.UTF-8&amp;quot;
+LC_MONETARY=&amp;quot;en_US.UTF-8&amp;quot;
+LC_MESSAGES=&amp;quot;en_US.UTF-8&amp;quot;
+LC_PAPER=&amp;quot;en_US.UTF-8&amp;quot;
+LC_NAME=&amp;quot;en_US.UTF-8&amp;quot;
+LC_ADDRESS=&amp;quot;en_US.UTF-8&amp;quot;
+LC_TELEPHONE=&amp;quot;en_US.UTF-8&amp;quot;
+LC_MEASUREMENT=&amp;quot;en_US.UTF-8&amp;quot;
+LC_IDENTIFICATION=&amp;quot;en_US.UTF-8&amp;quot;
 LC_ALL=
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;查看当前安装的中文语言包&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;$locale -a | grep zh&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;zh_CN
-zh_CN.gb18030
-zh_CN.gb2312
-zh_CN.gbk
-zh_CN.utf8
-zh_HK
-zh_HK.big5hkscs
-zh_HK.utf8
-zh_SG
-zh_SG.gb2312
-zh_SG.gbk
-zh_SG.utf8
-zh_TW
-zh_TW.big5
-zh_TW.euctw
-zh_TW.utf8
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="CentOS7"></category></entry><entry><title>CentOS7 中文支持</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-zh-rst/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-01T00:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-zh-rst/</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;p&gt;&lt;code&gt;$locale -a | grep en_US&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;en_US
+en_US.iso88591
+en_US.iso885915
+en_US.utf8
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="CentOS7"></category></entry><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/" rel="alternate"></link><published>2016-12-14T12:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-utf8-rst/</id><summary type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;1.&amp;nbsp;查看系统版本信息&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;$cat&amp;nbsp;/etc/redhat-release&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -143,7 +131,7 @@ LC_ALL=
 &lt;p&gt;&lt;em&gt;$vim&amp;nbsp;/etc/locale.conf&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 #LANG=&amp;quot;C&amp;quot;
-LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
+LANG=&amp;quot;en_US.UTF-8&amp;quot;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id4"&gt;
@@ -155,42 +143,30 @@ LANG=&amp;quot;zh_CN.UTF-8&amp;quot;
 &lt;h2&gt;6.&amp;nbsp;查看locale环境变量&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;$locale&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-LANG=zh_CN.UTF-8
-LC_CTYPE=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_NUMERIC=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_TIME=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_COLLATE=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_MONETARY=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_MESSAGES=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_PAPER=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_NAME=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_ADDRESS=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_TELEPHONE=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_MEASUREMENT=&amp;quot;zh_CN.UTF-8&amp;quot;
-LC_IDENTIFICATION=&amp;quot;zh_CN.UTF-8&amp;quot;
+LANG=en_US.UTF-8
+LC_CTYPE=&amp;quot;en_US.UTF-8&amp;quot;
+LC_NUMERIC=&amp;quot;en_US.UTF-8&amp;quot;
+LC_TIME=&amp;quot;en_US.UTF-8&amp;quot;
+LC_COLLATE=&amp;quot;en_US.UTF-8&amp;quot;
+LC_MONETARY=&amp;quot;en_US.UTF-8&amp;quot;
+LC_MESSAGES=&amp;quot;en_US.UTF-8&amp;quot;
+LC_PAPER=&amp;quot;en_US.UTF-8&amp;quot;
+LC_NAME=&amp;quot;en_US.UTF-8&amp;quot;
+LC_ADDRESS=&amp;quot;en_US.UTF-8&amp;quot;
+LC_TELEPHONE=&amp;quot;en_US.UTF-8&amp;quot;
+LC_MEASUREMENT=&amp;quot;en_US.UTF-8&amp;quot;
+LC_IDENTIFICATION=&amp;quot;en_US.UTF-8&amp;quot;
 LC_ALL=
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="id6"&gt;
-&lt;h2&gt;7.&amp;nbsp;查看当前安装的中文语言包&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;$locale -a | grep&amp;nbsp;zh&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;7.&amp;nbsp;查看当前安装的语言包&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;$locale -a | grep&amp;nbsp;en_US&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
-zh_CN
-zh_CN.gb18030
-zh_CN.gb2312
-zh_CN.gbk
-zh_CN.utf8
-zh_HK
-zh_HK.big5hkscs
-zh_HK.utf8
-zh_SG
-zh_SG.gb2312
-zh_SG.gbk
-zh_SG.utf8
-zh_TW
-zh_TW.big5
-zh_TW.euctw
-zh_TW.utf8
+en_US
+en_US.iso88591
+en_US.iso885915
+en_US.utf8
 &lt;/pre&gt;
 &lt;/div&gt;
 </summary><category term="CentOS7"></category></entry></feed>
