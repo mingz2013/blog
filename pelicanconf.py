@@ -35,7 +35,7 @@ SITEURL = 'http://localhost/'  # 站点url,测试
 
 TIMEZONE = 'Europe/Paris'
 
-TYPOGRIFY = True  # 如果设置为True, 一些排版效果将会纳入生成的HTML文件中，通过 Typogrify 库, 安装方式: pip install typogrify
+#TYPOGRIFY = True  # 如果设置为True, 一些排版效果将会纳入生成的HTML文件中，通过 Typogrify 库, 安装方式: pip install typogrify
 
 # DIRECT_TEMPLATES = ('index', 'tags', 'categories',
 #                     'archives')  # 直接使用模板。 通常情况下直接使用模板生成index页面的内容，(e.g., tags and category index pages). 如果无需标签和分类合集,设置 DIRECT_TEMPLATES = ('index', 'archives')
