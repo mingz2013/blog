@@ -100,8 +100,8 @@ Status: draft
 用正则表达式解析源代码
 
 
-yacc,lex
-Javacc
+- yacc,lex
+- Javacc
 
 
 ## 手工构造
@@ -116,12 +116,22 @@ Javacc
 
 
 ## 编程语言的设计
+
 编程语言的设计，有两种文法表示
+
+
 ### bnf, ebnf定义文法
-BNF（巴科斯范式，Backus Normal Form）
+
+- BNF（巴科斯范式，Backus Normal Form）
+
 ![BNF](images/compiler-11.png)
-EBNF(扩展巴克斯范式，Extend BNF)
+
+- EBNF(扩展巴克斯范式，Extend BNF)
+
 ![BNF](images/compiler-12.png)
+
+
+示例：
 
 ![举例](images/compiler-10.png)
 
@@ -135,10 +145,11 @@ EBNF(扩展巴克斯范式，Extend BNF)
 消除左递归（LL（1））
 
 LL(1)
+
 LALR(1)
 
 
-
+TODO
 
 
 
@@ -202,12 +213,18 @@ LALR(1)
 汇编代码优化
 
 
-## 二进制生成，汇编器
-了解各个平台的可执行文件结构，格式，编写汇编器，生成二进制
+
+## 二进制格式
+
 
 ![ELF文件格式](images/compiler-06.png)
 
 ![COFF文件格式](images/compiler-14.png)
+
+
+## 二进制生成，汇编器
+了解各个平台的可执行文件结构，格式，编写汇编器，生成二进制
+
 
 ![汇编器结构](images/compiler-07.png)
 
@@ -225,11 +242,20 @@ LALR(1)
 中间代码优化，汇编代码优化，等，每一部分都有优化部分
 
 
+# CPU架构
+- intel x86
+- ARM
+- Power
+
+TODO
+
 
 # 虚拟机的设计
 模拟真实CPU架构
 
 定义栈空间，定义堆空间，定义寄存器，等数据结构
+
+
 
 
 
@@ -266,17 +292,28 @@ java，.NET Framework都具备在运行的同时将字节码转换为机器码�
 
 JVM虚拟机，Java，Groovy，Scala，Clojure，Jython，JRuby等。
 
+CPython
+
+Pypy
+
+go
+
+js
 
 
 
-# 编程语言demo
+
+
+# 编程语言开发示例demo
 [py.calc](https://github.com/mingz2013/py.calc)解释型语言
 
 
 
 
 # 参考资料
+
 ## 书籍
+
 - 《计算的本质：深入剖析程序和计算机》
 - 《编译器构造（Java语言版）》
 - 《lua设计与实现》
