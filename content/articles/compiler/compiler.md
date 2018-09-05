@@ -49,6 +49,7 @@ Status: draft
 
 词法分析, 生成token串，语法分析，生成抽象语法树，生成中间代码，生成各个CPU架构的汇编代码，生成各个平台的二进制，
 
+![编译器结构](images/compiler-04.png)
 
 二进制：真实CPU架构下的二进制，或虚拟机下的二进制（操作码或字节码）
 
@@ -118,11 +119,16 @@ Javacc
 编程语言的设计，有两种文法表示
 ### bnf, ebnf定义文法
 BNF（巴科斯范式，Backus Normal Form）
+![BNF](images/compiler-11.png)
 EBNF(扩展巴克斯范式，Extend BNF)
+![BNF](images/compiler-12.png)
 
+![举例](images/compiler-10.png)
+
+![举例2](images/compiler-13.png)
 
 ### 地铁图描述文法
-
+![地铁图](images/compiler-03.png)
 
 ### 少许理论知识
 
@@ -147,7 +153,7 @@ LALR(1)
 
 顺序读取源代码文件每个字符，用token的有限自动机来选择生成不同的token
 
-
+![有限自动机](images/compiler-05.png)
 
 
 
@@ -163,6 +169,8 @@ LALR(1)
 
 可直接编写eval方法，执行每个节点
 
+
+![抽象语法树](images/compiler-09.png)
 
 
 ## 语义分析
@@ -182,9 +190,14 @@ LALR(1)
 ## 生成中间代码
 符号表，语义分析，中间代码优化等。
 
+![中间代码](images/compiler-16.png)
 
 ## 生成汇编代码
 了解不同CPU架构的汇编语言，或自定义虚拟机的汇编语法
+
+
+
+![Intel x86指令格式](images/compiler-15.png)
 
 汇编代码优化
 
@@ -192,14 +205,24 @@ LALR(1)
 ## 二进制生成，汇编器
 了解各个平台的可执行文件结构，格式，编写汇编器，生成二进制
 
+![ELF文件格式](images/compiler-06.png)
+
+![COFF文件格式](images/compiler-14.png)
+
+![汇编器结构](images/compiler-07.png)
 
 ## 可执行文件生成，链接器
 链接成可执行文件
+
+![链接器结构](images/compiler-08.png)
 
 
 ## 错误处理
 伴随着每个过程，都需要有错误处理，和友好的错误提示
 
+
+## 优化
+中间代码优化，汇编代码优化，等，每一部分都有优化部分
 
 
 
@@ -211,7 +234,7 @@ LALR(1)
 
 
 ## 字节码文件的解析
-
+读取文件，读取一个个指令，巨大的switch case结构
 
 ## 运行时数据区
 
