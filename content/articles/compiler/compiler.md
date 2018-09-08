@@ -75,7 +75,7 @@ Status: draft
 ### 强类型
 ### 弱类型
 
-
+![编程语言划分](images/compiler-17.png)
 
 
 # 编译器前端与编译器后端
