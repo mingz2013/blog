@@ -6,7 +6,7 @@ Tags: compiler, VM
 Slug: compiler
 Author: Mingz
 Summary: 泛泛讲解编译系统
-Status: draft
+Status: published
 
 
 

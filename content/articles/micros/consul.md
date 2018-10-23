@@ -6,7 +6,7 @@ Tags: consul, micro service
 Slug: consul
 Author: Mingz
 Summary: consul 初体验
-Status: draft
+Status: published
 
 
 

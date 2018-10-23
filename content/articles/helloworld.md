@@ -6,6 +6,6 @@ Tags: pelican, publishing
 Slug: helloworld
 Author: Mingz
 Summary: Short version for index and feeds
-Status: draft
+Status: published
 
 This is the content of my super blog post.

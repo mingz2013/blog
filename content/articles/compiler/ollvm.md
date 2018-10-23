@@ -6,7 +6,7 @@ Tags: compiler, llvm, ollvm
 Slug: compiler-ollvm
 Author: Mingz
 Summary: 由解决ios 4.3过审问题引发的探讨
-Status: draft
+Status: published
 
 
 

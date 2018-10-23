@@ -6,7 +6,7 @@ Tags: network, epoll, select
 Slug: network
 Author: Mingz
 Summary: 泛泛讲解网络编程
-Status: draft
+Status: published
 
 
 **禁止转载**
