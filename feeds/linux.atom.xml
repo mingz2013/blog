@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/linux.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-14T12:00:00+01:00</updated><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8/" rel="alternate"></link><published>2016-12-14T12:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-utf8/</id><summary type="html">&lt;h2&gt;查看系统版本信息&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog - Linux</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/linux.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-14T12:00:00+01:00</updated><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:/blog/posts/2016/Dec/01/centos7-utf8/</id><summary type="html">&lt;p&gt;CentOS7 utf8编码&lt;/p&gt;</summary><content type="html">&lt;h2&gt;查看系统版本信息&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;$cat /etc/redhat-release&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;CentOS Linux release 7.1.1503 (Core)
 &lt;/pre&gt;&lt;/div&gt;
@@ -80,7 +80,8 @@ LC_ALL=
 en_US.iso88591
 en_US.iso885915
 en_US.utf8
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="CentOS7"></category></entry><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/" rel="alternate"></link><published>2016-12-14T12:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-utf8-rst/</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="CentOS7"></category></entry><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:/blog/posts/2016/Dec/01/centos7-utf8-rst/</id><summary type="html">&lt;p class="first last"&gt;CentOS7 utf8编码&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;1. 查看系统版本信息&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;$cat /etc/redhat-release&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -169,4 +170,4 @@ en_US.iso885915
 en_US.utf8
 &lt;/pre&gt;
 &lt;/div&gt;
-</summary><category term="CentOS7"></category></entry></feed>
+</content><category term="CentOS7"></category></entry></feed>

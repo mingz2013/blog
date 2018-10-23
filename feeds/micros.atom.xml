@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog - micros</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/micros.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2018-10-23T15:20:00+02:00</updated><entry><title>consul 初体验</title><link href="http://mingz.me/blog/posts/2018/Oct/23/consul/" rel="alternate"></link><published>2018-10-23T15:20:00+02:00</published><updated>2016-10-23T15:20:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2018-10-23:/blog/posts/2018/Oct/23/consul/</id><summary type="html">&lt;p&gt;consul 初体验&lt;/p&gt;</summary><content type="html">&lt;h1&gt;github&lt;/h1&gt;
+&lt;p&gt;https://github.com/hashicorp/consul&lt;/p&gt;
+&lt;h1&gt;website&lt;/h1&gt;
+&lt;p&gt;https://www.consul.io/&lt;/p&gt;
+&lt;h1&gt;install consul&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;$brew install consul&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;verifying the installation&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$consul&lt;/code&gt;&lt;/p&gt;
+&lt;h1&gt;run the agent&lt;/h1&gt;
+&lt;h2&gt;starting the agent&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$consul agent -dev&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;为了简单，我们以开发模式启动consul agent。这个模式可以快速和容易的启动一个单节点的consul环境. 这个模式不适合用于生产环境，因为它不保存任何状态。&lt;/p&gt;
+&lt;h2&gt;cluster members&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$consul members
+Node         Address         Status  Type    Build  Protocol  DC   Segment
+avril.local  127.0.0.1:8301  alive   server  1.3.0  2         dc1  &amp;lt;all&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在另一个terminal中执行&lt;code&gt;consul members&lt;/code&gt;，你可以看到consul cluster的members，你可以看到，只有 one member（yourself）.&lt;/p&gt;
+&lt;p&gt;输出显示了我们自己的node，这address it is running on，its health state, its role in the cluster, and some version information. 额外的元数据信息可以通过&lt;code&gt;-detailed&lt;/code&gt; flag看到.&lt;/p&gt;
+&lt;p&gt;这个命令的输出，基于&lt;code&gt;gossip protocol&lt;/code&gt;, and is 最终一致的。也就是说，在任何节点在同一时间，看到的世界，by 你本地的agent 可能不完全匹配这状态在servers。一个强一致的系统的展示，可以用这&lt;code&gt;HTTP API&lt;/code&gt; 去远程请求consul servers&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$curl localhost:8500/v1/catalog/nodes
+[
+    {
+        &amp;quot;ID&amp;quot;: &amp;quot;9a8b671d-ffdb-6445-f436-9ad02cf7d219&amp;quot;,
+        &amp;quot;Node&amp;quot;: &amp;quot;avril.local&amp;quot;,
+        &amp;quot;Address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
+        &amp;quot;Datacenter&amp;quot;: &amp;quot;dc1&amp;quot;,
+        &amp;quot;TaggedAddresses&amp;quot;: {
+            &amp;quot;lan&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
+            &amp;quot;wan&amp;quot;: &amp;quot;127.0.0.1&amp;quot;
+        },
+        &amp;quot;Meta&amp;quot;: {
+            &amp;quot;consul-network-segment&amp;quot;: &amp;quot;&amp;quot;
+        },
+        &amp;quot;CreateIndex&amp;quot;: 9,
+        &amp;quot;ModifyIndex&amp;quot;: 10
+    }
+]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;对于这个HTTP API额外的说一下，&lt;code&gt;DNS interface&lt;/code&gt;可以被用来请求这个节点。提示：你必须确保你的DNS 发现 指向 consul agent's DNS server, which 运行在 8600默认端口上的。这DNS 入口的格式，（类似 "avril.local.node.consul"）可以被发现在一会&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;8600&lt;/span&gt; &lt;span class="n"&gt;avril&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cansul&lt;/span&gt;
+
+
+&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;DiG&lt;/span&gt; &lt;span class="mf"&gt;9.10.6&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;8600&lt;/span&gt; &lt;span class="n"&gt;avril&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cansul&lt;/span&gt;
+&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt; &lt;span class="n"&gt;found&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="nl"&gt;options&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;cmd&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;Got&lt;/span&gt; &lt;span class="nl"&gt;answer&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;HEADER&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;-&lt;/span&gt; &lt;span class="nl"&gt;opcode&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;QUERY&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nl"&gt;status&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;SERVFAIL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;id&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;56796&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="nl"&gt;flags&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;qr&lt;/span&gt; &lt;span class="n"&gt;rd&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nl"&gt;QUERY&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nl"&gt;ANSWER&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nl"&gt;AUTHORITY&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nl"&gt;ADDITIONAL&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="nl"&gt;WARNING&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;recursion&lt;/span&gt; &lt;span class="n"&gt;requested&lt;/span&gt; &lt;span class="n"&gt;but&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;available&lt;/span&gt;
+
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;QUESTION&lt;/span&gt; &lt;span class="nl"&gt;SECTION&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;avril&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cansul&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;   &lt;span class="n"&gt;IN&lt;/span&gt;  &lt;span class="n"&gt;A&lt;/span&gt;
+
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;Query&lt;/span&gt; &lt;span class="nl"&gt;time&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;msec&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="nl"&gt;SERVER&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="mi"&gt;8600&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="nl"&gt;WHEN&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Tue&lt;/span&gt; &lt;span class="n"&gt;Oct&lt;/span&gt; &lt;span class="mi"&gt;23&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt; &lt;span class="n"&gt;CST&lt;/span&gt; &lt;span class="mi"&gt;2018&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;MSG&lt;/span&gt; &lt;span class="n"&gt;SIZE&lt;/span&gt;  &lt;span class="nl"&gt;rcvd&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;41&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;stopping the agent&lt;/h2&gt;
+&lt;p&gt;你可以&lt;code&gt;ctrl-C&lt;/code&gt;去优雅的停止这个agent，当中断这个agent，你可以看到，它离开的cluster，and shut down。&lt;/p&gt;
+&lt;p&gt;为了优雅的leaving，consul 通知其他集群成员，这个节点离开了。如果你强行kill这个agent 进程，其他成员将发现这个node fail的。
+当一个成员离开，它的服务和检查，将从catalog移除。当一个成员fails，它的健康仅仅标记为critical, 但它不会从catalog中移除。
+cansul往往会重连 failed nodes，允许它从好的网络状态下恢复。然而离开的节点永远不会联系。&lt;/p&gt;
+&lt;p&gt;另外，如果一个agent 正在操作一个server，一个优雅的离开方式是重要的，去避免造成一些超出控制的影响.&lt;/p&gt;
+&lt;h1&gt;services&lt;/h1&gt;
+&lt;h2&gt;registering services&lt;/h2&gt;
+&lt;p&gt;在前面的步骤里，我们运行了我们的第一个agent，查看了集群的成员，并且访问了这个节点。在本节guide，我们将注册我们第一个service，并且query这个service。&lt;/p&gt;
+&lt;h2&gt;defining a service&lt;/h2&gt;
+&lt;p&gt;一个服务，可以通过，提供一个服务定义文件，或者调用一个合适的HTTP API&lt;/p&gt;
+&lt;p&gt;一个服务定义，是最常用的方式去注册service，所以，我们用这种方式开启下一步。我们将基于上一步的agent 配置。&lt;/p&gt;
+&lt;p&gt;首先，创建一个目录用于consul configuration。consul loads 所有的配置文件，in the 配置目录，所以一个通用的形式，在unix系统上是定义这个目录like &lt;code&gt;/etc/consul.d&lt;/code&gt;(the .d suffix implies "this directory contaions a set of configuration files").&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$sudo mkdir /etc/consul.d&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;接下来，我们写一个服务定义文件，我们假装我们有一个服务named"web" 跑在80端口，另外，我们给它一个tag，我们可以用来额外的方式查询这个service.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ echo '{"service": {"name": "web", "tags": ["rails"], "port": 80}}' \
+    | sudo tee /etc/consul.d/web.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;现在，重启agent，提供这个配置目录
+&lt;code&gt;$ consul agent -dev -config-dir=/etc/consul.d&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;你可以注意到他的输出，同步的这个web service。这意味着这个agent加载了这个服务配置，从配置文件里，并且成功注册了他在这服务catalog。&lt;/p&gt;
+&lt;p&gt;如果你想去注册multiple services，你可以创建multiple service配置文件在这配置目录里。&lt;/p&gt;
+&lt;h2&gt;querying services&lt;/h2&gt;
+&lt;p&gt;Once the agent is started and the service is synced, we can query the service using either the DNS or HTTP API.&lt;/p&gt;
+&lt;h3&gt;DNS API&lt;/h3&gt;
+&lt;p&gt;让我们首先请求我们的服务，用DNS API。for the DNS API, the DNS name for servics is NAME.service.consul. By default, all DNS names are always in the consul namespace, though this is configurable. The service subdomain tells Consul we're querying services, and the NAME is the name of the service.&lt;/p&gt;
+&lt;p&gt;For the web service we registered, these conventions and settings yield a fully-qualified domain name of web.service.consul&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ dig &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;127&lt;/span&gt;.0.0.1 -p &lt;span class="m"&gt;8600&lt;/span&gt; web.service.consul
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;你可以看到，一个记录返回了这IP地址，of 这个节点，on which 这个服务存在的。一个记录可以仅仅包含IP地址。&lt;/p&gt;
+&lt;p&gt;你可以用这DNS API to retrieve the entrie address/port pair as a SRV record&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;8600&lt;/span&gt; &lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;service&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;consul&lt;/span&gt; &lt;span class="n"&gt;SRV&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;这个服务记录，说，这个web service 运行在80端口，并且在节点。。上，并且额外的信息返回了，通过这DNS，with the 一个记录 for the node。&lt;/p&gt;
+&lt;p&gt;实际上，我们也可以通过DNS API去过滤服务用tags，&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;8600&lt;/span&gt; &lt;span class="n"&gt;rails&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;service&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;consul&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;HTTP API&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ curl http://localhost:8500/v1/catalog/service/web
+&lt;span class="o"&gt;[{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Node&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;Armons-MacBook-Air&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;Address&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;172.20.20.11&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;ServiceID&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;web&amp;quot;&lt;/span&gt;, &lt;span class="se"&gt;\&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;ServiceName&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;web&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;ServiceTags&amp;quot;&lt;/span&gt;:&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rails&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;ServicePort&amp;quot;&lt;/span&gt;:80&lt;span class="o"&gt;}]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The catalog API gives all nodes hosting a given service. As we will see later with health checks you'll typically want to query just for healthy instances where the checks are passing. This is what DNS is doing under the hood. Here's a query to look for only healthy instances:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ curl &lt;span class="s1"&gt;&amp;#39;http://localhost:8500/v1/health/service/web?passing&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;[{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Node&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;Armons-MacBook-Air&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;Address&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;172.20.20.11&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;Service&amp;quot;&lt;/span&gt;:&lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;ID&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;web&amp;quot;&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;Service&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;web&amp;quot;&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;Tags&amp;quot;&lt;/span&gt;:&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rails&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;Port&amp;quot;&lt;/span&gt;:80&lt;span class="o"&gt;}&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;Checks&amp;quot;&lt;/span&gt;: ...&lt;span class="o"&gt;}]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;updating services&lt;/h2&gt;
+&lt;p&gt;服务定义可以被更新，通过改变配置文件，和发送 a SIGHUP to the agent. 这可以让你更新services 没有任何停机或不可用。&lt;/p&gt;
+&lt;p&gt;这HTTP API可以被用来，add，remove，modify services dynamically。&lt;/p&gt;
+&lt;h1&gt;Connect&lt;/h1&gt;
+&lt;h1&gt;Consul Cluster&lt;/h1&gt;
+&lt;h1&gt;Health Checks&lt;/h1&gt;
+&lt;h1&gt;KV Data&lt;/h1&gt;
+&lt;h1&gt;Web UI&lt;/h1&gt;</content><category term="consul"></category><category term="micro service"></category></entry></feed>

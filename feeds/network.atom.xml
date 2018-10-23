@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog - network</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/network.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2018-09-05T15:40:00+02:00</updated><entry><title>网络编程泛讲</title><link href="http://mingz.me/blog/posts/2018/Sep/05/network/" rel="alternate"></link><published>2018-09-05T15:40:00+02:00</published><updated>2018-09-05T15:40:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2018-09-05:/blog/posts/2018/Sep/05/network/</id><summary type="html">&lt;p&gt;泛泛讲解网络编程&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;禁止转载&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一些图文 出自参考书籍中的截图，如有侵权，请联系删除&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;TCP/IP协议&lt;/h1&gt;
+&lt;h1&gt;网络编程基础API&lt;/h1&gt;
+&lt;h2&gt;socket&lt;/h2&gt;
+&lt;h2&gt;字节序&lt;/h2&gt;
+&lt;h1&gt;高级API&lt;/h1&gt;
+&lt;h1&gt;服务器模型&lt;/h1&gt;
+&lt;h1&gt;I/O模型&lt;/h1&gt;
+&lt;h1&gt;事件处理模式&lt;/h1&gt;
+&lt;h2&gt;reactor&lt;/h2&gt;
+&lt;h2&gt;proactor&lt;/h2&gt;
+&lt;h1&gt;并发模式&lt;/h1&gt;
+&lt;h1&gt;IO复用&lt;/h1&gt;
+&lt;p&gt;select，poll，epoll&lt;/p&gt;
+&lt;h1&gt;参考资料&lt;/h1&gt;
+&lt;h2&gt;参考书籍&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《Linux高性能服务器编程》&lt;/li&gt;
+&lt;li&gt;《后台开发 核心技术与应用实践》&lt;/li&gt;
+&lt;li&gt;《Linux多线程服务端编程：使用muduo C++网络库》&lt;/li&gt;
+&lt;/ul&gt;</content><category term="network"></category><category term="epoll"></category><category term="select"></category></entry></feed>

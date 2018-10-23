@@ -1,5 +1,401 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/mingz.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2016-12-14T12:00:00+01:00</updated><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8/" rel="alternate"></link><published>2016-12-14T12:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-utf8/</id><summary type="html">&lt;h2&gt;查看系统版本信息&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog - Mingz</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/mingz.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2018-10-23T15:20:00+02:00</updated><entry><title>consul 初体验</title><link href="http://mingz.me/blog/posts/2018/Oct/23/consul/" rel="alternate"></link><published>2018-10-23T15:20:00+02:00</published><updated>2016-10-23T15:20:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2018-10-23:/blog/posts/2018/Oct/23/consul/</id><summary type="html">&lt;p&gt;consul 初体验&lt;/p&gt;</summary><content type="html">&lt;h1&gt;github&lt;/h1&gt;
+&lt;p&gt;https://github.com/hashicorp/consul&lt;/p&gt;
+&lt;h1&gt;website&lt;/h1&gt;
+&lt;p&gt;https://www.consul.io/&lt;/p&gt;
+&lt;h1&gt;install consul&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;$brew install consul&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;verifying the installation&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$consul&lt;/code&gt;&lt;/p&gt;
+&lt;h1&gt;run the agent&lt;/h1&gt;
+&lt;h2&gt;starting the agent&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$consul agent -dev&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;为了简单，我们以开发模式启动consul agent。这个模式可以快速和容易的启动一个单节点的consul环境. 这个模式不适合用于生产环境，因为它不保存任何状态。&lt;/p&gt;
+&lt;h2&gt;cluster members&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$consul members
+Node         Address         Status  Type    Build  Protocol  DC   Segment
+avril.local  127.0.0.1:8301  alive   server  1.3.0  2         dc1  &amp;lt;all&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在另一个terminal中执行&lt;code&gt;consul members&lt;/code&gt;，你可以看到consul cluster的members，你可以看到，只有 one member（yourself）.&lt;/p&gt;
+&lt;p&gt;输出显示了我们自己的node，这address it is running on，its health state, its role in the cluster, and some version information. 额外的元数据信息可以通过&lt;code&gt;-detailed&lt;/code&gt; flag看到.&lt;/p&gt;
+&lt;p&gt;这个命令的输出，基于&lt;code&gt;gossip protocol&lt;/code&gt;, and is 最终一致的。也就是说，在任何节点在同一时间，看到的世界，by 你本地的agent 可能不完全匹配这状态在servers。一个强一致的系统的展示，可以用这&lt;code&gt;HTTP API&lt;/code&gt; 去远程请求consul servers&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$curl localhost:8500/v1/catalog/nodes
+[
+    {
+        &amp;quot;ID&amp;quot;: &amp;quot;9a8b671d-ffdb-6445-f436-9ad02cf7d219&amp;quot;,
+        &amp;quot;Node&amp;quot;: &amp;quot;avril.local&amp;quot;,
+        &amp;quot;Address&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
+        &amp;quot;Datacenter&amp;quot;: &amp;quot;dc1&amp;quot;,
+        &amp;quot;TaggedAddresses&amp;quot;: {
+            &amp;quot;lan&amp;quot;: &amp;quot;127.0.0.1&amp;quot;,
+            &amp;quot;wan&amp;quot;: &amp;quot;127.0.0.1&amp;quot;
+        },
+        &amp;quot;Meta&amp;quot;: {
+            &amp;quot;consul-network-segment&amp;quot;: &amp;quot;&amp;quot;
+        },
+        &amp;quot;CreateIndex&amp;quot;: 9,
+        &amp;quot;ModifyIndex&amp;quot;: 10
+    }
+]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;对于这个HTTP API额外的说一下，&lt;code&gt;DNS interface&lt;/code&gt;可以被用来请求这个节点。提示：你必须确保你的DNS 发现 指向 consul agent's DNS server, which 运行在 8600默认端口上的。这DNS 入口的格式，（类似 "avril.local.node.consul"）可以被发现在一会&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;8600&lt;/span&gt; &lt;span class="n"&gt;avril&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cansul&lt;/span&gt;
+
+
+&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;DiG&lt;/span&gt; &lt;span class="mf"&gt;9.10.6&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;8600&lt;/span&gt; &lt;span class="n"&gt;avril&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cansul&lt;/span&gt;
+&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;server&lt;/span&gt; &lt;span class="n"&gt;found&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="nl"&gt;options&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;cmd&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;Got&lt;/span&gt; &lt;span class="nl"&gt;answer&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;HEADER&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;-&lt;/span&gt; &lt;span class="nl"&gt;opcode&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;QUERY&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nl"&gt;status&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;SERVFAIL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;id&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;56796&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="nl"&gt;flags&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;qr&lt;/span&gt; &lt;span class="n"&gt;rd&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nl"&gt;QUERY&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nl"&gt;ANSWER&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nl"&gt;AUTHORITY&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nl"&gt;ADDITIONAL&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="nl"&gt;WARNING&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;recursion&lt;/span&gt; &lt;span class="n"&gt;requested&lt;/span&gt; &lt;span class="n"&gt;but&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;available&lt;/span&gt;
+
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;QUESTION&lt;/span&gt; &lt;span class="nl"&gt;SECTION&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;avril&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cansul&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;   &lt;span class="n"&gt;IN&lt;/span&gt;  &lt;span class="n"&gt;A&lt;/span&gt;
+
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;Query&lt;/span&gt; &lt;span class="nl"&gt;time&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;msec&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="nl"&gt;SERVER&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="mi"&gt;8600&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="nl"&gt;WHEN&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Tue&lt;/span&gt; &lt;span class="n"&gt;Oct&lt;/span&gt; &lt;span class="mi"&gt;23&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt; &lt;span class="n"&gt;CST&lt;/span&gt; &lt;span class="mi"&gt;2018&lt;/span&gt;
+&lt;span class="p"&gt;;;&lt;/span&gt; &lt;span class="n"&gt;MSG&lt;/span&gt; &lt;span class="n"&gt;SIZE&lt;/span&gt;  &lt;span class="nl"&gt;rcvd&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;41&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;stopping the agent&lt;/h2&gt;
+&lt;p&gt;你可以&lt;code&gt;ctrl-C&lt;/code&gt;去优雅的停止这个agent，当中断这个agent，你可以看到，它离开的cluster，and shut down。&lt;/p&gt;
+&lt;p&gt;为了优雅的leaving，consul 通知其他集群成员，这个节点离开了。如果你强行kill这个agent 进程，其他成员将发现这个node fail的。
+当一个成员离开，它的服务和检查，将从catalog移除。当一个成员fails，它的健康仅仅标记为critical, 但它不会从catalog中移除。
+cansul往往会重连 failed nodes，允许它从好的网络状态下恢复。然而离开的节点永远不会联系。&lt;/p&gt;
+&lt;p&gt;另外，如果一个agent 正在操作一个server，一个优雅的离开方式是重要的，去避免造成一些超出控制的影响.&lt;/p&gt;
+&lt;h1&gt;services&lt;/h1&gt;
+&lt;h2&gt;registering services&lt;/h2&gt;
+&lt;p&gt;在前面的步骤里，我们运行了我们的第一个agent，查看了集群的成员，并且访问了这个节点。在本节guide，我们将注册我们第一个service，并且query这个service。&lt;/p&gt;
+&lt;h2&gt;defining a service&lt;/h2&gt;
+&lt;p&gt;一个服务，可以通过，提供一个服务定义文件，或者调用一个合适的HTTP API&lt;/p&gt;
+&lt;p&gt;一个服务定义，是最常用的方式去注册service，所以，我们用这种方式开启下一步。我们将基于上一步的agent 配置。&lt;/p&gt;
+&lt;p&gt;首先，创建一个目录用于consul configuration。consul loads 所有的配置文件，in the 配置目录，所以一个通用的形式，在unix系统上是定义这个目录like &lt;code&gt;/etc/consul.d&lt;/code&gt;(the .d suffix implies "this directory contaions a set of configuration files").&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$sudo mkdir /etc/consul.d&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;接下来，我们写一个服务定义文件，我们假装我们有一个服务named"web" 跑在80端口，另外，我们给它一个tag，我们可以用来额外的方式查询这个service.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ echo '{"service": {"name": "web", "tags": ["rails"], "port": 80}}' \
+    | sudo tee /etc/consul.d/web.json&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;现在，重启agent，提供这个配置目录
+&lt;code&gt;$ consul agent -dev -config-dir=/etc/consul.d&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;你可以注意到他的输出，同步的这个web service。这意味着这个agent加载了这个服务配置，从配置文件里，并且成功注册了他在这服务catalog。&lt;/p&gt;
+&lt;p&gt;如果你想去注册multiple services，你可以创建multiple service配置文件在这配置目录里。&lt;/p&gt;
+&lt;h2&gt;querying services&lt;/h2&gt;
+&lt;p&gt;Once the agent is started and the service is synced, we can query the service using either the DNS or HTTP API.&lt;/p&gt;
+&lt;h3&gt;DNS API&lt;/h3&gt;
+&lt;p&gt;让我们首先请求我们的服务，用DNS API。for the DNS API, the DNS name for servics is NAME.service.consul. By default, all DNS names are always in the consul namespace, though this is configurable. The service subdomain tells Consul we're querying services, and the NAME is the name of the service.&lt;/p&gt;
+&lt;p&gt;For the web service we registered, these conventions and settings yield a fully-qualified domain name of web.service.consul&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ dig &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;127&lt;/span&gt;.0.0.1 -p &lt;span class="m"&gt;8600&lt;/span&gt; web.service.consul
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;你可以看到，一个记录返回了这IP地址，of 这个节点，on which 这个服务存在的。一个记录可以仅仅包含IP地址。&lt;/p&gt;
+&lt;p&gt;你可以用这DNS API to retrieve the entrie address/port pair as a SRV record&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;8600&lt;/span&gt; &lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;service&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;consul&lt;/span&gt; &lt;span class="n"&gt;SRV&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;这个服务记录，说，这个web service 运行在80端口，并且在节点。。上，并且额外的信息返回了，通过这DNS，with the 一个记录 for the node。&lt;/p&gt;
+&lt;p&gt;实际上，我们也可以通过DNS API去过滤服务用tags，&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;dig&lt;/span&gt; &lt;span class="mf"&gt;@127.0.0.1&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="mi"&gt;8600&lt;/span&gt; &lt;span class="n"&gt;rails&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;service&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;consul&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;HTTP API&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ curl http://localhost:8500/v1/catalog/service/web
+&lt;span class="o"&gt;[{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Node&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;Armons-MacBook-Air&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;Address&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;172.20.20.11&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;ServiceID&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;web&amp;quot;&lt;/span&gt;, &lt;span class="se"&gt;\&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;ServiceName&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;web&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;ServiceTags&amp;quot;&lt;/span&gt;:&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rails&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;ServicePort&amp;quot;&lt;/span&gt;:80&lt;span class="o"&gt;}]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The catalog API gives all nodes hosting a given service. As we will see later with health checks you'll typically want to query just for healthy instances where the checks are passing. This is what DNS is doing under the hood. Here's a query to look for only healthy instances:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ curl &lt;span class="s1"&gt;&amp;#39;http://localhost:8500/v1/health/service/web?passing&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;[{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Node&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;Armons-MacBook-Air&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;Address&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;172.20.20.11&amp;quot;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;Service&amp;quot;&lt;/span&gt;:&lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+    &lt;span class="s2"&gt;&amp;quot;ID&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;web&amp;quot;&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;Service&amp;quot;&lt;/span&gt;:&lt;span class="s2"&gt;&amp;quot;web&amp;quot;&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;Tags&amp;quot;&lt;/span&gt;:&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rails&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;,&lt;span class="s2"&gt;&amp;quot;Port&amp;quot;&lt;/span&gt;:80&lt;span class="o"&gt;}&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;Checks&amp;quot;&lt;/span&gt;: ...&lt;span class="o"&gt;}]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;updating services&lt;/h2&gt;
+&lt;p&gt;服务定义可以被更新，通过改变配置文件，和发送 a SIGHUP to the agent. 这可以让你更新services 没有任何停机或不可用。&lt;/p&gt;
+&lt;p&gt;这HTTP API可以被用来，add，remove，modify services dynamically。&lt;/p&gt;
+&lt;h1&gt;Connect&lt;/h1&gt;
+&lt;h1&gt;Consul Cluster&lt;/h1&gt;
+&lt;h1&gt;Health Checks&lt;/h1&gt;
+&lt;h1&gt;KV Data&lt;/h1&gt;
+&lt;h1&gt;Web UI&lt;/h1&gt;</content><category term="consul"></category><category term="micro service"></category></entry><entry><title>ollvm</title><link href="http://mingz.me/blog/posts/2018/Oct/11/compiler-ollvm/" rel="alternate"></link><published>2018-10-11T11:30:00+02:00</published><updated>2018-10-11T11:30:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2018-10-11:/blog/posts/2018/Oct/11/compiler-ollvm/</id><summary type="html">&lt;p&gt;由解决ios 4.3过审问题引发的探讨&lt;/p&gt;</summary><content type="html">&lt;h1&gt;做的事情&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;之前已经做的东西，资源加密，符号混淆&lt;/li&gt;
+&lt;li&gt;本次做的事情，代码膨胀，变形&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;名词介绍&lt;/h1&gt;
+&lt;h2&gt;gcc&lt;/h2&gt;
+&lt;p&gt;GNU编译器套件（GNU Compiler Collection）包括C、C++、Objective-C、Fortran、Java、Ada和Go语言的前端，也包括了这些语言的库（如libstdc++、libgcj等等）。GCC的初衷是为GNU操作系统专门编写的一款编译器。GNU系统是彻底的自由软件。此处，“自由”的含义是它尊重用户的自由。&lt;/p&gt;
+&lt;h2&gt;llvm&lt;/h2&gt;
+&lt;p&gt;LLVM是构架编译器(compiler)的框架系统，以C++编写而成，用于优化以任意程序语言编写的程序的编译时间(compile-time)、链接时间(link-time)、运行时间(run-time)以及空闲时间(idle-time)，对开发者保持开放，并兼容已有脚本。&lt;/p&gt;
+&lt;h2&gt;clang&lt;/h2&gt;
+&lt;p&gt;Clang是一个C语言、C++、Objective-C语言的轻量级编译器。源代码发布于BSD协议下。Clang将支持其普通lambda表达式、返回类型的简化处理以及更好的处理constexpr关键字。&lt;/p&gt;
+&lt;h2&gt;ollvm&lt;/h2&gt;
+&lt;p&gt;OLLVM（Obfuscator-LLVM）是瑞士西北应用科技大学安全实验室于2010年6月份发起的一个项目，这个项目的目标是提供一个LLVM编译套件的开源分支，能够通过代码混淆和防篡改，增加对逆向工程的难度，提供更高的软件安全性。目前，OLLVM已经支持LLVM-4.0.1版本。OLLVM的混淆操作就是在中间表示IR层，通过编写Pass来混淆IR，然后后端依据IR来生成的目标代码也就被混淆了。得益于LLVM的设计，OLLVM适用LLVM支持的所有语言（C, C++, Objective-C, Ada 和 Fortran）和目标平台（x86, x86-64, PowerPC, PowerPC-64, ARM, Thumb, SPARC, Alpha, CellSPU,MIPS, MSP430, SystemZ, 和 XCore）&lt;/p&gt;
+&lt;h1&gt;llvm相关架构与原理&lt;/h1&gt;
+&lt;p&gt;https://llvm.org/docs/&lt;/p&gt;
+&lt;p&gt;http://www.aosabook.org/en/llvm.html&lt;/p&gt;
+&lt;p&gt;https://llvm.org/docs/WritingAnLLVMPass.html&lt;/p&gt;
+&lt;h1&gt;ollvm扩展内容&lt;/h1&gt;
+&lt;p&gt;https://github.com/obfuscator-llvm/obfuscator/wiki&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;-fla 控制流扁平化的PASS参数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;-sub指令替换的PASS参数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;-bcf虚假控制流的PASS参数&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;https://blog.csdn.net/chrisnotfound/article/details/79026449&lt;/p&gt;
+&lt;h1&gt;攻与防&lt;/h1&gt;
+&lt;p&gt;https://bbs.pediy.com/thread-217727.htm&lt;/p&gt;
+&lt;p&gt;http://www.freebuf.com/articles/terminal/130142.html&lt;/p&gt;
+&lt;h1&gt;github&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/llvm-mirror/llvm"&gt;llvm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/obfuscator-llvm/obfuscator"&gt;ollvm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/HikariObfuscator/Hikari"&gt;Hikari&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/GoSSIP-SJTU/Armariris"&gt;Armariris&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/trailofbits/mcsema"&gt;mcsema&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;参考书籍&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;《iOS应用逆向与安全》&lt;/li&gt;
+&lt;li&gt;《编译与反编译技术实战》&lt;/li&gt;
+&lt;li&gt;《LLVM Cookbook中文版》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;links&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gnu.org/software/gcc/"&gt;gcc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://clang.llvm.org/"&gt;clang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cnblogs.com/zuopeng/p/4141467.html"&gt;LLVM和GCC的区别&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="compiler"></category><category term="llvm"></category><category term="ollvm"></category></entry><entry><title>网络编程泛讲</title><link href="http://mingz.me/blog/posts/2018/Sep/05/network/" rel="alternate"></link><published>2018-09-05T15:40:00+02:00</published><updated>2018-09-05T15:40:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2018-09-05:/blog/posts/2018/Sep/05/network/</id><summary type="html">&lt;p&gt;泛泛讲解网络编程&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;禁止转载&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一些图文 出自参考书籍中的截图，如有侵权，请联系删除&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;TCP/IP协议&lt;/h1&gt;
+&lt;h1&gt;网络编程基础API&lt;/h1&gt;
+&lt;h2&gt;socket&lt;/h2&gt;
+&lt;h2&gt;字节序&lt;/h2&gt;
+&lt;h1&gt;高级API&lt;/h1&gt;
+&lt;h1&gt;服务器模型&lt;/h1&gt;
+&lt;h1&gt;I/O模型&lt;/h1&gt;
+&lt;h1&gt;事件处理模式&lt;/h1&gt;
+&lt;h2&gt;reactor&lt;/h2&gt;
+&lt;h2&gt;proactor&lt;/h2&gt;
+&lt;h1&gt;并发模式&lt;/h1&gt;
+&lt;h1&gt;IO复用&lt;/h1&gt;
+&lt;p&gt;select，poll，epoll&lt;/p&gt;
+&lt;h1&gt;参考资料&lt;/h1&gt;
+&lt;h2&gt;参考书籍&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《Linux高性能服务器编程》&lt;/li&gt;
+&lt;li&gt;《后台开发 核心技术与应用实践》&lt;/li&gt;
+&lt;li&gt;《Linux多线程服务端编程：使用muduo C++网络库》&lt;/li&gt;
+&lt;/ul&gt;</content><category term="network"></category><category term="epoll"></category><category term="select"></category></entry><entry><title>编译系统泛讲</title><link href="http://mingz.me/blog/posts/2018/Sep/03/compiler/" rel="alternate"></link><published>2018-09-03T10:30:00+02:00</published><updated>2018-09-03T10:30:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2018-09-03:/blog/posts/2018/Sep/03/compiler/</id><summary type="html">&lt;p&gt;泛泛讲解编译系统&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;禁止转载&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一些图文 出自参考书籍中的截图，如有侵权，请联系删除&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;编程语言的分类&lt;/h1&gt;
+&lt;h2&gt;解释型与编译型之分&lt;/h2&gt;
+&lt;p&gt;编程语言可分为解释型和编译型。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="语言处理器内部的处理过程" src="images/compiler-01.png"&gt;&lt;/p&gt;
+&lt;h3&gt;解释型&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;源代码转换为某种中间状态，如语法树，语法树直接执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;源代码，词法分析，生成token串，语法分析，生成分析树，语法分析树，或语法树，抽象语法树，执行&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;纯粹的解释型，读一句，解释执行一句，执行到有语法错误的时候才会报错&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;字节码，解释器运行字节码, 也可称为虚拟机
+将抽象语法树转换成字节码，字节码可在虚拟机里执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;也有编译的一个过程&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;编译型&lt;/h3&gt;
+&lt;h4&gt;编译过程&lt;/h4&gt;
+&lt;p&gt;词法分析, 生成token串，语法分析，生成抽象语法树，生成中间代码，生成各个CPU架构的汇编代码，生成各个平台的二进制，&lt;/p&gt;
+&lt;p&gt;二进制：真实CPU架构下的二进制，或虚拟机下的二进制（操作码或字节码）&lt;/p&gt;
+&lt;p&gt;&lt;img alt="编译器结构" src="images/compiler-04.png"&gt;&lt;/p&gt;
+&lt;h4&gt;链接过程&lt;/h4&gt;
+&lt;p&gt;链接器，链接成可执行文件&lt;/p&gt;
+&lt;h2&gt;动态类型与静态类型之分&lt;/h2&gt;
+&lt;h3&gt;动态&lt;/h3&gt;
+&lt;h3&gt;静态&lt;/h3&gt;
+&lt;h2&gt;强类型与弱类型之分&lt;/h2&gt;
+&lt;h3&gt;强类型&lt;/h3&gt;
+&lt;h3&gt;弱类型&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="编程语言划分" src="images/compiler-17.png"&gt;&lt;/p&gt;
+&lt;h1&gt;编译器前端与编译器后端&lt;/h1&gt;
+&lt;h2&gt;编译器前端(Front End)&lt;/h2&gt;
+&lt;p&gt;从源代码到抽象语法树的过程&lt;/p&gt;
+&lt;h2&gt;编译器后端(Back End)&lt;/h2&gt;
+&lt;p&gt;从抽象语法树到二进制的过程&lt;/p&gt;
+&lt;h1&gt;编程语言的开发方法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;工具型&lt;/li&gt;
+&lt;li&gt;手工型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;工具生成&lt;/h2&gt;
+&lt;p&gt;用一些工具，定义一些文法，通过工具输入文法，自动生成编译器代码。&lt;/p&gt;
+&lt;p&gt;或者 用正则表达式解析源代码&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;yacc,lex&lt;/li&gt;
+&lt;li&gt;Javacc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;手工构造&lt;/h2&gt;
+&lt;p&gt;自顶向下的分析，编写代码&lt;/p&gt;
+&lt;h1&gt;编程语言的开发过程&lt;/h1&gt;
+&lt;p&gt;首先进行编程语言的设计，然后是词法分析，语法分析，语义分析，生成抽象语法树，生成中间代码，生成操作码，&lt;/p&gt;
+&lt;h2&gt;编程语言的设计&lt;/h2&gt;
+&lt;p&gt;编程语言的设计，有两种文法表示&lt;/p&gt;
+&lt;h3&gt;bnf, ebnf定义文法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;BNF（巴科斯范式，Backus Normal Form）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="BNF" src="images/compiler-11.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;EBNF(扩展巴克斯范式，Extend BNF)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="BNF" src="images/compiler-12.png"&gt;&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="举例" src="images/compiler-10.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="举例2" src="images/compiler-13.png"&gt;&lt;/p&gt;
+&lt;h3&gt;地铁图描述文法&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="地铁图" src="images/compiler-03.png"&gt;&lt;/p&gt;
+&lt;h3&gt;少许理论知识&lt;/h3&gt;
+&lt;p&gt;消除左递归（LL（1））&lt;/p&gt;
+&lt;p&gt;LL(1)&lt;/p&gt;
+&lt;p&gt;LALR(1)&lt;/p&gt;
+&lt;p&gt;理解 i++ + ++i 怎么执行的&lt;/p&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h2&gt;词法分析&lt;/h2&gt;
+&lt;p&gt;将源代码分割成若干个记号（token）的过程。&lt;/p&gt;
+&lt;p&gt;首先定义token(记号)，用ebnf文法定义词法&lt;/p&gt;
+&lt;p&gt;每个token有相应的有限自动机&lt;/p&gt;
+&lt;p&gt;顺序读取源代码文件每个字符，用token的有限自动机来选择生成不同的token&lt;/p&gt;
+&lt;p&gt;&lt;img alt="有限自动机" src="images/compiler-05.png"&gt;&lt;/p&gt;
+&lt;h2&gt;语法分析&lt;/h2&gt;
+&lt;p&gt;即从记号构建分析树（parse tree）的过程。分析树也叫作语法树（syntax tree）或抽象语法树（abstract syntax tree，AST）。&lt;/p&gt;
+&lt;p&gt;用ebnf定义文法，根据文法写不同的解析代码&lt;/p&gt;
+&lt;h2&gt;抽象语法树&lt;/h2&gt;
+&lt;p&gt;终结符与非终结符&lt;/p&gt;
+&lt;p&gt;可直接编写eval方法，执行每个节点&lt;/p&gt;
+&lt;p&gt;&lt;img alt="抽象语法树" src="images/compiler-09.png"&gt;&lt;/p&gt;
+&lt;h2&gt;语义分析&lt;/h2&gt;
+&lt;p&gt;检查AST中，是否有语义错误，比如不能除0等&lt;/p&gt;
+&lt;h2&gt;符号管理&lt;/h2&gt;
+&lt;p&gt;需要将各个级别的变量，保存到环境变量中，并标记好级别，
+在eval的时候，如果生成变量，就new Var，并记录到环境变量中，
+如果计算用到了变量，就从环境变量中取出Var用于计算&lt;/p&gt;
+&lt;p&gt;如果推出当前级别的空间，就释放当前级别的空间内的变量,作用域管理&lt;/p&gt;
+&lt;h2&gt;生成中间代码&lt;/h2&gt;
+&lt;p&gt;符号表，语义分析，中间代码优化等。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="中间代码" src="images/compiler-16.png"&gt;&lt;/p&gt;
+&lt;h2&gt;生成汇编代码&lt;/h2&gt;
+&lt;p&gt;了解不同CPU架构的汇编语言，或自定义虚拟机的汇编语法&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Intel x86指令格式" src="images/compiler-15.png"&gt;&lt;/p&gt;
+&lt;p&gt;汇编代码优化&lt;/p&gt;
+&lt;h2&gt;二进制格式&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="ELF文件格式" src="images/compiler-06.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="COFF文件格式" src="images/compiler-14.png"&gt;&lt;/p&gt;
+&lt;h2&gt;二进制生成，汇编器&lt;/h2&gt;
+&lt;p&gt;了解各个平台的可执行文件结构，格式，编写汇编器，生成二进制&lt;/p&gt;
+&lt;p&gt;&lt;img alt="汇编器结构" src="images/compiler-07.png"&gt;&lt;/p&gt;
+&lt;h2&gt;可执行文件生成，链接器&lt;/h2&gt;
+&lt;p&gt;链接成可执行文件&lt;/p&gt;
+&lt;p&gt;&lt;img alt="链接器结构" src="images/compiler-08.png"&gt;&lt;/p&gt;
+&lt;h2&gt;错误处理&lt;/h2&gt;
+&lt;p&gt;伴随着每个过程，都需要有错误处理，和友好的错误提示&lt;/p&gt;
+&lt;h2&gt;优化&lt;/h2&gt;
+&lt;p&gt;中间代码优化，汇编代码优化，等，每一部分都有优化部分&lt;/p&gt;
+&lt;h1&gt;CPU架构&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;intel x86&lt;/li&gt;
+&lt;li&gt;ARM&lt;/li&gt;
+&lt;li&gt;Power&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h1&gt;虚拟机的设计&lt;/h1&gt;
+&lt;p&gt;模拟真实CPU架构&lt;/p&gt;
+&lt;p&gt;定义栈空间，定义堆空间，定义寄存器，等数据结构&lt;/p&gt;
+&lt;h2&gt;字节码文件的解析&lt;/h2&gt;
+&lt;p&gt;读取文件，读取一个个指令，巨大的switch case结构&lt;/p&gt;
+&lt;h2&gt;运行时数据区&lt;/h2&gt;
+&lt;h3&gt;栈(stack)的设计&lt;/h3&gt;
+&lt;h4&gt;栈帧&lt;/h4&gt;
+&lt;h3&gt;堆(heap)的设计&lt;/h3&gt;
+&lt;h3&gt;局部变量&lt;/h3&gt;
+&lt;h3&gt;全局变量&lt;/h3&gt;
+&lt;h2&gt;汇编指令与机器码的设计&lt;/h2&gt;
+&lt;h2&gt;解释器的设计&lt;/h2&gt;
+&lt;h2&gt;GC垃圾回收&lt;/h2&gt;
+&lt;h1&gt;JIT&lt;/h1&gt;
+&lt;p&gt;java，.NET Framework都具备在运行的同时将字节码转换为机器码的功能，这叫做JIT，Just-In-Time编译技术。&lt;/p&gt;
+&lt;h1&gt;编程语言分类漫谈&lt;/h1&gt;
+&lt;p&gt;JVM虚拟机，Java，Groovy，Scala，Clojure，Jython，JRuby等。&lt;/p&gt;
+&lt;p&gt;CPython&lt;/p&gt;
+&lt;p&gt;Pypy&lt;/p&gt;
+&lt;p&gt;go&lt;/p&gt;
+&lt;p&gt;js&lt;/p&gt;
+&lt;h1&gt;编程语言开发示例demo&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/mingz2013/py.calc"&gt;py.calc&lt;/a&gt;解释型语言&lt;/p&gt;
+&lt;h1&gt;参考资料&lt;/h1&gt;
+&lt;h2&gt;书籍&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《Lua设计与实现》&lt;/li&gt;
+&lt;li&gt;《Lua 源码欣赏》&lt;/li&gt;
+&lt;li&gt;《Go 1.5 源码剖析》&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《Python源码剖析--深度探索动态语言核心技术》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《编译器构造（Java语言版）》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;《自己动手写Java虚拟机》&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《揭秘Java虚拟机-JVM设计原理与实现》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《自制编程语言》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《两周自制脚本语言》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《自制编译器》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;《自己动手构造编译系统 编译、汇编与链接》&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《自己动手写编译器、链接器》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《C编译器剖析》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;《可变目标C编译器：设计与实现》&lt;/li&gt;
+&lt;li&gt;《深入分析GCC》&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《高级编译器设计与实现》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《编译系统透视  图解编译原理》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;《编译原理》&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《现代编译原理：c语言描述》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;《程序是怎样跑起来的》&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;《计算的本质：深入剖析程序和计算机》&lt;/li&gt;
+&lt;/ul&gt;</content><category term="compiler"></category><category term="VM"></category></entry><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:/blog/posts/2016/Dec/01/centos7-utf8/</id><summary type="html">&lt;p&gt;CentOS7 utf8编码&lt;/p&gt;</summary><content type="html">&lt;h2&gt;查看系统版本信息&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;$cat /etc/redhat-release&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;CentOS Linux release 7.1.1503 (Core)
 &lt;/pre&gt;&lt;/div&gt;
@@ -80,7 +476,8 @@ LC_ALL=
 en_US.iso88591
 en_US.iso885915
 en_US.utf8
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="CentOS7"></category></entry><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/" rel="alternate"></link><published>2016-12-14T12:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:blog/posts/2016/Dec/01/centos7-utf8-rst/</id><summary type="html">&lt;div class="section" id="id1"&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="CentOS7"></category></entry><entry><title>CentOS7 UTF8编码设置</title><link href="http://mingz.me/blog/posts/2016/Dec/01/centos7-utf8-rst/" rel="alternate"></link><published>2016-12-01T00:00:00+01:00</published><updated>2016-12-14T12:00:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-12-01:/blog/posts/2016/Dec/01/centos7-utf8-rst/</id><summary type="html">&lt;p class="first last"&gt;CentOS7 utf8编码&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="id1"&gt;
 &lt;h2&gt;1. 查看系统版本信息&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;$cat /etc/redhat-release&lt;/em&gt;&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -169,4 +566,4 @@ en_US.iso885915
 en_US.utf8
 &lt;/pre&gt;
 &lt;/div&gt;
-</summary><category term="CentOS7"></category></entry></feed>
+</content><category term="CentOS7"></category></entry><entry><title>Helloworld</title><link href="http://mingz.me/blog/posts/2016/Nov/25/helloworld/" rel="alternate"></link><published>2016-11-25T22:20:00+01:00</published><updated>2016-11-25T22:20:00+01:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2016-11-25:/blog/posts/2016/Nov/25/helloworld/</id><summary type="html">&lt;p&gt;Short version for index and feeds&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry></feed>
