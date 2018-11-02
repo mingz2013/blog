@@ -27,7 +27,16 @@ PAGE_PATHS = ['pages', ]  # 页面生成目录
 ARTICLE_PATHS = ['articles', ]  # 文章输入文件目录
 # can be useful in development, but set to False when you're ready to publish
 RELATIVE_URLS = False  # 定义是否使用文档相对URL链接，只有当测试时设置为 True
-PLUGINS = []  # 插件
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = [
+    'sitemap',
+]  # 插件
+
+SITEMAP = {
+    'format': "xml",
+
+}
 
 SITENAME = u"Mingz's Blog"  # 站点名称
 SITESUBTITLE = u"Mingz's blog on GitHub Page"
