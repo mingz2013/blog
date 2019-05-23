@@ -253,8 +253,8 @@ OpenShift在Docker和k8s的基础上提供了各种功能，以满足业务应�
 &lt;p&gt;K8s是一个容器编排工具，虽然提供了很多的功能，但只是一个工具。而OpenShift是一整套企业解决方案。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="OpenShift技术堆栈" src="./images/openshift-3-02.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="OpenShift技术堆栈" src="./images/openshift-3-01.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="./images/openshift-3-03.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="./images/openshift-3-04.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OpenShift核心组件" src="./images/openshift-3-03.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OpenShift核心组件及流程" src="./images/openshift-3-04.png"&gt;&lt;/p&gt;
 &lt;h3&gt;混合云&lt;/h3&gt;
 &lt;h3&gt;DevOps&lt;/h3&gt;
 &lt;h3&gt;CI/CD&lt;/h3&gt;
