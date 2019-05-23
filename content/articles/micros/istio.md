@@ -63,7 +63,7 @@ Service Mesh主要功能：
 
 
 
-![](./images/network-01.jpeg)
+![七层网络图](./images/network-01.jpeg)
 
 
 
@@ -88,7 +88,7 @@ Helm是k8s的包管理工具，类似于yum，apt-get。
 
 
 #### Sidecar
-![](./images/sidecar-01.jpeg)
+![SideCar](./images/sidecar-01.jpeg)
 
 
 
