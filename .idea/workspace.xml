@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22dd89e9-20ad-416c-aad5-8312c6193cb9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican-plugins" afterPath="$PROJECT_DIR$/pelican-plugins" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/articles/micros/index.md" afterPath="$PROJECT_DIR$/content/articles/micros/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/articles/micros/microservice.md" afterPath="$PROJECT_DIR$/content/articles/micros/microservice.md" />
     </list>
     <ignored path="blog.iws" />
@@ -59,12 +60,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="microservice.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="microservice.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/articles/micros/microservice.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="285">
-                <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/articles/micros/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="645">
+                <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -160,10 +174,10 @@
         <option value="$PROJECT_DIR$/content/articles/micros/serverless.md" />
         <option value="$PROJECT_DIR$/content/articles/micros/spring-cloud.md" />
         <option value="$PROJECT_DIR$/content/articles/micros/k8s.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/index.md" />
         <option value="$PROJECT_DIR$/content/articles/micros/devops.md" />
         <option value="$PROJECT_DIR$/content/articles/micros/openshift-3.md" />
         <option value="$PROJECT_DIR$/content/articles/micros/microservice.md" />
+        <option value="$PROJECT_DIR$/content/articles/micros/index.md" />
       </list>
     </option>
   </component>
@@ -1075,17 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/articles/micros/istio.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1186,8 +1189,19 @@
     <entry file="file://$PROJECT_DIR$/content/articles/micros/microservice.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/articles/micros/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="645">
+            <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
