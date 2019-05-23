@@ -62,7 +62,7 @@ Kubernetes特性
 ### Helm
 
 Kuberneres的安装包管理器，类似于yum，apt-get等
-
+K8s类似于微服务层的操作系统，Helm类似于操作系统上的包管理器。
 
 
 
