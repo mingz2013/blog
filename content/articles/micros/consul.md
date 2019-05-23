@@ -9,24 +9,36 @@ Summary: consul 初体验
 Status: published
 
 
+# Consul
 
 
-# github 
-https://github.com/hashicorp/consul
-
-# website
-https://www.consul.io/
+## 概念
 
 
-# install consul
+### 服务注册与发现
+
+
+![服务注册与发现方案对比](./images/consul-01.png)
+
+
+
+### Consul
+
+
+
+
+
+## 演示
+
+### install consul
 `$brew install consul`
 
-## verifying the installation
+#### verifying the installation
 `$consul`
 
 
-# run the agent
-## starting the agent
+### run the agent
+#### starting the agent
 `$consul agent -dev`
 
 
@@ -34,7 +46,7 @@ https://www.consul.io/
 
 
 
-## cluster members
+#### cluster members
 
 
 ```
@@ -99,7 +111,7 @@ $dig @127.0.0.1 -p 8600 avril.local.node.cansul
 
 ```
 
-## stopping the agent
+#### stopping the agent
 
 你可以`ctrl-C`去优雅的停止这个agent，当中断这个agent，你可以看到，它离开的cluster，and shut down。
 
@@ -110,14 +122,14 @@ cansul往往会重连 failed nodes，允许它从好的网络状态下恢复。�
 另外，如果一个agent 正在操作一个server，一个优雅的离开方式是重要的，去避免造成一些超出控制的影响.
 
 
-# services
+### services
 
-## registering services
+#### registering services
 
 在前面的步骤里，我们运行了我们的第一个agent，查看了集群的成员，并且访问了这个节点。在本节guide，我们将注册我们第一个service，并且query这个service。
 
 
-## defining a service
+#### defining a service
 
 一个服务，可以通过，提供一个服务定义文件，或者调用一个合适的HTTP API
 
@@ -142,10 +154,10 @@ cansul往往会重连 failed nodes，允许它从好的网络状态下恢复。�
 如果你想去注册multiple services，你可以创建multiple service配置文件在这配置目录里。
 
 
-## querying services
+#### querying services
 Once the agent is started and the service is synced, we can query the service using either the DNS or HTTP API.
 
-### DNS API
+##### DNS API
 
 让我们首先请求我们的服务，用DNS API。for the DNS API, the DNS name for servics is NAME.service.consul. By default, all DNS names are always in the consul namespace, though this is configurable. The service subdomain tells Consul we're querying services, and the NAME is the name of the service.
 
@@ -174,7 +186,7 @@ $ dig @127.0.0.1 -p 8600 web.service.consul SRV
 $ dig @127.0.0.1 -p 8600 rails.web.service.consul
 ```
 
-### HTTP API
+##### HTTP API
 ```
 $ curl http://localhost:8500/v1/catalog/service/web
 [{"Node":"Armons-MacBook-Air","Address":"172.20.20.11","ServiceID":"web", \
@@ -190,15 +202,31 @@ $ curl 'http://localhost:8500/v1/health/service/web?passing'
     "ID":"web", "Service":"web", "Tags":["rails"],"Port":80}, "Checks": ...}]
 ```
 
-## updating services
+#### updating services
 服务定义可以被更新，通过改变配置文件，和发送 a SIGHUP to the agent. 这可以让你更新services 没有任何停机或不可用。
 
 这HTTP API可以被用来，add，remove，modify services dynamically。
 
 
-# Connect
+### Connect
 
-# Consul Cluster
-# Health Checks
-# KV Data
-# Web UI
+### Consul Cluster
+### Health Checks
+### KV Data
+### Web UI
+
+
+
+
+
+## todos demo
+
+
+## 参考资料
+
+
+### GitHub 
+https://github.com/hashicorp/consul
+
+### Website
+https://www.consul.io/
