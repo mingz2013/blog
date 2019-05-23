@@ -56,11 +56,11 @@ K8s是一个容器编排工具，虽然提供了很多的功能，但只是一�
 
 
 
-![](./images/openshift-3-03.png)
+![OpenShift核心组件](./images/openshift-3-03.png)
 
 
 
-![](./images/openshift-3-04.png)
+![OpenShift核心组件及流程](./images/openshift-3-04.png)
 
 ### 混合云
 ### DevOps
