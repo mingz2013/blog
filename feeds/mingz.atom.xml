@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog - Mingz</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/mingz.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2019-05-23T12:00:00+02:00</updated><entry><title>Docker</title><link href="http://mingz.me/blog/posts/2019/May/23/docker/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/docker/</id><summary type="html">&lt;p&gt;docker&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Docker&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog - Mingz</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/mingz.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2019-05-23T12:00:00+02:00</updated><entry><title>DevOps</title><link href="http://mingz.me/blog/posts/2019/May/23/devops/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/devops/</id><summary type="html">&lt;p&gt;devops&lt;/p&gt;</summary><content type="html">&lt;h1&gt;DevOps&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DevOps（Development &amp;amp; Operations）即开发运维一体化，可理解为软件研发的一种过程，方法，文化，运动或实践，主要是通过一条高度自动化的流水线来加强开发，测试，运维和其他部门之间的沟通和协作，加速产品和服务的交付。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="DevOps流程图" src="./images/devops-01.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DevOps流水线" src="./images/devops-02.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DevOps工具链" src="./images/devops-03.png"&gt;&lt;/p&gt;</content><category term="devops"></category><category term="micro service"></category></entry><entry><title>Docker</title><link href="http://mingz.me/blog/posts/2019/May/23/docker/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/docker/</id><summary type="html">&lt;p&gt;docker&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Docker&lt;/h1&gt;
 &lt;h2&gt;概述&lt;/h2&gt;
 &lt;h3&gt;Container&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="容器和虚拟机对比" src="./images/containers-01.png"&gt;&lt;/p&gt;
