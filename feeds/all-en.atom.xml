@@ -103,13 +103,13 @@
 2. 为应用请求提供可靠传递
 3. 每个业务节点部署轻量级代理
 4. 透明化，应用程序无感知。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="./images/network-01.jpeg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="七层网络图" src="./images/network-01.jpeg"&gt;&lt;/p&gt;
 &lt;p&gt;Service Mesh类似于更高级的一层网络栈。&lt;/p&gt;
 &lt;p&gt;k8s就是微服务级别的操作系统。&lt;/p&gt;
 &lt;p&gt;Helm是k8s的包管理工具，类似于yum，apt-get。&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Servie Mesh网络架构" src="./images/servicemesh-01.png"&gt;&lt;/p&gt;
 &lt;h4&gt;Sidecar&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="" src="./images/sidecar-01.jpeg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="SideCar" src="./images/sidecar-01.jpeg"&gt;&lt;/p&gt;
 &lt;h3&gt;Istio&lt;/h3&gt;
 &lt;p&gt;事实上的标准&lt;/p&gt;
 &lt;p&gt;2017年5月，Google，IBM和Lyft宣布了Istio的诞生。Istio以Envoy为数据平面，通过Sidecar的方式让Envoy同业务容器一起运行，并劫持其通信，接受控制平面的统一管理，在此基础上为服务之间的通信提供了丰富的连接，控制，观察，安全等特性。&lt;/p&gt;
