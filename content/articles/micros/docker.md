@@ -61,10 +61,10 @@ docker，优势，可以构建一个隔离的，稳定的，安全地，高性�
 ## 参考资料
 
 ### GitHub
-https://github.com/docker
+- https://github.com/docker
 
 ### WebSite
-https://www.docker.com/
+- https://www.docker.com/
 
 ### Books
 - 《Docker技术入门与实战（第3版）》

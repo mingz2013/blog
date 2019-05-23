@@ -63,8 +63,33 @@ Service Mesh主要功能：
 
 
 
+![](./images/network-01.jpeg)
+
+
+
+
+Service Mesh类似于更高级的一层网络栈。
+
+k8s就是微服务级别的操作系统。
+
+Helm是k8s的包管理工具，类似于yum，apt-get。
+
+
 
 ![Servie Mesh网络架构](./images/servicemesh-01.png)
+
+
+
+
+
+
+
+
+
+
+#### Sidecar
+![](./images/sidecar-01.jpeg)
+
 
 
 
@@ -99,7 +124,7 @@ TODO
 ## 参考资料
 
 ### GitHub
-https://github.com/istio
+- https://github.com/istio
 
 ### WebSite
 - https://istio.io/

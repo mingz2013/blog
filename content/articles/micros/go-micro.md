@@ -50,7 +50,7 @@ TODO
 ## 参考资料
 
 ### GitHub
-https://github.com/micro
+- https://github.com/micro
 
 ### WebSite
 - https://micro.mu/

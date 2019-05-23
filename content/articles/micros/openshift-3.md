@@ -31,8 +31,11 @@ Status: published
 - 通过OpenShift的灵活架构，企业可以以OpenShift作为核心，在其上搭建一个企业的DevOps引擎，推动企业的DevOps变革和转型。
 
 
+
+
 容器引擎及容器编排组件是两项关键的技术，但还不能满足生产效率的要求。
 OpenShift在Docker和k8s的基础上提供了各种功能，以满足业务应用，研发用户及运维用户在生产效率上的诉求。
+
 - 应用开发框架及中间件
 - 应用及服务目录
 - 自动化流程及工具。
@@ -40,6 +43,11 @@ OpenShift在Docker和k8s的基础上提供了各种功能，以满足业务应�
 - 性能监控及日志管理
 - 多用户接口
 - 自动化集群部署及管理
+
+
+
+K8s是一个容器编排工具，虽然提供了很多的功能，但只是一个工具。而OpenShift是一整套企业解决方案。
+
 
 ![OpenShift技术堆栈](./images/openshift-3-02.png)
 
@@ -68,10 +76,12 @@ OpenShift在Docker和k8s的基础上提供了各种功能，以满足业务应�
 ## todos demo
 
 
+TODO
+
 ## 参考资料
 
 ### GitHub
-https://github.com/openshift
+- https://github.com/openshift
 
 
 ### WebSite

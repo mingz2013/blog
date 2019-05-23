@@ -72,16 +72,16 @@ Kuberneres的安装包管理器，类似于yum，apt-get等
 
 ## todos demo
 
-
+TODO
 
 ## 参考资料
 
 ### GitHub
-https://github.com/kubernetes
+- https://github.com/kubernetes
 
 ### WebSite
-https://kubernetes.io/
-https://kubernetes.io/zh/docs/tutorials/
+- https://kubernetes.io/
+- https://kubernetes.io/zh/docs/tutorials/
 
 ### Books
 - 《每天5分钟玩转Kubernetes》
