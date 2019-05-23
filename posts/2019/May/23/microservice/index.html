@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://mingz.me/blog/favicon.ico">
+    <title>Mingz's Blog</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="http://mingz.me/blog/theme/css/blog.css" rel="stylesheet">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8794583546569613",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f0e1b5e6ef723d1acfbe44ef6ede389b";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<body>
+
+    <a href="http://github.com/mingz2013">
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+             src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"/>
+    </a>
+
+
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="/">Home</a>
+                <a class="blog-nav-item active" href="http://mingz.me/blog/">Blog</a>
+                <a class="blog-nav-item" href="http://mingz.me/blog/archives.html">Archives</a>
+                    <a class="blog-nav-item" href="http://mingz.me/blog/pages/about.html">About</a>
+                    <a class="blog-nav-item" href="http://mingz.me/blog/pages/contact.html">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+<div class="container">
+
+    <div class="blog-header">
+        <h1 class="blog-title"><a href="http://mingz.me/blog/">Mingz's Blog</a></h1>
+        <p class="lead blog-description">Mingz's blog on GitHub Page</p>
+    </div>
+
+    <div class="row">
+
+    <div class="col-sm-8 blog-main">
+
+        <div class="blog-post">
+            <h2 class="blog-post-title"><a href="http://mingz.me/blog/posts/2019/May/23/microservice/">microservice架构探索</a></h2>
+            <p class="blog-post-meta">
+                2019-05-23 12:00:00 by <a
+                    href="http://mingz.me/blog/author/mingz.html">Mingz</a><br/>
+                Category: <a href="http://mingz.me/blog/category/micros.html">micros</a>
+                Tags:
+                    <a href="http://mingz.me/blog/tag/microservice.html">microservice</a>
+                    <a href="http://mingz.me/blog/tag/micro-service.html">micro service</a>
+            </p>
+
+
+            <p><p>microservice</p></p>
+            <hr>
+            <h1>MicroService</h1>
+<h2>概述</h2>
+<blockquote>
+<p>微服务是一种软件架构模式，用来把大而重的应用程序切成许多可管理的、可管理的独立服务，各服务之间的通信并不受不同语言的协议影响，每个服务只管做好一件事情。</p>
+</blockquote>
+<h3>微服务设计的理念：</h3>
+<ul>
+<li>各服务要小 - 单一的业务目标应该是要细粒度，就像Unix的”只做一件事并且要做好”理念。</li>
+<li>组织文化要包含部署与测试的自动化，这个降低管理与操作的负担。</li>
+<li>设计原则要包含失败与错误，就像抗脆弱的系统。</li>
+</ul>
+<h3>为什么要使用微服务</h3>
+<p>随着组织的扩大，使用的技术和员工的数量都在增加，管理单一代码实现的服务，只会变得越来越复杂。</p>
+<h3>微服务特点，如下所述。</h3>
+<ul>
+<li>在结构上，将原有的从技术角度拆分的组件，升级为从业务角度拆分的独立运行的服务，这些服务具备各自的实现平台，并且独占自有数据，在服务之间以智能端点和哑管道的方式通信。</li>
+<li>在工程上，从产品而非项目的角度进行设计，强调迭代，自动化和面向故障的设计方法。</li>
+</ul>
+<h3>微服务带来的问题。</h3>
+<p>微服务架构在很大程度上提高了应用的伸缩性，方便了部门或业务之间的协作，使技术岗位能够更好地引入新技术并提高自动化程度，最终达到减耗增效的目的，然而和所有新方法一样，微服务架构在解决老问题的同时，也带来了一些新问题，例如：
+- 实例数量急剧增长，对部署和运维的自动化要求更高。
+- 用网络调动代替内部API，对网络这一不可靠的基础设施依赖增强
+- 调用链路变长，分布式跟踪称为必选项目
+- 日志分散严重，跟踪和分析难度加大
+- 服务分数，受攻击面积更大
+- 在不同的服务之间存在协作关系，需要有更好的跨服务控制协调能力
+- 自动伸缩，路由管理，故障控制，存储共享，等等。</p>
+<h2>todos demo</h2>
+<p>TODO</p>
+<h2>参考资料</h2>
+        </div><!-- /.blog-post -->
+
+<div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+</div>
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "2",
+        "bdSize": "16"
+    },
+    "share": {},
+    "image": {"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16"},
+    //"selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]}
+};
+with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="microservice" data-title="microservice架构探索"
+         data-url="http://mingz.me/blog/posts/2019/May/23/microservice/"></div>
+    <!-- 多说评论框 end -->
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name: "mingz"};
+    (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+    </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+
+            <div class="sidebar-module">
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=11871988930968386671' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>            </div>
+
+<div class="sidebar-module">
+    <h4>Categories</h4>
+    <ol class="list-unstyled">
+            <li><a href="http://mingz.me/blog/category/compiler.html">compiler(2)</a></li>
+            <li><a href="http://mingz.me/blog/category/linux.html">Linux(2)</a></li>
+            <li><a href="http://mingz.me/blog/category/micros.html">micros(11)</a></li>
+            <li><a href="http://mingz.me/blog/category/network.html">network(1)</a></li>
+            <li><a href="http://mingz.me/blog/category/python.html">Python(1)</a></li>
+    </ol>
+</div><div class="sidebar-module">
+    <h4>Tags</h4>
+    <ol class="list-unstyled">
+            <li><a href="http://mingz.me/blog/tag/centos7.html">CentOS7(2)</a></li>
+            <li><a href="http://mingz.me/blog/tag/compiler.html">compiler(2)</a></li>
+            <li><a href="http://mingz.me/blog/tag/consul.html">consul(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/docker.html">docker(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/epoll.html">epoll(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/go-micro.html">go-micro(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/istio.html">istio(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/k8s.html">k8s(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/llvm.html">llvm(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/micro-service.html">micro service(11)</a></li>
+            <li><a href="http://mingz.me/blog/tag/microservice.html">microservice(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/network.html">network(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/ollvm.html">ollvm(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/openshift-3.html">openshift 3(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/openshift-4.html">openshift 4(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/pelican.html">pelican(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/publishing.html">publishing(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/select.html">select(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/serverless.html">serverless(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/spring-cloud.html">Spring Cloud(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/vm.html">VM(1)</a></li>
+    </ol>
+</div><div class="sidebar-module">
+    <h4>Elsewhere</h4>
+    <ol class="list-unstyled">
+            <li><a href="http://github.com/mingz2013">github</a></li>
+            <li><a href="http://blog.csdn.net/mingzznet">csdn</a></li>
+    </ol>
+</div>
+        </div><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+</div><!-- /.container -->
+
+<div class="blog-footer">
+    <p>Mingz's blog on GitHub Page by <a href="http://github.com/mingz2013">@Mingz</a>.</p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

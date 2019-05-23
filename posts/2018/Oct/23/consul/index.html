@@ -89,19 +89,21 @@ var _hmt = _hmt || [];
 
             <p><p>consul 初体验</p></p>
             <hr>
-            <h1>github</h1>
-<p>https://github.com/hashicorp/consul</p>
-<h1>website</h1>
-<p>https://www.consul.io/</p>
-<h1>install consul</h1>
+            <h1>Consul</h1>
+<h2>概念</h2>
+<h3>服务注册与发现</h3>
+<p><img alt="服务注册与发现方案对比" src="./images/consul-01.png"></p>
+<h3>Consul</h3>
+<h2>演示</h2>
+<h3>install consul</h3>
 <p><code>$brew install consul</code></p>
-<h2>verifying the installation</h2>
+<h4>verifying the installation</h4>
 <p><code>$consul</code></p>
-<h1>run the agent</h1>
-<h2>starting the agent</h2>
+<h3>run the agent</h3>
+<h4>starting the agent</h4>
 <p><code>$consul agent -dev</code></p>
 <p>为了简单，我们以开发模式启动consul agent。这个模式可以快速和容易的启动一个单节点的consul环境. 这个模式不适合用于生产环境，因为它不保存任何状态。</p>
-<h2>cluster members</h2>
+<h4>cluster members</h4>
 <div class="highlight"><pre><span></span>$consul members
 Node         Address         Status  Type    Build  Protocol  DC   Segment
 avril.local  127.0.0.1:8301  alive   server  1.3.0  2         dc1  &lt;all&gt;
@@ -154,16 +156,16 @@ avril.local  127.0.0.1:8301  alive   server  1.3.0  2         dc1  &lt;all&gt;
 </pre></div>
 
 
-<h2>stopping the agent</h2>
+<h4>stopping the agent</h4>
 <p>你可以<code>ctrl-C</code>去优雅的停止这个agent，当中断这个agent，你可以看到，它离开的cluster，and shut down。</p>
 <p>为了优雅的leaving，consul 通知其他集群成员，这个节点离开了。如果你强行kill这个agent 进程，其他成员将发现这个node fail的。
 当一个成员离开，它的服务和检查，将从catalog移除。当一个成员fails，它的健康仅仅标记为critical, 但它不会从catalog中移除。
 cansul往往会重连 failed nodes，允许它从好的网络状态下恢复。然而离开的节点永远不会联系。</p>
 <p>另外，如果一个agent 正在操作一个server，一个优雅的离开方式是重要的，去避免造成一些超出控制的影响.</p>
-<h1>services</h1>
-<h2>registering services</h2>
+<h3>services</h3>
+<h4>registering services</h4>
 <p>在前面的步骤里，我们运行了我们的第一个agent，查看了集群的成员，并且访问了这个节点。在本节guide，我们将注册我们第一个service，并且query这个service。</p>
-<h2>defining a service</h2>
+<h4>defining a service</h4>
 <p>一个服务，可以通过，提供一个服务定义文件，或者调用一个合适的HTTP API</p>
 <p>一个服务定义，是最常用的方式去注册service，所以，我们用这种方式开启下一步。我们将基于上一步的agent 配置。</p>
 <p>首先，创建一个目录用于consul configuration。consul loads 所有的配置文件，in the 配置目录，所以一个通用的形式，在unix系统上是定义这个目录like <code>/etc/consul.d</code>(the .d suffix implies "this directory contaions a set of configuration files").</p>
@@ -175,9 +177,9 @@ cansul往往会重连 failed nodes，允许它从好的网络状态下恢复。�
 <code>$ consul agent -dev -config-dir=/etc/consul.d</code></p>
 <p>你可以注意到他的输出，同步的这个web service。这意味着这个agent加载了这个服务配置，从配置文件里，并且成功注册了他在这服务catalog。</p>
 <p>如果你想去注册multiple services，你可以创建multiple service配置文件在这配置目录里。</p>
-<h2>querying services</h2>
+<h4>querying services</h4>
 <p>Once the agent is started and the service is synced, we can query the service using either the DNS or HTTP API.</p>
-<h3>DNS API</h3>
+<h5>DNS API</h5>
 <p>让我们首先请求我们的服务，用DNS API。for the DNS API, the DNS name for servics is NAME.service.consul. By default, all DNS names are always in the consul namespace, though this is configurable. The service subdomain tells Consul we're querying services, and the NAME is the name of the service.</p>
 <p>For the web service we registered, these conventions and settings yield a fully-qualified domain name of web.service.consul</p>
 <div class="highlight"><pre><span></span>$ dig <span class="p">&amp;</span><span class="m">127</span>.0.0.1 -p <span class="m">8600</span> web.service.consul
@@ -196,7 +198,7 @@ cansul往往会重连 failed nodes，允许它从好的网络状态下恢复。�
 </pre></div>
 
 
-<h3>HTTP API</h3>
+<h5>HTTP API</h5>
 <div class="highlight"><pre><span></span>$ curl http://localhost:8500/v1/catalog/service/web
 <span class="o">[{</span><span class="s2">&quot;Node&quot;</span>:<span class="s2">&quot;Armons-MacBook-Air&quot;</span>,<span class="s2">&quot;Address&quot;</span>:<span class="s2">&quot;172.20.20.11&quot;</span>,<span class="s2">&quot;ServiceID&quot;</span>:<span class="s2">&quot;web&quot;</span>, <span class="se">\</span>
     <span class="s2">&quot;ServiceName&quot;</span>:<span class="s2">&quot;web&quot;</span>,<span class="s2">&quot;ServiceTags&quot;</span>:<span class="o">[</span><span class="s2">&quot;rails&quot;</span><span class="o">]</span>,<span class="s2">&quot;ServicePort&quot;</span>:80<span class="o">}]</span>
@@ -210,14 +212,25 @@ cansul往往会重连 failed nodes，允许它从好的网络状态下恢复。�
 </pre></div>
 
 
-<h2>updating services</h2>
+<h4>updating services</h4>
 <p>服务定义可以被更新，通过改变配置文件，和发送 a SIGHUP to the agent. 这可以让你更新services 没有任何停机或不可用。</p>
 <p>这HTTP API可以被用来，add，remove，modify services dynamically。</p>
-<h1>Connect</h1>
-<h1>Consul Cluster</h1>
-<h1>Health Checks</h1>
-<h1>KV Data</h1>
-<h1>Web UI</h1>
+<h3>Connect</h3>
+<h3>Consul Cluster</h3>
+<h3>Health Checks</h3>
+<h3>KV Data</h3>
+<h3>Web UI</h3>
+<h2>todos demo</h2>
+<p>TODO</p>
+<h2>参考资料</h2>
+<h3>GitHub</h3>
+<ul>
+<li>https://github.com/hashicorp/consul</li>
+</ul>
+<h3>Website</h3>
+<ul>
+<li>https://www.consul.io/</li>
+</ul>
         </div><!-- /.blog-post -->
 
 <div class="bdsharebuttonbox">
@@ -282,7 +295,7 @@ with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createEle
     <ol class="list-unstyled">
             <li><a href="http://mingz.me/blog/category/compiler.html">compiler(2)</a></li>
             <li><a href="http://mingz.me/blog/category/linux.html">Linux(2)</a></li>
-            <li><a href="http://mingz.me/blog/category/micros.html">micros(1)</a></li>
+            <li><a href="http://mingz.me/blog/category/micros.html">micros(11)</a></li>
             <li><a href="http://mingz.me/blog/category/network.html">network(1)</a></li>
             <li><a href="http://mingz.me/blog/category/python.html">Python(1)</a></li>
     </ol>
@@ -292,14 +305,23 @@ with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createEle
             <li><a href="http://mingz.me/blog/tag/centos7.html">CentOS7(2)</a></li>
             <li><a href="http://mingz.me/blog/tag/compiler.html">compiler(2)</a></li>
             <li><a href="http://mingz.me/blog/tag/consul.html">consul(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/docker.html">docker(1)</a></li>
             <li><a href="http://mingz.me/blog/tag/epoll.html">epoll(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/go-micro.html">go-micro(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/istio.html">istio(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/k8s.html">k8s(1)</a></li>
             <li><a href="http://mingz.me/blog/tag/llvm.html">llvm(1)</a></li>
-            <li><a href="http://mingz.me/blog/tag/micro-service.html">micro service(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/micro-service.html">micro service(11)</a></li>
+            <li><a href="http://mingz.me/blog/tag/microservice.html">microservice(1)</a></li>
             <li><a href="http://mingz.me/blog/tag/network.html">network(1)</a></li>
             <li><a href="http://mingz.me/blog/tag/ollvm.html">ollvm(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/openshift-3.html">openshift 3(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/openshift-4.html">openshift 4(1)</a></li>
             <li><a href="http://mingz.me/blog/tag/pelican.html">pelican(1)</a></li>
             <li><a href="http://mingz.me/blog/tag/publishing.html">publishing(1)</a></li>
             <li><a href="http://mingz.me/blog/tag/select.html">select(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/serverless.html">serverless(1)</a></li>
+            <li><a href="http://mingz.me/blog/tag/spring-cloud.html">Spring Cloud(1)</a></li>
             <li><a href="http://mingz.me/blog/tag/vm.html">VM(1)</a></li>
     </ol>
 </div><div class="sidebar-module">

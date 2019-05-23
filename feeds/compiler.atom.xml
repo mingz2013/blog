@@ -31,6 +31,9 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;https://blog.csdn.net/chrisnotfound/article/details/79026449&lt;/p&gt;
+&lt;h1&gt;demo&lt;/h1&gt;
+&lt;p&gt;用Armariris演示编译一个简单的C源码，试用各种参数。&lt;/p&gt;
+&lt;p&gt;对编译出的二进制进行分析，查看文件大小，用ida分析二进制，展示流图。&lt;/p&gt;
 &lt;h1&gt;攻与防&lt;/h1&gt;
 &lt;p&gt;https://bbs.pediy.com/thread-217727.htm&lt;/p&gt;
 &lt;p&gt;http://www.freebuf.com/articles/terminal/130142.html&lt;/p&gt;
