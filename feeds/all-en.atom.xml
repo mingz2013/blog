@@ -195,7 +195,7 @@ K8s类似于微服务层的操作系统，Helm类似于操作系统上的包管�
 &lt;li&gt;&lt;a href="./serverless.md"&gt;Serverless&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./istio.md"&gt;Istio&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./openshift-4.md"&gt;OpenShift 4&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="micro service"></category></entry><entry><title>microservice架构探索</title><link href="http://mingz.me/blog/posts/2019/May/23/microservice/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/microservice/</id><summary type="html">&lt;p&gt;microservice&lt;/p&gt;</summary><content type="html">&lt;h1&gt;MicroService&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="micro service"></category></entry><entry><title>microservice</title><link href="http://mingz.me/blog/posts/2019/May/23/microservice/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/microservice/</id><summary type="html">&lt;p&gt;microservice&lt;/p&gt;</summary><content type="html">&lt;h1&gt;MicroService&lt;/h1&gt;
 &lt;h2&gt;概述&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;微服务是一种软件架构模式，用来把大而重的应用程序切成许多可管理的、可管理的独立服务，各服务之间的通信并不受不同语言的协议影响，每个服务只管做好一件事情。&lt;/p&gt;
