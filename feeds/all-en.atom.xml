@@ -179,7 +179,7 @@ K8s类似于微服务层的操作系统，Helm类似于操作系统上的包管�
 &lt;li&gt;《每天5分钟玩转Kubernetes》&lt;/li&gt;
 &lt;li&gt;《Kubernetes进阶实战》&lt;/li&gt;
 &lt;li&gt;《基于Kubernetes的容器云平台实战》&lt;/li&gt;
-&lt;/ul&gt;</content><category term="k8s"></category><category term="micro service"></category></entry><entry><title>microservice架构探索</title><link href="http://mingz.me/blog/posts/2019/May/23/micro-index/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/micro-index/</id><summary type="html">&lt;p&gt;micro index&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;禁止转载&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><category term="k8s"></category><category term="micro service"></category></entry><entry><title>MicroService架构探索</title><link href="http://mingz.me/blog/posts/2019/May/23/micro-index/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/micro-index/</id><summary type="html">&lt;p&gt;micro index&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;禁止转载&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;本目录内文章，图片和文字资源大多来自于网络和参考书籍，如有侵权，请联系删除&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h1&gt;MicroService架构探索&lt;/h1&gt;
 &lt;p&gt;各位领导大家好，今天给大家汇报一下最近的一些关于微服务的研究。&lt;/p&gt;
@@ -195,7 +195,7 @@ K8s类似于微服务层的操作系统，Helm类似于操作系统上的包管�
 &lt;li&gt;&lt;a href="./serverless.md"&gt;Serverless&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./istio.md"&gt;Istio&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./openshift-4.md"&gt;OpenShift 4&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="micro service"></category></entry><entry><title>microservice</title><link href="http://mingz.me/blog/posts/2019/May/23/microservice/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/microservice/</id><summary type="html">&lt;p&gt;microservice&lt;/p&gt;</summary><content type="html">&lt;h1&gt;MicroService&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="micro service"></category></entry><entry><title>MicroService</title><link href="http://mingz.me/blog/posts/2019/May/23/microservice/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/microservice/</id><summary type="html">&lt;p&gt;microservice&lt;/p&gt;</summary><content type="html">&lt;h1&gt;MicroService&lt;/h1&gt;
 &lt;h2&gt;概述&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;微服务是一种软件架构模式，用来把大而重的应用程序切成许多可管理的、可管理的独立服务，各服务之间的通信并不受不同语言的协议影响，每个服务只管做好一件事情。&lt;/p&gt;
