@@ -214,14 +214,16 @@ K8s类似于微服务层的操作系统，Helm类似于操作系统上的包管�
 &lt;li&gt;在工程上，从产品而非项目的角度进行设计，强调迭代，自动化和面向故障的设计方法。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;微服务带来的问题。&lt;/h3&gt;
-&lt;p&gt;微服务架构在很大程度上提高了应用的伸缩性，方便了部门或业务之间的协作，使技术岗位能够更好地引入新技术并提高自动化程度，最终达到减耗增效的目的，然而和所有新方法一样，微服务架构在解决老问题的同时，也带来了一些新问题，例如：
-- 实例数量急剧增长，对部署和运维的自动化要求更高。
-- 用网络调动代替内部API，对网络这一不可靠的基础设施依赖增强
-- 调用链路变长，分布式跟踪称为必选项目
-- 日志分散严重，跟踪和分析难度加大
-- 服务分数，受攻击面积更大
-- 在不同的服务之间存在协作关系，需要有更好的跨服务控制协调能力
-- 自动伸缩，路由管理，故障控制，存储共享，等等。&lt;/p&gt;
+&lt;p&gt;微服务架构在很大程度上提高了应用的伸缩性，方便了部门或业务之间的协作，使技术岗位能够更好地引入新技术并提高自动化程度，最终达到减耗增效的目的，然而和所有新方法一样，微服务架构在解决老问题的同时，也带来了一些新问题，例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实例数量急剧增长，对部署和运维的自动化要求更高。&lt;/li&gt;
+&lt;li&gt;用网络调动代替内部API，对网络这一不可靠的基础设施依赖增强&lt;/li&gt;
+&lt;li&gt;调用链路变长，分布式跟踪称为必选项目&lt;/li&gt;
+&lt;li&gt;日志分散严重，跟踪和分析难度加大&lt;/li&gt;
+&lt;li&gt;服务分数，受攻击面积更大&lt;/li&gt;
+&lt;li&gt;在不同的服务之间存在协作关系，需要有更好的跨服务控制协调能力&lt;/li&gt;
+&lt;li&gt;自动伸缩，路由管理，故障控制，存储共享，等等。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;todos demo&lt;/h2&gt;
 &lt;p&gt;TODO&lt;/p&gt;
 &lt;h2&gt;参考资料&lt;/h2&gt;</content><category term="microservice"></category><category term="micro service"></category></entry><entry><title>openshift 3</title><link href="http://mingz.me/blog/posts/2019/May/23/openshift-3/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/openshift-3/</id><summary type="html">&lt;p&gt;openshift 3&lt;/p&gt;</summary><content type="html">&lt;h1&gt;OpenShift 3&lt;/h1&gt;
