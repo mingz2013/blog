@@ -64,6 +64,14 @@ https://github.com/obfuscator-llvm/obfuscator/wiki
 https://blog.csdn.net/chrisnotfound/article/details/79026449
 
 
+
+
+# demo
+用Armariris演示编译一个简单的C源码，试用各种参数。
+
+对编译出的二进制进行分析，查看文件大小，用ida分析二进制，展示流图。
+
+
 # 攻与防
 
 https://bbs.pediy.com/thread-217727.htm
