@@ -260,13 +260,30 @@ OpenShift在Docker和k8s的基础上提供了各种功能，以满足业务应�
 &lt;li&gt;自动化集群部署及管理&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;K8s是一个容器编排工具，虽然提供了很多的功能，但只是一个工具。而OpenShift是一整套企业解决方案。&lt;/p&gt;
+&lt;h4&gt;架构概览&lt;/h4&gt;
 &lt;p&gt;&lt;img alt="OpenShift技术堆栈" src="./images/openshift-3-02.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="OpenShift技术堆栈" src="./images/openshift-3-01.png"&gt;&lt;/p&gt;
+&lt;h4&gt;核心组件&lt;/h4&gt;
 &lt;p&gt;&lt;img alt="OpenShift核心组件" src="./images/openshift-3-03.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="OpenShift核心组件及流程" src="./images/openshift-3-04.png"&gt;&lt;/p&gt;
+&lt;h4&gt;构建与部署自动化 CI/CD&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="构建部署自动化" src="./images/openshift-3-11.png"&gt;&lt;/p&gt;
+&lt;h4&gt;企业部署&lt;/h4&gt;
+&lt;p&gt;多环境单集群&lt;/p&gt;
+&lt;p&gt;&lt;img alt="多环境单集群" src="./images/openshift-3-05.png"&gt;&lt;/p&gt;
+&lt;p&gt;多环境多集群
+&lt;img alt="多环境多集群" src="./images/openshift-3-06.png"&gt;&lt;/p&gt;
+&lt;p&gt;多数据中心
+&lt;img alt="多数据中心" src="./images/openshift-3-07.png"&gt;&lt;/p&gt;
+&lt;h4&gt;高可用&lt;/h4&gt;
+&lt;p&gt;主控节点的高可用&lt;/p&gt;
+&lt;p&gt;&lt;img alt="多Master高可用架构" src="./images/openshift-3-08.png"&gt;&lt;/p&gt;
+&lt;h4&gt;度量与日志管理&lt;/h4&gt;
+&lt;p&gt;度量采集
+&lt;img alt="度量采集" src="./images/openshift-3-09.png"&gt;&lt;/p&gt;
+&lt;p&gt;日志采集
+&lt;img alt="日志采集" src="./images/openshift-3-10.png"&gt;&lt;/p&gt;
 &lt;h3&gt;混合云&lt;/h3&gt;
-&lt;h3&gt;DevOps&lt;/h3&gt;
-&lt;h3&gt;CI/CD&lt;/h3&gt;
 &lt;h2&gt;演示&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;演示本地macos的OpenShift单节点集群&lt;/li&gt;
