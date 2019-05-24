@@ -271,18 +271,18 @@ OpenShift在Docker和k8s的基础上提供了各种功能，以满足业务应�
 &lt;h4&gt;企业部署&lt;/h4&gt;
 &lt;p&gt;多环境单集群&lt;/p&gt;
 &lt;p&gt;&lt;img alt="多环境单集群" src="./images/openshift-3-05.png"&gt;&lt;/p&gt;
-&lt;p&gt;多环境多集群
-&lt;img alt="多环境多集群" src="./images/openshift-3-06.png"&gt;&lt;/p&gt;
-&lt;p&gt;多数据中心
-&lt;img alt="多数据中心" src="./images/openshift-3-07.png"&gt;&lt;/p&gt;
+&lt;p&gt;多环境多集群&lt;/p&gt;
+&lt;p&gt;&lt;img alt="多环境多集群" src="./images/openshift-3-06.png"&gt;&lt;/p&gt;
+&lt;p&gt;多数据中心&lt;/p&gt;
+&lt;p&gt;&lt;img alt="多数据中心" src="./images/openshift-3-07.png"&gt;&lt;/p&gt;
 &lt;h4&gt;高可用&lt;/h4&gt;
 &lt;p&gt;主控节点的高可用&lt;/p&gt;
 &lt;p&gt;&lt;img alt="多Master高可用架构" src="./images/openshift-3-08.png"&gt;&lt;/p&gt;
 &lt;h4&gt;度量与日志管理&lt;/h4&gt;
-&lt;p&gt;度量采集
-&lt;img alt="度量采集" src="./images/openshift-3-09.png"&gt;&lt;/p&gt;
-&lt;p&gt;日志采集
-&lt;img alt="日志采集" src="./images/openshift-3-10.png"&gt;&lt;/p&gt;
+&lt;p&gt;度量采集&lt;/p&gt;
+&lt;p&gt;&lt;img alt="度量采集" src="./images/openshift-3-09.png"&gt;&lt;/p&gt;
+&lt;p&gt;日志采集&lt;/p&gt;
+&lt;p&gt;&lt;img alt="日志采集" src="./images/openshift-3-10.png"&gt;&lt;/p&gt;
 &lt;h3&gt;混合云&lt;/h3&gt;
 &lt;h2&gt;演示&lt;/h2&gt;
 &lt;ul&gt;
