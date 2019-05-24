@@ -76,15 +76,18 @@ K8s是一个容器编排工具，虽然提供了很多的功能，但只是一�
 
 
 #### 企业部署
+
 多环境单集群
 
 ![多环境单集群](./images/openshift-3-05.png)
 
 多环境多集群
+
 ![多环境多集群](./images/openshift-3-06.png)
 
 
 多数据中心
+
 ![多数据中心](./images/openshift-3-07.png)
 
 
@@ -102,9 +105,11 @@ K8s是一个容器编排工具，虽然提供了很多的功能，但只是一�
 #### 度量与日志管理
 
 度量采集
+
 ![度量采集](./images/openshift-3-09.png)
 
 日志采集
+
 ![日志采集](./images/openshift-3-10.png)
 
 
@@ -115,6 +120,7 @@ K8s是一个容器编排工具，虽然提供了很多的功能，但只是一�
 
 
 ## 演示
+
 - 演示本地macos的OpenShift单节点集群
 - 演示OpenShift的Web Dashboard
 
@@ -128,12 +134,15 @@ TODO
 ## 参考资料
 
 ### GitHub
+
 - https://github.com/openshift
 
 
 ### WebSite
+
 - http://www.openshift.org
 - https://www.okd.io/
 
 ### Books
+
 - 《开源容器云OpenShift 构建基于Kubernetes的企业应用云》
