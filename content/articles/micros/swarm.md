@@ -1,3 +1,16 @@
+Title: Swarm
+Date: 2019-05-28 12:00
+Modified: 2019-05-28 12:00
+Category: micros
+Tags: micro service Swarm
+Slug: swarm
+Author: Mingz
+Summary: Swarm
+Status: published
+
+
+
+
 * 
 * Docker Machine 创建 Docker 主机
 * Docker Swarm 配置集群节点
