@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Mingz's Blog - micros</title><link href="http://mingz.me/blog/" rel="alternate"></link><link href="http://mingz.me/blog/feeds/micros.atom.xml" rel="self"></link><id>http://mingz.me/blog/</id><updated>2019-05-28T12:00:00+02:00</updated><entry><title>Chaos Engineering</title><link href="http://mingz.me/blog/posts/2019/May/28/chaos-engineering/" rel="alternate"></link><published>2019-05-28T12:00:00+02:00</published><updated>2019-05-28T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-28:/blog/posts/2019/May/28/chaos-engineering/</id><summary type="html">&lt;p&gt;Chaos Engineering&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Chaos Engineering&lt;/h1&gt;
 &lt;p&gt;混沌工程&lt;/p&gt;</content><category term="Chaos Engineering"></category><category term="micro service"></category></entry><entry><title>Mesos</title><link href="http://mingz.me/blog/posts/2019/May/28/mesos/" rel="alternate"></link><published>2019-05-28T12:00:00+02:00</published><updated>2019-05-28T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-28:/blog/posts/2019/May/28/mesos/</id><summary type="html">&lt;p&gt;Mesos&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Mesos&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mesos项目是源自UC Berkeley的对集群资源进行抽象和管理的开源项目，类似于操作系统内核，使用它可以很容易的实现分布式应用的自动化调度。&lt;/p&gt;
+&lt;p&gt;同时，Mesos自身也很好的结合和主持了Docker等相关容器技术，基于Mesos已有的大量应用框架，可以实现用户应用的快速上线。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href="https://mp.weixin.qq.com/s/5S_lXr5wuszoHHIK0iQKsA"&gt;Twitter 宣布抛弃 Mesos 全面转向 Kubernetes&lt;/a&gt;&lt;/p&gt;</content><category term="micro service Mesos"></category></entry><entry><title>Swarm</title><link href="http://mingz.me/blog/posts/2019/May/28/swarm/" rel="alternate"></link><published>2019-05-28T12:00:00+02:00</published><updated>2019-05-28T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-28:/blog/posts/2019/May/28/swarm/</id><summary type="html">&lt;p&gt;Swarm&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;li&gt;Docker Machine 创建 Docker 主机&lt;/li&gt;
 &lt;li&gt;Docker Swarm 配置集群节点&lt;/li&gt;
 &lt;li&gt;Docker Service 部署单个集群服务&lt;/li&gt;
@@ -12,7 +15,16 @@
 &lt;li&gt;
 &lt;p&gt;docker-machine、docker swarm、docker node、docker service 和 docker stack 常用命令&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="micro service Swarm"></category></entry><entry><title>Docker Compose</title><link href="http://mingz.me/blog/posts/2019/May/23/compose/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/compose/</id><summary type="html">&lt;p&gt;docker compose&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Docker Compose&lt;/h1&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker Machine&lt;/h2&gt;
+&lt;p&gt;Docker Machine是Docker官方编排项目之一，是一个简化Docker安装的命令行工具，可以帮助用户构建拥有Docker运行环境的虚拟机，并能够远程管理虚拟机及其里面的容器。&lt;/p&gt;
+&lt;h2&gt;Docker Compose&lt;/h2&gt;
+&lt;p&gt;Docker Compose是Docker的一种编排服务，是一个用于在Docker上定义并运行复杂应用的工具，可以让用户在集群中部署分布式应用。通过Compose，用户可以很容易的用一个配置文件定义一个多容器的应用，然后使用一条指令安装这个应用的所有依赖，完成构建。Docker Compose解决了容器与容器之间如何管理编排的问题，适合开发和测试环境。&lt;/p&gt;
+&lt;h2&gt;Docker Swarm&lt;/h2&gt;
+&lt;p&gt;Swarm是Docker公司在2014年12月初发布的一套较为简单的工具，用来管理Docker集群，它将一群Docker宿主机变成一个单一的，虚拟的主机，使用Swarm操作集群，会使用户感觉就像是在一台主机上进行操作。Swarm使用标准的Docker API接口作为其前端访问入口，换言之，各种形式的Docker Client都可以直接与Swarm通信。&lt;/p&gt;
+&lt;h2&gt;Docker Node&lt;/h2&gt;
+&lt;h2&gt;Docker Service&lt;/h2&gt;
+&lt;h2&gt;Docker Stack&lt;/h2&gt;</content><category term="micro service Swarm"></category></entry><entry><title>Docker Compose</title><link href="http://mingz.me/blog/posts/2019/May/23/compose/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/compose/</id><summary type="html">&lt;p&gt;docker compose&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Docker Compose&lt;/h1&gt;
 &lt;h2&gt;简介&lt;/h2&gt;
 &lt;p&gt;单机服务编排工具&lt;/p&gt;
 &lt;h2&gt;使用&lt;/h2&gt;
