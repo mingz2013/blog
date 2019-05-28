@@ -12,3 +12,8 @@ Status: published
 
 
 # Mesos
+
+
+
+
+[Twitter 宣布抛弃 Mesos 全面转向 Kubernetes](https://mp.weixin.qq.com/s/5S_lXr5wuszoHHIK0iQKsA)
