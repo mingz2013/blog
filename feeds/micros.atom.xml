@@ -346,7 +346,7 @@ K8s类似于微服务层的操作系统，Helm类似于操作系统上的包管�
 &lt;h2&gt;参考资料&lt;/h2&gt;
 &lt;h3&gt;GitHub&lt;/h3&gt;
 &lt;h3&gt;WebSite&lt;/h3&gt;
-&lt;h3&gt;Books&lt;/h3&gt;</content><category term="openshift 4"></category><category term="micro service"></category></entry><entry><title>Serverless</title><link href="http://mingz.me/blog/posts/2019/May/23/serverless/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/serverless/</id><summary type="html">&lt;p&gt;serverless&lt;/p&gt;</summary><content type="html">&lt;h1&gt;MicroService&lt;/h1&gt;
+&lt;h3&gt;Books&lt;/h3&gt;</content><category term="openshift 4"></category><category term="micro service"></category></entry><entry><title>Serverless</title><link href="http://mingz.me/blog/posts/2019/May/23/serverless/" rel="alternate"></link><published>2019-05-23T12:00:00+02:00</published><updated>2019-05-23T12:00:00+02:00</updated><author><name>Mingz</name></author><id>tag:mingz.me,2019-05-23:/blog/posts/2019/May/23/serverless/</id><summary type="html">&lt;p&gt;serverless&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Serverless&lt;/h1&gt;
 &lt;h2&gt;概述&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Serverless架构" src="./images/serverless-01.png"&gt;&lt;/p&gt;
 &lt;p&gt;Serverless下包含的两个概念：
