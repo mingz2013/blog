@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://mingz.me/blog/</loc>
-<lastmod>2019-05-24T16:52:47-00:00</lastmod>
+<lastmod>2019-05-28T11:00:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mingz.me/blog/archives.html</loc>
-<lastmod>2019-05-24T16:52:47-00:00</lastmod>
+<lastmod>2019-05-28T11:00:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mingz.me/blog/tags.html</loc>
-<lastmod>2019-05-24T16:52:47-00:00</lastmod>
+<lastmod>2019-05-28T11:00:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mingz.me/blog/categories.html</loc>
-<lastmod>2019-05-24T16:52:47-00:00</lastmod>
+<lastmod>2019-05-28T11:00:52-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -41,6 +41,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://mingz.me/blog/pages/contact.html</loc>
 <lastmod>2016-11-25T15:20:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mingz.me/blog/posts/2019/May/28/mesos/</loc>
+<lastmod>2019-05-28T12:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mingz.me/blog/posts/2019/May/28/swarm/</loc>
+<lastmod>2019-05-28T12:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -187,7 +201,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://mingz.me/blog/category/micros.html</loc>
-<lastmod>2019-05-23T12:00:00+00:09</lastmod>
+<lastmod>2019-05-28T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -228,8 +242,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://mingz.me/blog/tag/vm.html</loc>
-<lastmod>2018-09-03T10:30:00+00:09</lastmod>
+<loc>http://mingz.me/blog/tag/micro-service-mesos.html</loc>
+<lastmod>2019-05-28T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -237,6 +251,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://mingz.me/blog/tag/devops.html</loc>
 <lastmod>2019-05-23T12:00:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mingz.me/blog/tag/micro-service-swarm.html</loc>
+<lastmod>2019-05-28T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -312,6 +333,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://mingz.me/blog/tag/vm.html</loc>
+<lastmod>2018-09-03T10:30:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://mingz.me/blog/tag/spring-cloud.html</loc>
 <lastmod>2019-05-23T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -362,7 +390,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://mingz.me/blog/author/mingz.html</loc>
-<lastmod>2019-05-23T12:00:00+00:09</lastmod>
+<lastmod>2019-05-28T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
