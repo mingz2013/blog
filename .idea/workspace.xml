@@ -2,13 +2,440 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22dd89e9-20ad-416c-aad5-8312c6193cb9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican-plugins" afterPath="$PROJECT_DIR$/pelican-plugins" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/backreftranslate" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/backreftranslate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/backreftranslate/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/backreftranslate/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/backreftranslate/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/backreftranslate/backreftranslate/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/backreftranslate/backreftranslate/backreftranslate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/better_code_samples" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/better_code_samples" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/better_code_samples/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/better_code_samples/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/better_code_samples/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/better_code_samples/better_code_samples.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/bootstrapify" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/bootstrapify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/bootstrapify/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/bootstrapify/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/bootstrapify/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/bootstrapify/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/bootstrapify/bootstrapify.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/category_order" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/category_order" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/category_order/Readme.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/category_order/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/category_order/category_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/cjk-auto-spacing" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/cjk-auto-spacing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/cjk-auto-spacing/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/cjk-auto-spacing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/cjk-auto-spacing/cjk_auto_spacing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/cjk-auto-spacing/screenshot1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/cjk-auto-spacing/screenshot2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/deadlinks" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/deadlinks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/deadlinks/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/deadlinks/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/deadlinks/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/deadlinks/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/deadlinks/deadlinks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/encrypt-content" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/encrypt-content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/encrypt-content/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/encrypt-content/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/encrypt-content/encrypt_content/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/encrypt-content/encrypt_content/decrypt-form.tpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/encrypt-content/encrypt_content/encrypt_content.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/encrypt-content/encrypt_content/test_encrypt_content.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/figure-ref" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/figure-ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/figure-ref/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/figure-ref/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/figure-ref/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/figure-ref/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/figure-ref/figure_ref.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/ga_page_view" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/ga_page_view" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/ga_page_view/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/ga_page_view/Readme.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/ga_page_view/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/ga_page_view/ga_page_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/ga_page_view/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/ga_page_view/testSuit/testApi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/image_process" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/Readme.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/image_process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/blur/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/blur/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/contour/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/contour/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/crop/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/crop/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/detail/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/detail/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/edge_enhance/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/edge_enhance/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/edge_enhance_more/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/edge_enhance_more/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/emboss/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/emboss/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/find_edges/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/find_edges/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/flip_horizontal/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/flip_horizontal/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/flip_vertical/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/flip_vertical/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/grayscale/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/grayscale/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/resize/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/resize/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/rotate/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/rotate/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/scale_in/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/scale_in/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/scale_out/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/scale_out/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/sharpen/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/sharpen/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/smooth/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/smooth/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/smooth_more/pelican-bird.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_data/results/smooth_more/pelican-bird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/image_process/test_image_process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/just_table" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/just_table" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/just_table/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/just_table/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/just_table/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/just_table/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/just_table/just_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/lightbox" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/lightbox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/lightbox/.github/stale.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/lightbox/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/lightbox/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/lightbox/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/lightbox/lightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/lightbox/lightbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/loadcsv" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/loadcsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/loadcsv/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/loadcsv/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/loadcsv/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/loadcsv/loadcsv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/md-metayaml" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/md-metayaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/md-metayaml/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/md-metayaml/.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/md-metayaml/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/md-metayaml/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/md-metayaml/markdown_metayaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/md-metayaml/md_metayaml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multi_neighbors" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/multi_neighbors" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multi_neighbors/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multi_neighbors/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multi_neighbors/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multi_neighbors/multi_neighbors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multi_neighbors/test_multi_neighbors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multimarkdown_reader" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/multimarkdown_reader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multimarkdown_reader/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multimarkdown_reader/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multimarkdown_reader/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/multimarkdown_reader/mmd_reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/org_pandoc_reader" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/org_pandoc_reader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/org_pandoc_reader/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/org_pandoc_reader/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/org_pandoc_reader/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/org_pandoc_reader/org_pandoc_reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pandoc_reader" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pandoc_reader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pandoc_reader/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pandoc_reader/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pandoc_reader/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pandoc_reader/pandoc_reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/panorama" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/dev-requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/history.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/panorama/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/panorama/chart_factory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/panorama/conf_factory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/panorama/data_factory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/panorama/default.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/panorama/panorama.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/panorama_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/template/test_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/conf/panorama.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/conf/panorama_error.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/article_with_metadata.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/crime.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/de_si_braves_garcons.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/entre_chat_et_chien.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/fun_home.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/genetiks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/hikaru_no_go_1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/in_god_we_trust.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/interieur.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/la_chambre_des_officiers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_data/content/sa_majeste_des_mouches.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_output/all_charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tests/test_panorama.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/panorama/tox.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pdf-img" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pdf-img" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pdf-img/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pdf-img/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pdf-img/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pdf-img/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pdf-img/pdf_img.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-cite" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-cite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-cite/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-cite/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-cite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-cite/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-cite/author_year.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-cite/pelican_cite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ert" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-ert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ert/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ert/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ert/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ert/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ert/ert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-flickr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/CHANGES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/pelican-flickr/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/pelican-flickr/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/pelican-flickr/cached.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/pelican-flickr/generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/pelican-flickr/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/pelican-flickr/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/pelican-flickr/templates/flickr_photo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/pelican-flickr/templates/flickr_set.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-flickr/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-genealogy" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-genealogy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-genealogy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-genealogy/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-genealogy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-genealogy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-genealogy/genealogy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-gist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/pelican_gist/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/pelican_gist/plugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/pelican_gist/test_plugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-gist/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/.github/stale.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/pelican_githubprojects/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/pelican_githubprojects/github.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/ipynb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/liquid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/markup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/tests/pelican/content/with-liquid-tag.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/tests/pelican/content/with-liquid-tag.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/tests/pelican/content/with-meta-file.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/tests/pelican/content/with-meta-file.ipynb-meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/tests/pelican/content/with-metacell.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/tests/pelican/pelicanconf_liquid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/tests/pelican/pelicanconf_markup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-ipynb/tests/pelican/theme/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-jinja2content" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-jinja2content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-jinja2content/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-jinja2content/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-jinja2content/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-jinja2content/jinja2content.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-langcategory" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-langcategory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-langcategory/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-langcategory/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-langcategory/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-langcategory/langcategory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass/external-link.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass/linkclass-example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass/linkclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass/mdx_linkclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-linkclass/test_linkclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/pelican_mboxreader/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/pelican_mboxreader/mboxreader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-open_graph" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-open_graph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-open_graph/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-open_graph/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-open_graph/Readme.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-open_graph/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-open_graph/open_graph.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-hierarchy" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-page-hierarchy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-hierarchy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-hierarchy/.hgignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-hierarchy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-hierarchy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-hierarchy/page_hierarchy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-order" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-page-order" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-order/.hgignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-order/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-order/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-page-order/page_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/dev_requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_exclude_small_headers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_exclude_small_headers_metadata.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_metadata.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_nonascii.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_toc_exclude_small_headers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_toc_exclude_small_headers_no_title.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_toc_no_title.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_toc_nonascii.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_with_headers_toc_nonascii_no_title.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_data/article_without_headers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/test_toc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/toc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-toc/tox.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-version" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican-version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-version/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-version/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-version/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-version/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-version/pelican_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican-version/version.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_javascript" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican_javascript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_javascript/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_javascript/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_javascript/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_javascript/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_javascript/pelican_javascript.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info/pelican_meetup_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/.github/stale.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/pelican_vimeo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/pelican_vimeo/vimeo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_vimeo/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelican_youtube" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/.github/stale.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/pelican_youtube/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/pelican_youtube/youtube.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelican_youtube/youtube.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelicanfly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/cache/ArticlesGenerator-Readers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/cache/PagesGenerator-Readers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/pelicanfly.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/css/font-awesome.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/tests/content/pages/test_pelicanfly.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/pelicanfly/tests/test_pelicanfly.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanfly/update_fontawesome.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator/generate_articles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator/generate_pelicanconfs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator/generate_screenshots.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator/pelicanconf_default.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pin_to_top" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/pin_to_top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pin_to_top/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pin_to_top/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pin_to_top/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pin_to_top/pelican-pin-to-top-example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/pin_to_top/pin_to_top.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/post_revision" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/post_revision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/post_revision/Readme.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/post_revision/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/post_revision/post_revision.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/replacer" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/replacer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/replacer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/replacer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/replacer/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/replacer/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/replacer/replacer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/similar_posts" beforeDir="false" afterPath="$PROJECT_DIR$/pelican-plugins/similar_posts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/similar_posts/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/similar_posts/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/similar_posts/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/similar_posts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/similar_posts/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/similar_posts/similar_posts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelican-plugins/similar_posts/test_similar_posts.py" beforeDir="false" />
     </list>
-    <ignored path="blog.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,137 +447,6 @@
   <component name="FavoritesManager">
     <favorites_list name="blog" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="swarm.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/swarm.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="449">
-                <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="openshift-4.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/openshift-4.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="555">
-                <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="compiler.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/compiler/compiler.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="330">
-                <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mesos.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/mesos.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="615">
-                <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serverless.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/serverless.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
-                <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="openshift-3.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/openshift-3.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-1157">
-                <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chaos-engineering.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/chaos-engineering.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="285">
-                <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-cloud.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/spring-cloud.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="450">
-                <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="compose.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/articles/micros/compose.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -161,140 +457,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/duoshuo.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/gentie.163.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/duoshuo.comment.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/duoshuo.share.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/baidu.share.html" />
-        <option value="$PROJECT_DIR$/content/articles/test_draft.md" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/archives.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/page.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/list.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/article.html" />
-        <option value="$PROJECT_DIR$/content/articles/test_markdown.md" />
-        <option value="$PROJECT_DIR$/content/articles/python/about_python.md" />
-        <option value="$PROJECT_DIR$/content/articles/js/about_js.md" />
-        <option value="$PROJECT_DIR$/content/articles/html/test_html.md" />
-        <option value="$PROJECT_DIR$/content/articles/test_rst.rst" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/plugins/baidu.push.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/plugins/duoshuo.comment.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/plugins/baidu.search.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/plugins/baidu.tongji.html" />
-        <option value="$PROJECT_DIR$/content/articles/linux/centos7_zh.md" />
-        <option value="$PROJECT_DIR$/output/posts/2016/Dec/01/centos7-zh/index.html" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/plugins/baidu.share.html" />
-        <option value="$PROJECT_DIR$/content/articles/Linux/centos7_zh.md" />
-        <option value="$PROJECT_DIR$/content/pages/about.md" />
-        <option value="$PROJECT_DIR$/content/pages/contact.md" />
-        <option value="$PROJECT_DIR$/content/articles/Linux/centos7_zh.rst" />
-        <option value="$PROJECT_DIR$/content/articles/Linux/centos7_utf8.rst" />
-        <option value="$PROJECT_DIR$/content/articles/Linux/centos7_utf8.md" />
-        <option value="$PROJECT_DIR$/content/articles/compiler/compiler.md" />
-        <option value="$PROJECT_DIR$/content/articles/network/network.md" />
-        <option value="$PROJECT_DIR$/content/articles/helloworld.md" />
-        <option value="$PROJECT_DIR$/themes/mycustomtheme/templates/base.html" />
-        <option value="$PROJECT_DIR$/pelicanconf.py" />
-        <option value="$PROJECT_DIR$/content/articles/compiler/ollvm.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/openshift.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/openshift-4.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/consul.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/go-micro.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/spring-cloud.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/devops.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/istio.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/microservice.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/k8s.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/openshift-3.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/docker.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/compose.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/serverless.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/chaos-engineering.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/index.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/mesos.md" />
-        <option value="$PROJECT_DIR$/content/articles/micros/swarm.md" />
-      </list>
-    </option>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="neIzphjJ" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="683" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="compiler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-              <item name="micros" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+  <component name="ProjectId" id="1Yfkz6MkzdXqP8Eri3LUkOky705" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="node.js.path.for.package.stylelint" value="project" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.stylelint" value="/usr/local/lib/node_modules/stylelint" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -316,27 +505,7 @@
       <recent name="$PROJECT_DIR$/themes/mycustomtheme/templates/plugins" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -345,99 +514,6 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
       <envs />
       <method />
     </configuration>
@@ -461,99 +537,40 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="blog" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
       <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="blog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
+      <method v="2" />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -565,6 +582,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480077896037</updated>
+      <workItem from="1583341297813" duration="955000" />
+      <workItem from="1583472609300" duration="1686000" />
+      <workItem from="1583592533264" duration="225000" />
+      <workItem from="1583597631014" duration="1406000" />
+      <workItem from="1583608538597" duration="253000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1480078265056</created>
@@ -716,35 +738,6 @@
     <option name="localTasksCounter" value="22" />
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="683" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18477103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23069106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Kevoree Base64 Translator" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -755,9 +748,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="编译系统泛谈" />
@@ -773,433 +763,5 @@
     <MESSAGE value="micro post" />
     <option name="LAST_COMMIT_MESSAGE" value="micro post" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content/articles/test_markdown.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/test_rst.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/extra/CNAME">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/extra/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/extra/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/pages/about.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/pages/contact.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/python/about_python.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/todo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/project.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="465">
-            <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/images/k8s-02.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/images/servicemesh-01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/images/openshift-3-01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/images/k8s-03.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-02.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-03.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-04.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-05.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-06.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-07.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-08.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-09.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-10.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-11.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-12.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-13.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-14.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-15.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-16.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/images/compiler-17.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/helloworld.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/network/network.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="318">
-            <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/consul.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="386">
-            <caret line="234" column="2" lean-forward="false" selection-start-line="234" selection-start-column="2" selection-end-line="234" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/microservice.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="615">
-            <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/go-micro.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="510">
-            <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/istio.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1020">
-            <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/k8s.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="291">
-            <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/devops.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/docker.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="600">
-            <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/compose.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/chaos-engineering.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="615">
-            <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/mesos.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/compiler/compiler.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="5205">
-          <caret line="347" column="0" lean-forward="true" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/spring-cloud.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="450">
-            <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/serverless.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/openshift-4.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="555">
-            <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/openshift-3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1157">
-            <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/articles/micros/swarm.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="449">
-            <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

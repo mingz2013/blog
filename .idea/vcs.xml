@@ -2,5 +2,53 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/ace_editor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/backreftranslate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/better_code_samples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/bootstrapify" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/category_order" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/cjk-auto-spacing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/deadlinks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/encrypt-content" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/figure-ref" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/ga_page_view" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/image_process" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/just_table" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/lightbox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/loadcsv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/md-metayaml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/multi_neighbors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/multimarkdown_reader" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/org_pandoc_reader" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pandoc_reader" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/panorama" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pdf-img" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-cite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-ert" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-flickr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-genealogy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-gist" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-githubprojects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-ipynb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-jinja2content" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-langcategory" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-linkclass" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-mboxreader" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-open_graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-page-hierarchy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-page-order" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-toc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican-version" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican_javascript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican_meetup_info" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican_vimeo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelican_youtube" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelicanfly" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pelicanthemes-generator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/pin_to_top" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/post_revision" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/replacer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pelican-plugins/similar_posts" vcs="Git" />
   </component>
 </project>
